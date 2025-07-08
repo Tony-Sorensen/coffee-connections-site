@@ -40,6 +40,13 @@ body {
   grid-column: 1;
 }
 
+/* 🧁 Logo Styling */
+.logo {
+  display: block;
+  max-width: 120px;
+  height: auto;
+}
+
 .logo {
   width: 100%;
   max-width: 120px;
