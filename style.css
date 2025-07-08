@@ -195,4 +195,23 @@ footer {
   color: var(--text-dark);
 }
 
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  background-color: var(--mocha-brown);
+  padding: 12px;
+  margin: 0;
+}
+
+.site-nav a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--healing-green);
+}
 
