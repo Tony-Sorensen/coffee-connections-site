@@ -7,6 +7,7 @@
   --mocha-brown: #554c43;
   --soft-gray: #f4f4f4;
   --text-dark: #333333;
+   --eggshell: #f4f1ea; /* updated to an eggshell tone */
 }/* 👈 Final closing brace here */
 
 /* ✍️ Base Typography & Layout */
@@ -14,7 +15,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 17px;
   line-height: 1.7;
-  background-color: var(--soft-gray);
+  background-color: var(--eggshell); /* subtle warmth */
   color: var(--text-dark);
   margin: 0;
   padding: 0;
