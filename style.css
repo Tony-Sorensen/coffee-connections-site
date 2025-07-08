@@ -56,3 +56,33 @@ footer {
   margin: 15px;
   border-radius: 6px;
 }
+
+/* 🧱 Mission Statement Styling */
+.mission-statement {
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #333;
+}
+
+/* ✍️ Founder Signature Styling */
+.founder-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #4B2E83; /* Deep plum or resilience tone */
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 768px) {
+  .mission-statement {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+
+  .founder-name {
+    font-size: 1.3em;
+  }
+}
+
