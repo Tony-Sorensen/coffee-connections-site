@@ -74,31 +74,32 @@
   <p id="timer">Loading...</p>
 </section>
 
-  #countdown {
-  text-align: center;
-  background-color: #ffffff;
-  border-left: 8px solid var(--connection-purple);
-  margin: 20px;
-  padding: 25px;
-  border-radius: 6px;
-}
-
-#countdown h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: var(--deep-plum);
-}
-
-#timer {
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--text-dark);
-}
-
   <!-- 🤝 Footer -->
   <footer>
     <p>© 2025 Coffee & Connections | El Paso, TX</p>
   </footer>
+  
+<script>
+  const launchDate = new Date("October 10, 2025 10:00:00").getTime();
+  const timer = document.getElementById("timer");
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    if (distance < 0) {
+      timer.innerHTML = "We’re Open!";
+    }
+  }, 1000);
+</script>
 </body>
+  
 </html>
 
