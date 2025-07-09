@@ -201,6 +201,53 @@ a:hover {
   color: var(--text-dark);
 }
 
+/* Menu Styling */
+.menu-item {
+  display: flex;
+  gap: 30px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-left: 8px solid var(--resilience-teal);
+  max-width: 1200px;
+}
+
+.menu-image img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.menu-details {
+  flex: 1;
+  color: var(--text-dark);
+}
+
+.menu-details h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: var(--deep-plum);
+}
+
+.theme-name {
+  font-style: italic;
+  color: var(--connection-purple);
+}
+
+.menu-description {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.menu-price,
+.menu-addons {
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+
 /* 🤝 Footer Styling */
 footer {
   background-color: var(--mocha-brown);
