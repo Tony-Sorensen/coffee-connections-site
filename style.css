@@ -201,6 +201,18 @@ a:hover {
   color: var(--text-dark);
 }
 
+.menu-section {
+  max-width: 1600px;
+  margin: 60px auto 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--deep-plum);
+}
+
+.menu-section h2 {
+  font-size: 24px;
+  color: var(--deep-plum);
+}
+
 /* 🤝 Menu Styling */
 .menu-pair {
   display: grid;
