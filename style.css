@@ -201,58 +201,6 @@ a:hover {
   color: var(--text-dark);
 }
 
-.menu-section {
-  max-width: 1600px;
-  margin: 60px auto 20px;
-  padding: 10px 0;
-  border-bottom: 2px solid var(--deep-plum);
-}
-
-.menu-section h2 {
-  font-size: 24px;
-  color: var(--deep-plum);
-}
-
-/* 🤝 Menu Styling */
-.menu-pair {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin: 40px auto;
-  max-width: 1600px;
-}
-
-.drink-block {
-  padding: 20px;
-  border-left: 8px solid var(--resilience-teal);
-  background-color: transparent;
-}
-
-.drink-block img {
-  width: 100%;
-  max-height: 220px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-.drink-block h3 {
-  font-size: 22px;
-  color: var(--deep-plum);
-  margin-bottom: 10px;
-}
-
-.theme-name {
-  font-style: italic;
-  color: var(--connection-purple);
-}
-
-.drink-block p {
-  font-size: 16px;
-  margin: 6px 0;
-  line-height: 1.6;
-}
-
 /* 🤝 Footer Styling */
 footer {
   background-color: var(--mocha-brown);
@@ -301,3 +249,4 @@ footer {
     padding: 20px;
   }
 }
+
