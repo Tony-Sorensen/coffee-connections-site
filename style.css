@@ -73,7 +73,7 @@ body {
 
 .sidebar {
   width: 220px;
-  background-color: #ffffff;
+  background-color: transparent;
   border-right: 2px solid #ddd;
   padding: 20px;
   flex-shrink: 0;
@@ -147,14 +147,18 @@ body {
 
 /* 🧾 Section Card Styling */
 section {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 20px;
-  margin: 15px;
+  margin: 0 auto;
   border-left: 8px solid var(--resilience-teal);
   border-radius: 6px;
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-dark);
+}
+
+section {
+  padding-left: 30px;
 }
 
 /* 🌟 Founding Circle Section Accent */
@@ -178,7 +182,7 @@ a:hover {
 /* ⏳ Countdown Section */
 #countdown {
   text-align: center;
-  background-color: #ffffff;
+  background-color: transparent;
   border-left: 8px solid var(--connection-purple);
   margin: 20px;
   padding: 25px;
