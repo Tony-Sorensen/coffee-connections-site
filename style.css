@@ -202,7 +202,7 @@ a:hover {
 }
 
 /* 🤝 Menu Styling */
-.menu-row {
+.menu-pair {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -210,24 +210,24 @@ a:hover {
   max-width: 1600px;
 }
 
-.drink-card {
-  background-color: transparent;
-  border-left: 8px solid var(--resilience-teal);
+.drink-block {
   padding: 20px;
+  border-left: 8px solid var(--resilience-teal);
+  background-color: transparent;
 }
 
-.drink-card img {
+.drink-block img {
   width: 100%;
-  height: auto;
+  max-height: 220px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 15px;
 }
 
-.drink-card h3 {
+.drink-block h3 {
   font-size: 22px;
   color: var(--deep-plum);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .theme-name {
@@ -235,7 +235,7 @@ a:hover {
   color: var(--connection-purple);
 }
 
-.drink-card p {
+.drink-block p {
   font-size: 16px;
   margin: 6px 0;
   line-height: 1.6;
