@@ -201,71 +201,25 @@ a:hover {
   color: var(--text-dark);
 }
 
-/* Menu Header Styling */
-.menu-intro {
-  background-color: #ede6dd; /* soft coffee tone */
-  color: var(--text-dark);
-  padding: 30px;
-  text-align: center;
-  border-left: 8px solid var(--mocha-brown);
-  max-width: 1600px;
-  margin: 30px auto;
-  border-radius: 6px;
-}
-
-.menu-intro h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: var(--deep-plum);
-}
-
-
-/* Menu Styling */
-.menu-item {
-  display: flex;
-  gap: 30px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: transparent;
-  border-left: 8px solid var(--resilience-teal);
-  max-width: 1200px;
-}
-
-.menu-image img {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.menu-details {
-  flex: 1;
-  color: var(--text-dark);
-}
-
-.menu-details h3 {
-  margin-top: 0;
-  font-size: 24px;
-  color: var(--deep-plum);
-}
-
-.theme-name {
-  font-style: italic;
-  color: var(--connection-purple);
-}
-
-.menu-description {
-  font-size: 17px;
-  margin: 10px 0;
-}
-
-.menu-price,
-.menu-addons {
-  font-size: 16px;
-  margin: 8px 0;
-  line-height: 1.6;
-}
-
+/* 🤝 Menu Styling */
+<div class="menu-item">
+  <div class="menu-image">
+    <img src="asset/earl-grey.png" alt="Earl Grey Tea" />
+  </div>
+  <div class="menu-details">
+    <h3>Earl Grey – <span class="theme-name">The Visionary</span></h3>
+    <p>
+      Bold, confident, and refined—a tea for those who see the world not just as it is,
+      <strong>but as it could be.</strong>
+    </p>
+    <p><strong>Sizes:</strong> 12oz $3.75 | 16oz $4.50 | 20oz $5.00 | 24oz $5.50</p>
+    <p><strong>Add-ons:</strong><br>
+      Honey or Vanilla Boost: $0.50<br>
+      Alternative Milk (Oat, Almond, Soy): $0.75<br>
+      Extra Tea Bag: $0.50
+    </p>
+  </div>
+</div>
 
 /* 🤝 Footer Styling */
 footer {
