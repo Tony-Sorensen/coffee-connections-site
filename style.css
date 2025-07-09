@@ -202,29 +202,32 @@ a:hover {
 }
 
 /* 🤝 Menu Styling */
-.drink-card {
+.menu-row {
   display: grid;
-  grid-template-columns: 200px 1fr 200px;
-  align-items: start;
-  gap: 30px;
-  margin: 30px auto;
-  padding: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 40px auto;
   max-width: 1600px;
-  border-left: 8px solid var(--resilience-teal);
-  background-color: transparent;
 }
 
-.drink-pic img {
+.drink-card {
+  background-color: transparent;
+  border-left: 8px solid var(--resilience-teal);
+  padding: 20px;
+}
+
+.drink-card img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
+  margin-bottom: 15px;
 }
 
-.drink-description h3 {
+.drink-card h3 {
   font-size: 22px;
-  margin-top: 0;
   color: var(--deep-plum);
+  margin-bottom: 8px;
 }
 
 .theme-name {
@@ -232,33 +235,10 @@ a:hover {
   color: var(--connection-purple);
 }
 
-.drink-description p {
+.drink-card p {
   font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.drink-description ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.drink-description li {
-  font-size: 15px;
-  margin-bottom: 6px;
-}
-
-.drink-price p {
-  font-size: 15px;
-  margin: 5px 0;
-  line-height: 1.5;
-  color: var(--text-dark);
-}
-
-.drink-price hr {
-  margin: 10px 0;
-  border: none;
-  border-top: 1px solid #ccc;
+  margin: 6px 0;
+  line-height: 1.6;
 }
 
 /* 🤝 Footer Styling */
