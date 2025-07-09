@@ -202,27 +202,28 @@ a:hover {
 }
 
 /* 🤝 Menu Styling */
-.menu-grid {
+.drink-card {
   display: grid;
-  grid-template-columns: 200px 1fr 220px;
+  grid-template-columns: 200px 1fr 200px;
+  align-items: start;
   gap: 30px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 30px auto;
+  padding: 25px;
   max-width: 1600px;
   border-left: 8px solid var(--resilience-teal);
-  align-items: start;
+  background-color: transparent;
 }
 
-.menu-pic img {
-  width: 180px;
+.drink-pic img {
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
 }
 
-.menu-description h3 {
-  margin-top: 0;
+.drink-description h3 {
   font-size: 22px;
+  margin-top: 0;
   color: var(--deep-plum);
 }
 
@@ -231,27 +232,33 @@ a:hover {
   color: var(--connection-purple);
 }
 
-.menu-description p {
+.drink-description p {
   font-size: 16px;
-  margin: 10px 0;
+  margin-bottom: 12px;
 }
 
-.menu-description ul {
+.drink-description ul {
   list-style: none;
-  padding-left: 0;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
 }
 
-.menu-description li {
+.drink-description li {
   font-size: 15px;
   margin-bottom: 6px;
 }
 
-.menu-pricing p {
+.drink-price p {
   font-size: 15px;
-  line-height: 1.6;
-  margin: 6px 0;
+  margin: 5px 0;
+  line-height: 1.5;
   color: var(--text-dark);
+}
+
+.drink-price hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
 }
 
 /* 🤝 Footer Styling */
