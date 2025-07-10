@@ -19,21 +19,21 @@
         <p class="tagline">Where Coffee Meets Compassion, & Connections Change Lives</p>
       </div>
     </div>
+
+    <!-- 🧭 Horizontal Navigation -->
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- 🧭 Layout Container -->
+  <!-- 📦 Main Content Layout -->
   <div class="main-layout">
-    <aside class="sidebar">
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html" class="active">Menu</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-        </ul>
-      </nav>
-    </aside>
-
     <section class="main-content">
+
       <!-- ☕ The Daily Ground Accordion Block -->
       <button class="accordion">☕ The Daily Ground</button>
       <div class="accordion-content">
@@ -51,6 +51,7 @@
           </ul>
         </div>
       </div>
+
     </section>
   </div>
 
@@ -59,7 +60,7 @@
     <p>© 2025 Coffee & Connections | El Paso, TX</p>
   </footer>
 
-  <!-- ✅ Accordion Script (only once per page) -->
+  <!-- ✅ Accordion Script -->
   <script>
     const accordions = document.querySelectorAll(".accordion");
     accordions.forEach(btn => {
@@ -77,4 +78,3 @@
 
 </body>
 </html>
-
