@@ -113,10 +113,10 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🟨 OUR MISSION BUTTON – Healing Green */
+/* 🟨 OUR MISSION BUTTON – Mocha Brown */
 .nav-buttons a[href="Our-Mission.html"] {
-  border-color: var(--mocha-brown: #554c43);
-  color: var(--mocha-brown: #554c43);
+  border-color: var(--mocha-brown);
+  color: var(--mocha-brown);
 }
 .nav-buttons a[href="OurMission.html"]:hover {
   color: var(--deep-plum);
@@ -161,6 +161,17 @@ body {
 .mission-right {
   flex: 1 1 45%;
   box-sizing: border-box;
+}
+
+/* 🎥 VIDEO WRAPPER STYLING */
+.video-wrapper video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .mission-right {
