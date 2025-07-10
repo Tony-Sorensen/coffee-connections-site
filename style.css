@@ -124,18 +124,18 @@ body {
 
 /* 🧭 MAIN LAYOUT */
 .main-layout {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
-/* 🖼️ MAIN CONTENT */
+/* 🖼️ MAIN CONTENT BLOCK */
 .main-content {
   flex: 1;
   padding: 0 30px;
 }
 
-/* 💬 MISSION STATEMENT */
+/* 💬 MISSION STATEMENT VIDEO CAPTION */
 .video-caption {
   font-size: 18px;
   text-align: center;
@@ -144,30 +144,35 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🧱 MISSION + VIDEO TWO-COLUMN LAYOUT */
+/* 🧱 TWO-COLUMN LAYOUT FOR MISSION + VIDEO */
 .two-column {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 40px auto;
-  border-top: 2px solid #ccc;
   padding-top: 20px;
+  border-top: 2px solid #ccc;
+}
+
+/* 🎥 VIDEO WRAPPER BLOCK */
+.video-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .video-wrapper video {
   width: 100%;
-  max-width: 900px;
   aspect-ratio: 16 / 9;
-  height: auto;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
   border-radius: 10px;
 }
 
+/* 🌿 MISSION TEXT COLUMNS */
 .mission-left,
 .mission-right {
   flex: 1 1 45%;
@@ -180,11 +185,13 @@ body {
   color: var(--text-dark);
 }
 
+/* 🪪 FOUNDER NAME STYLING */
 .founder-name {
   font-weight: bold;
   font-size: 20px;
   color: #4B2E83;
 }
+
 
 /* 🧾 SECTION BLOCK STYLING */
 section {
