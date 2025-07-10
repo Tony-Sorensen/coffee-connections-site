@@ -162,15 +162,17 @@ section {
 /* 🎥 VIDEO WRAPPER & SIZING */
 .video-wrapper {
   width: 100%;
-  max-width: 1800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .video-wrapper video {
-  height: 620px;
   width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  aspect-ratio: auto; /* Optional fallback */
+  display: block;
+  border-radius: 10px;
 }
 
 /* 🌿 MISSION COLUMNS */
