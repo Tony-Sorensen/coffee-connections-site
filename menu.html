@@ -62,10 +62,27 @@
 </section>
 
   
-  <!-- 🤝 Footer -->
-  <footer>
-    <p>© 2025 Coffee & Connections | El Paso, TX</p>
-  </footer>
+ <!-- 🤝 Footer -->
+<footer>
+  <p>© 2025 Coffee & Connections | El Paso, TX</p>
+</footer>
+
+<!-- ✅ Accordion Script (only once per page) -->
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+      const content = btn.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
+
