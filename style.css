@@ -1,4 +1,4 @@
-/* 🌱 THEME VARIABLES */
+/* 🌱 THEME COLORS & VARIABLES */
 :root {
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -23,7 +23,7 @@ body {
   padding: 0;
 }
 
-/* 🧁 HEADER LAYOUT */
+/* 🧁 HEADER STRUCTURE */
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
@@ -35,22 +35,17 @@ body {
   grid-template-columns: 120px 1fr;
   align-items: center;
   gap: 20px;
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.logo-cell {
-  grid-column: 1;
-}
-
 .logo {
-  display: block;
   max-width: 120px;
   height: auto;
+  display: block;
 }
 
 .title-cell {
-  grid-column: 2;
   text-align: center;
 }
 
@@ -77,16 +72,15 @@ body {
 .nav-buttons a {
   padding: 12px 24px;
   font-weight: bold;
-  border-radius: 8px;
   font-size: 17px;
+  border-radius: 8px;
   text-decoration: none;
   background-color: transparent;
   border: 2px solid transparent;
   transition: color 0.3s ease, border-color 0.3s ease;
-  opacity: 1;
 }
 
-/* 🟩 HOME BUTTON – India Green */
+/* ✅ Nav Button Colors */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
@@ -95,7 +89,6 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🟦 MENU BUTTON – Teal */
 .nav-buttons a[href="menu.html"] {
   border-color: var(--resilience-teal);
   color: var(--resilience-teal);
@@ -104,7 +97,6 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🟪 CALENDAR BUTTON – Purple */
 .nav-buttons a[href="calendar.html"] {
   border-color: var(--connection-purple);
   color: var(--connection-purple);
@@ -113,7 +105,6 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🟨 OUR MISSION BUTTON – Mocha Brown */
 .nav-buttons a[href="Our-Mission.html"] {
   border-color: var(--mocha-brown);
   color: var(--mocha-brown);
@@ -122,7 +113,7 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🧭 MAIN LAYOUT */
+/* 📐 MAIN CONTAINER LAYOUT */
 .main-layout {
   max-width: 1000px;
   margin: 0 auto;
@@ -135,7 +126,7 @@ body {
   padding: 0 30px;
 }
 
-/* 💬 MISSION STATEMENT VIDEO CAPTION */
+/* 💬 VIDEO CAPTION */
 .video-caption {
   font-size: 18px;
   text-align: center;
@@ -144,7 +135,7 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🧱 TWO-COLUMN LAYOUT FOR MISSION + VIDEO */
+/* 🧱 TWO-COLUMN SECTION */
 .two-column {
   display: flex;
   flex-wrap: wrap;
@@ -157,7 +148,7 @@ body {
   border-top: 2px solid #ccc;
 }
 
-/* 🎥 VIDEO WRAPPER BLOCK */
+/* 🎥 VIDEO WRAPPER & SIZING */
 .video-wrapper {
   width: 100%;
   max-width: 900px;
@@ -172,7 +163,7 @@ body {
   border-radius: 10px;
 }
 
-/* 🌿 MISSION TEXT COLUMNS */
+/* 🌿 MISSION COLUMNS */
 .mission-left,
 .mission-right {
   flex: 1 1 45%;
@@ -185,28 +176,26 @@ body {
   color: var(--text-dark);
 }
 
-/* 🪪 FOUNDER NAME STYLING */
 .founder-name {
   font-weight: bold;
   font-size: 20px;
   color: #4B2E83;
 }
 
-
-/* 🧾 SECTION BLOCK STYLING */
+/* 🧾 SECTION BLOCK STYLING (with Teal Accent) */
 section {
   position: relative;
-  background-color: transparent;
   padding: 20px 30px;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
   border-radius: 6px;
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-dark);
+  background-color: rgba(0, 128, 0, 0.03); /* 🧪 Debug tint */
 }
 
-/* 🎯 TEAL BAR ACCENT */
+/* 🎯 TEAL BAR ACCENT AS PSEUDO-ELEMENT */
 section::before {
   content: "";
   position: absolute;
@@ -218,32 +207,31 @@ section::before {
   border-radius: 6px 0 0 6px;
 }
 
-/* 🌟 FOUNDING CIRCLE ACCENT */
+/* 🌟 FOUNDING CIRCLE */
 #founding-circle {
   border-left-color: var(--healing-green);
   margin-top: 20px;
 }
 
-/* 🔗 LINK STYLES */
+/* 🔗 LINK STYLING */
 a {
   color: var(--deep-plum);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 a:hover {
   color: var(--resilience-teal);
   text-decoration: underline;
 }
 
-/* ⏳ COUNTDOWN SECTION */
+/* ⏳ COUNTDOWN BLOCK */
 #countdown {
   text-align: center;
-  background-color: transparent;
   border-left: 8px solid var(--connection-purple);
   margin: 20px;
   padding: 25px;
   border-radius: 6px;
+  background-color: transparent;
 }
 
 #countdown h2 {
@@ -258,7 +246,7 @@ a:hover {
   color: var(--text-dark);
 }
 
-/* 🔘 ACCORDION STYLES */
+/* 🔘 ACCORDION STYLING */
 .accordion {
   background-color: var(--mocha-brown);
   color: #fff;
@@ -266,12 +254,11 @@ a:hover {
   padding: 20px;
   width: 100%;
   text-align: left;
-  border: none;
   font-size: 20px;
   font-weight: bold;
+  border-left: 8px solid var(--resilience-teal);
   transition: background-color 0.3s ease;
   margin: 30px 0;
-  border-left: 8px solid var(--resilience-teal);
 }
 
 .accordion:hover {
@@ -288,36 +275,7 @@ a:hover {
   border-left: 8px solid var(--resilience-teal);
 }
 
-/* 🤲 ACCESSIBILITY PREP (optional for future) */
-/*
-.accordion[aria-expanded="true"] {
-  background-color: var(--deep-plum);
-}
-*/
-
-.accordion-description {
-  font-size: 17px;
-  color: var(--text-dark);
-  margin: 15px 0;
-}
-
-.accordion-list ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-.accordion-list li {
-  margin: 8px 0;
-  font-size: 16px;
-  color: var(--text-dark);
-}
-
-.accordion-list li {
-  margin-bottom: 15px;
-}
-
-/* 🤝 FOOTER STYLES */
+/* 🤝 FOOTER */
 footer {
   background-color: var(--mocha-brown);
   color: #ffffff;
@@ -326,7 +284,7 @@ footer {
   font-size: 15px;
 }
 
-/* 📱 RESPONSIVE STYLES */
+/* 📱 RESPONSIVE STYLING */
 @media (max-width: 768px) {
   .header-grid {
     grid-template-columns: 1fr;
@@ -364,3 +322,4 @@ footer {
     align-items: center;
   }
 }
+
