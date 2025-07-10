@@ -274,6 +274,10 @@ a:hover {
   color: var(--text-dark);
 }
 
+.accordion-list li {
+  margin-bottom: 15px;
+}
+
 /* 🤝 FOOTER STYLES */
 footer {
   background-color: var(--mocha-brown);
