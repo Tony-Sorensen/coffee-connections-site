@@ -78,7 +78,7 @@ body {
   font-weight: bold;
   border-radius: 8px;
   border: 2px solid transparent; /* base structure */
-  color: white;
+  color: var(--deep-plum);
   text-decoration: none;
   font-size: 17px;
   transition: background-color 0.3s ease;
@@ -87,8 +87,8 @@ body {
 
 /* 🎨 Individual Button Colors */
 .nav-buttons a[href="index.html"] {
-  background-color: var(--healing-green);
-  border-color: var(--healing-green);
+  background-color: var(--indial-green);
+  border-color: var(--inida-green);
 }
 
 .nav-buttons a[href="menu.html"] {
