@@ -66,13 +66,6 @@ body {
   margin-top: 8px;
 }
 
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 20px 0;
-}
-
 .nav-buttons a {
   padding: 12px 24px;
   font-weight: bold;
@@ -85,26 +78,30 @@ body {
   opacity: 1;
 }
 
-/* 🟩 Home Button – India Green */
+/* 🟩 HOME BUTTON – India Green */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
 }
+.nav-buttons a[href="index.html"]:hover {
+  color: var(--deep-plum);
+}
 
-/* 🟦 Menu Button – Advocacy Teal */
+/* 🟦 MENU BUTTON – Teal */
 .nav-buttons a[href="menu.html"] {
   border-color: var(--resilience-teal);
   color: var(--resilience-teal);
 }
+.nav-buttons a[href="menu.html"]:hover {
+  color: var(--deep-plum);
+}
 
-/* 🟪 Calendar Button – Advocacy Purple */
+/* 🟪 CALENDAR BUTTON – Purple */
 .nav-buttons a[href="calendar.html"] {
   border-color: var(--connection-purple);
   color: var(--connection-purple);
 }
-
-/* 🖐 Hover Interaction – Text shifts to Deep Plum */
-.nav-buttons a:hover {
+.nav-buttons a[href="calendar.html"]:hover {
   color: var(--deep-plum);
 }
 
