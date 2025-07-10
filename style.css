@@ -105,6 +105,13 @@ body {
   color: var(--deep-plum);
 }
 
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
 </header>
 
 /* 🧭 MAIN LAYOUT */
