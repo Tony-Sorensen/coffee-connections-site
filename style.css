@@ -71,34 +71,42 @@ body {
   padding: 20px;
 }
 
-.sidebar {
-  width: 220px;
-  background-color: transparent;
-  border-right: 2px solid #ddd;
-  padding: 20px;
-  flex-shrink: 0;
-}
-
 .site-nav ul {
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   padding: 0;
-  margin: 0;
-}
-
-.site-nav li {
-  margin-bottom: 12px;
+  margin: 20px 0;
+  list-style: none;
 }
 
 .site-nav a {
-  color: var(--deep-plum);
+  padding: 12px 20px;
   font-weight: bold;
+  border-radius: 8px;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+/* 🎨 Individual Color Buttons */
+.site-nav a[href="index.html"] {
+  background-color: var(--healing-green);
+}
+
+.site-nav a[href="menu.html"] {
+  background-color: var(--resilience-teal);
+}
+
+.site-nav a[href="calendar.html"] {
+  background-color: var(--connection-purple);
 }
 
 .site-nav a:hover {
-  color: var(--resilience-teal);
+  opacity: 0.85;
 }
+
 
 /* 🖼️ MAIN CONTENT */
 .main-content {
@@ -281,12 +289,6 @@ footer {
 
   .main-layout {
     flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid #ddd;
   }
 
   .main-content {
