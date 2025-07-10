@@ -115,9 +115,9 @@ body {
 
 /* 📐 MAIN CONTAINER LAYOUT */
 .main-layout {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
 /* 🖼️ MAIN CONTENT BLOCK */
@@ -153,7 +153,7 @@ section {
   gap: 30px;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 40px auto;
   padding-top: 20px;
   border-top: 2px solid #ccc;
