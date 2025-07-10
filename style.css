@@ -114,7 +114,7 @@ body {
 }
 
 /* 🟨 OUR MISSION BUTTON – Healing Green */
-.nav-buttons a[href="OurMission.html"] {
+.nav-buttons a[href="Our-Mission.html"] {
   border-color: var(--mocha-brown: #554c43);
   color: var(--mocha-brown: #554c43);
 }
