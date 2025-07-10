@@ -135,6 +135,17 @@ body {
   color: var(--deep-plum);
 }
 
+.main-layout,
+.two-column,
+.mission-section,
+.video-wrapper,
+section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
 /* 🧱 TWO-COLUMN SECTION */
 .two-column {
   display: flex;
@@ -187,15 +198,14 @@ section {
   position: relative;
   padding: 20px 30px;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1400px;
   border-radius: 6px;
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-dark);
-  background-color: rgba(0, 128, 0, 0.03); /* 🧪 Debug tint */
 }
 
-/* 🎯 TEAL BAR ACCENT AS PSEUDO-ELEMENT */
+/* 🎯 Teal Accent Pseudo-Element */
 section::before {
   content: "";
   position: absolute;
