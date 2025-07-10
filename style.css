@@ -250,3 +250,48 @@ footer {
   }
 }
 
+.accordion {
+  background-color: var(--mocha-brown);
+  color: #fff;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 30px 0;
+  border-left: 8px solid var(--resilience-teal);
+}
+
+.accordion:hover {
+  background-color: var(--deep-plum);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: var(--eggshell);
+  padding: 0 20px;
+  border-left: 8px solid var(--resilience-teal);
+}
+
+.accordion-description {
+  font-size: 17px;
+  color: var(--text-dark);
+  margin: 15px 0;
+}
+
+.accordion-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.accordion-list li {
+  margin: 8px 0;
+  font-size: 16px;
+  color: var(--text-dark);
+}
