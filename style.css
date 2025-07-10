@@ -66,6 +66,14 @@ body {
   margin-top: 8px;
 }
 
+/* 🧭 NAVIGATION BUTTONS */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
 .nav-buttons a {
   padding: 12px 24px;
   font-weight: bold;
@@ -104,15 +112,6 @@ body {
 .nav-buttons a[href="calendar.html"]:hover {
   color: var(--deep-plum);
 }
-
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 20px 0;
-}
-
-</header>
 
 /* 🧭 MAIN LAYOUT */
 .main-layout {
@@ -238,16 +237,24 @@ a:hover {
 
 .accordion:hover {
   background-color: var(--deep-plum);
+  color: #fff;
 }
 
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   background-color: var(--eggshell);
   padding: 0 20px;
   border-left: 8px solid var(--resilience-teal);
 }
+
+/* 🤲 ACCESSIBILITY PREP (optional for future) */
+/*
+.accordion[aria-expanded="true"] {
+  background-color: var(--deep-plum);
+}
+*/
 
 .accordion-description {
   font-size: 17px;
@@ -307,5 +314,10 @@ footer {
 
   .main-content {
     padding: 20px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }
