@@ -63,50 +63,35 @@ body {
   margin-top: 8px;
 }
 
-/* 🧭 MAIN LAYOUT & SIDEBAR */
+<!-- 🧁 Header -->
+<header class="site-header">
+  <div class="header-grid">
+    <div class="logo-cell">
+      <img src="asset/logo-stripped.png" alt="Coffee & Connections Logo" class="logo">
+    </div>
+    <div class="title-cell">
+      <h1>Coffee & Connections</h1>
+      <p class="tagline">Where Coffee Meets Compassion, & Connections Change Lives</p>
+    </div>
+  </div>
+
+  <!-- 🧭 Horizontal Nav -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+    </ul>
+  </nav>
+</header>
+
+/* 🧭 MAIN LAYOUT */
 .main-layout {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
 }
-
-.site-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
-  margin: 20px 0;
-  list-style: none;
-}
-
-.site-nav a {
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  transition: background-color 0.3s ease;
-}
-
-/* 🎨 Individual Color Buttons */
-.site-nav a[href="index.html"] {
-  background-color: var(--healing-green);
-}
-
-.site-nav a[href="menu.html"] {
-  background-color: var(--resilience-teal);
-}
-
-.site-nav a[href="calendar.html"] {
-  background-color: var(--connection-purple);
-}
-
-.site-nav a:hover {
-  opacity: 0.85;
-}
-
 
 /* 🖼️ MAIN CONTENT */
 .main-content {
