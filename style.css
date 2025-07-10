@@ -74,28 +74,34 @@ body {
   padding: 12px 24px;
   font-weight: bold;
   border-radius: 8px;
+  border: 2px solid transparent; /* base structure */
   color: white;
   text-decoration: none;
   font-size: 17px;
   transition: background-color 0.3s ease;
+  opacity: 1;
 }
 
 /* 🎨 Individual Button Colors */
 .nav-buttons a[href="index.html"] {
   background-color: var(--healing-green);
+  border-color: var(--healing-green);
 }
 
 .nav-buttons a[href="menu.html"] {
   background-color: var(--resilience-teal);
+  border-color: var(--resilience-teal);
 }
 
 .nav-buttons a[href="calendar.html"] {
   background-color: var(--connection-purple);
+  border-color: var(--connection-purple);
 }
 
 .nav-buttons a:hover {
   opacity: 0.85;
 }
+
 </header>
 
 /* 🧭 MAIN LAYOUT */
