@@ -75,12 +75,49 @@ body {
     </div>
   </div>
 
-  <!-- 🧭 Horizontal Nav -->
-  <nav class="site-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html" class="active">Menu</a></li>
-      <li><a href="calendar.html">Calendar</a></li>
+<!-- 🧭 Horizontal Navigation -->
+<nav class="site-nav">
+  <div class="nav-buttons">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="calendar.html">Calendar</a>
+  </div>
+</nav>
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.nav-buttons a {
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+/* 🎨 Individual Button Colors */
+.nav-buttons a[href="index.html"] {
+  background-color: var(--healing-green);
+}
+
+.nav-buttons a[href="menu.html"] {
+  background-color: var(--resilience-teal);
+}
+
+.nav-buttons a[href="calendar.html"] {
+  background-color: var(--connection-purple);
+}
+
+.nav-buttons a:hover {
+  opacity: 0.85;
+}
+
     </ul>
   </nav>
 </header>
