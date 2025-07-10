@@ -167,14 +167,11 @@ section {
 }
 
 .video-wrapper video {
+  height: 520px;
   width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9; /* Ensures consistent shape */
   object-fit: cover;
-  border-radius: 10px;
-  display: block;
+  aspect-ratio: auto; /* Optional fallback */
 }
-
 
 /* 🌿 MISSION COLUMNS */
 .mission-left,
