@@ -238,11 +238,13 @@ a:hover {
 /* ⏳ COUNTDOWN BLOCK */
 #countdown {
   text-align: center;
-  border-left: 8px solid var(--connection-purple);
   margin: 20px;
   padding: 25px;
   border-radius: 6px;
   background-color: transparent;
+
+  /* 🧹 Accent line removed for a cleaner look */
+  /* border-left: 8px solid var(--connection-purple); */
 }
 
 #countdown h2 {
@@ -256,6 +258,7 @@ a:hover {
   font-weight: bold;
   color: var(--text-dark);
 }
+
 
 /* 🔘 ACCORDION STYLING */
 .accordion {
