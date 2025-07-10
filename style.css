@@ -123,9 +123,8 @@ body {
 }
 
 /* 🧭 MAIN LAYOUT */
-.main-layout {
-  display: flex;
-  max-width: 1600px;
+..main-layout {
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
