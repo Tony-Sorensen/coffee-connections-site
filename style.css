@@ -118,12 +118,12 @@ body {
   border-color: var(--mocha-brown);
   color: var(--mocha-brown);
 }
-.nav-buttons a[href="OurMission.html"]:hover {
+.nav-buttons a[href="Our-Mission.html"]:hover {
   color: var(--deep-plum);
 }
 
 /* 🧭 MAIN LAYOUT */
-..main-layout {
+.main-layout {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
