@@ -113,6 +113,15 @@ body {
   color: var(--deep-plum);
 }
 
+/* 🟨 OUR MISSION BUTTON – Healing Green */
+.nav-buttons a[href="OurMission.html"] {
+  border-color: var(--healing-green);
+  color: var(--healing-green);
+}
+.nav-buttons a[href="OurMission.html"]:hover {
+  color: var(--deep-plum);
+}
+
 /* 🧭 MAIN LAYOUT */
 .main-layout {
   display: flex;
