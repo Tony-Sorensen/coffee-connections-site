@@ -1,4 +1,4 @@
-/* 🌱 Root Theme Variables */
+/* 🌱 THEME VARIABLES */
 :root {
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -9,7 +9,7 @@
   --text-dark: #333333;
 }
 
-/* ✍️ Base Typography & Page Layout */
+/* ✍️ BASE TYPOGRAPHY & BODY */
 body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 17px;
@@ -20,7 +20,7 @@ body {
   padding: 0;
 }
 
-/* 🧁 Grid-Based Header Layout */
+/* 🧁 HEADER LAYOUT */
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
@@ -63,7 +63,7 @@ body {
   margin-top: 8px;
 }
 
-/* 🧭 Sidebar Navigation */
+/* 🧭 MAIN LAYOUT & SIDEBAR */
 .main-layout {
   display: flex;
   max-width: 1600px;
@@ -100,12 +100,13 @@ body {
   color: var(--resilience-teal);
 }
 
+/* 🖼️ MAIN CONTENT */
 .main-content {
   flex: 1;
   padding: 0 30px;
 }
 
-/* 💬 Mission Statement Caption */
+/* 💬 MISSION STATEMENT */
 .video-caption {
   font-size: 18px;
   text-align: center;
@@ -114,7 +115,7 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🧱 Two-Column Mission + Video Layout */
+/* 🧱 MISSION + VIDEO TWO-COLUMN LAYOUT */
 .two-column {
   display: flex;
   flex-wrap: wrap;
@@ -145,10 +146,10 @@ body {
   color: #4B2E83;
 }
 
-/* 🧾 Section Card Styling */
+/* 🧾 SECTION BLOCK STYLING */
 section {
   background-color: transparent;
-  padding: 20px;
+  padding: 20px 30px;
   margin: 0 auto;
   border-left: 8px solid var(--resilience-teal);
   border-radius: 6px;
@@ -157,17 +158,13 @@ section {
   color: var(--text-dark);
 }
 
-section {
-  padding-left: 30px;
-}
-
-/* 🌟 Founding Circle Section Accent */
+/* 🌟 FOUNDING CIRCLE ACCENT */
 #founding-circle {
   border-left-color: var(--healing-green);
   margin-top: 20px;
 }
 
-/* 🔗 Link Styling */
+/* 🔗 LINK STYLES */
 a {
   color: var(--deep-plum);
   text-decoration: none;
@@ -179,7 +176,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ⏳ Countdown Section */
+/* ⏳ COUNTDOWN SECTION */
 #countdown {
   text-align: center;
   background-color: transparent;
@@ -201,55 +198,7 @@ a:hover {
   color: var(--text-dark);
 }
 
-/* 🤝 Footer Styling */
-footer {
-  background-color: var(--mocha-brown);
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  font-size: 15px;
-}
-
-/* 📱 Responsive Layout */
-@media (max-width: 768px) {
-  .header-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .logo-cell {
-    margin-bottom: 15px;
-  }
-
-  .two-column {
-    flex-direction: column;
-  }
-
-  .mission-left,
-  .mission-right {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .founder-name {
-    font-size: 21px;
-  }
-
-  .main-layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid #ddd;
-  }
-
-  .main-content {
-    padding: 20px;
-  }
-}
-
+/* 🔘 ACCORDION STYLES */
 .accordion {
   background-color: var(--mocha-brown);
   color: #fff;
@@ -294,4 +243,53 @@ footer {
   margin: 8px 0;
   font-size: 16px;
   color: var(--text-dark);
+}
+
+/* 🤝 FOOTER STYLES */
+footer {
+  background-color: var(--mocha-brown);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* 📱 RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .logo-cell {
+    margin-bottom: 15px;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+
+  .mission-left,
+  .mission-right {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .founder-name {
+    font-size: 21px;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
 }
