@@ -1,4 +1,4 @@
-/* 🌱 THEME COLORS & VARIABLES */
+/* 🌱 GLOBAL THEME COLORS & VARIABLES */
 :root {
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -12,7 +12,7 @@
   --text-dark: #333333;
 }
 
-/* ✍️ BASE TYPOGRAPHY & BODY */
+/* ✍️ GLOBAL BODY STYLES */
 body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 17px;
@@ -23,7 +23,7 @@ body {
   padding: 0;
 }
 
-/* 🧁 HEADER STRUCTURE */
+/* 🧁 SHARED HEADER STYLES (All Pages) */
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
@@ -61,7 +61,7 @@ body {
   margin-top: 8px;
 }
 
-/* 🧭 NAVIGATION BUTTONS */
+/* 🧭 SHARED NAVIGATION BAR STYLES (All Pages) */
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@ body {
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-/* ✅ Nav Button Colors */
+/* 🎨 Nav Button Colors by Page */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
@@ -113,118 +113,19 @@ body {
   color: var(--deep-plum);
 }
 
-/* 📐 MAIN CONTAINER LAYOUT */
+/* 📐 SHARED LAYOUT CONTAINER */
 .main-layout {
   margin: 0 auto;
   padding: 20px 40px;
   box-sizing: border-box;
 }
 
-/* 🖼️ MAIN CONTENT BLOCK */
 .main-content {
   flex: 1;
   padding: 0 30px;
 }
 
-/* 💬 VIDEO CAPTION */
-.video-caption {
-  font-size: 18px;
-  text-align: center;
-  margin-top: 12px;
-  font-style: italic;
-  color: var(--deep-plum);
-}
-
-.main-layout,
-.two-column,
-.mission-section,
-.video-wrapper,
-section {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 20px 40px;
-  box-sizing: border-box;
-}
-
-/* 🧱 TWO-COLUMN SECTION */
-.two-column {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1800px;
-  margin: 40px auto;
-  padding-top: 20px;
-  border-top: 2px solid #ccc;
-}
-
-/* 🎥 VIDEO WRAPPER & SIZING */
-.video-wrapper {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.video-wrapper video {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-/* 🌿 MISSION COLUMNS */
-.mission-left,
-.mission-right {
-  flex: 1 1 45%;
-  box-sizing: border-box;
-}
-
-.mission-right {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-dark);
-}
-
-.founder-name {
-  font-weight: bold;
-  font-size: 20px;
-  color: #4B2E83;
-}
-
-/* 🧾 SECTION BLOCK STYLING (with Teal Accent) */
-section {
-  position: relative;
-  padding: 20px 30px;
-  margin: 0 auto;
-  max-width: 1800px;
-  border-radius: 6px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-dark);
-}
-
-/* 🎯 Teal Accent Pseudo-Element */
-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 100%;
-  background-color: var(--resilience-teal);
-  border-radius: 6px 0 0 6px;
-}
-
-/* 🌟 FOUNDING CIRCLE */
-#founding-circle {
-  border-left-color: var(--healing-green);
-  margin-top: 20px;
-}
-
-/* 🔗 LINK STYLING */
+/* 🔗 SHARED LINK STYLING */
 a {
   color: var(--deep-plum);
   text-decoration: none;
@@ -235,70 +136,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ⏳ COUNTDOWN BLOCK */
-#countdown {
-  text-align: center;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 6px;
-  background-color: transparent;
-
-  /* 🪞 Gentle plum-tinted border */
-  border: 1px solid rgba(102, 51, 153, 0.2);
-
-  /* 🧹 Accent line removed for a cleaner look */
-  /* border-left: 8px solid var(--connection-purple); */
-}
-
-/* 🎯 Optional hover glow */
-#countdown:hover {
-  box-shadow: 0 0 12px rgba(102, 51, 153, 0.15);
-}
-
-/* 📝 Countdown Title */
-#countdown h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: var(--deep-plum);
-}
-
-/* ⏱️ Timer Value */
-#timer {
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--text-dark);
-}
-
-/* 🔘 ACCORDION STYLING */
-.accordion {
-  background-color: var(--mocha-brown);
-  color: #fff;
-  cursor: pointer;
-  padding: 20px;
-  width: 100%;
-  text-align: left;
-  font-size: 20px;
-  font-weight: bold;
-  border-left: 8px solid var(--resilience-teal);
-  transition: background-color 0.3s ease;
-  margin: 30px 0;
-}
-
-.accordion:hover {
-  background-color: var(--deep-plum);
-  color: #fff;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  background-color: var(--eggshell);
-  padding: 0 20px;
-  border-left: 8px solid var(--resilience-teal);
-}
-
-/* 🤝 FOOTER */
+/* 🤝 SHARED FOOTER STYLES */
 footer {
   background-color: var(--mocha-brown);
   color: #ffffff;
@@ -307,41 +145,181 @@ footer {
   font-size: 15px;
 }
 
-/* 📱 RESPONSIVE STYLING */
-@media (max-width: 768px) {
-  .header-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .logo-cell {
-    margin-bottom: 15px;
-  }
-
-  .two-column {
-    flex-direction: column;
-  }
-
-  .mission-left,
-  .mission-right {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .founder-name {
-    font-size: 21px;
-  }
-
-  .main-layout {
-    flex-direction: column;
-  }
-
-  .main-content {
-    padding: 20px;
-  }
-
-  .nav-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+/* 🍽 MENU PAGE STYLES */
+.menu-section {
+  padding: 40px 30px;
+  background-color: #ffffff;
 }
+
+.item-card {
+  background-color: var(--eggshell);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🗓️ CALENDAR PAGE STYLES */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 6px solid var(--connection-purple);
+}
+
+/* 🌟 OUR MISSION PAGE STYLES */
+.mission-hero {
+  text-align: center;
+  background-color: var(--eggshell);
+  padding: 60px 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.mission-hero h1 {
+  font-size: 34px;
+  color: var(--deep-plum);
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.mission-hero .mission-subtext {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.mission-origin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.origin-left, .origin-right {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+.origin-left h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
+
+.origin-left p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.origin-right img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.mission-pillars {
+  background-color: var(--eggshell);
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.mission-pillars h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: var(--deep-plum);
+}
+
+.mission-pillars ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.mission-pillars ul li {
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.mission-founders {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-left: 8px solid var(--resilience-teal);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.mission-invitation {
+  text-align: center;
+  background-color: var(--eggshell);
+  padding: 50px 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.mission-invitation h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 15px;
+}
+
+.mission-invitation p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.mission-invitation .cta {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mission-invitation .cta:hover {
+  background-color: var(--deep-plum);
+}
+
+/* 🔐 FOUNDING CIRCLE PAGE STYLES */
+#founding-circle {
+  background-color: #ffffff;
+  border-left: 8px solid var(--healing-green);
+  padding: 40px 30px;
+  margin-top: 20px;
+}
+
+/* ⏳ HOMEPAGE COUNTDOWN STYLES */
+#countdown {
+  text-align: center;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid rgba(102, 51, 153, 0.2);
+}
+
+#countdown:hover {
+  box-shadow: 0 0 12px rgba(102, 51, 153, 0.15);
+}
+
+#countdown h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--deep-plum);
+}
+
+#timer {
+  font-size: 22px;
+  font-weight: bold;
