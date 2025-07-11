@@ -65,3 +65,126 @@ footer { ... }
   }
 }
 
+/* 🌟 OUR MISSION: Hero Message */
+.mission-hero {
+  text-align: center;
+  background-color: var(--eggshell);
+  padding: 60px 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.mission-hero h1 {
+  font-size: 34px;
+  color: var(--deep-plum);
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.mission-hero .mission-subtext {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* 📖 OUR MISSION: Origin Story (Two-Column Layout) */
+.mission-origin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.origin-left,
+.origin-right {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+.origin-left h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
+
+.origin-left p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.origin-right img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* 🎯 OUR MISSION: Guiding Principles */
+.mission-pillars {
+  background-color: var(--eggshell);
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.mission-pillars h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: var(--deep-plum);
+}
+
+.mission-pillars ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.mission-pillars ul li {
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+/* 💬 OUR MISSION: Founders Message */
+.mission-founders {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-left: 8px solid var(--resilience-teal);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+/* 🤝 OUR MISSION: Invitation Block */
+.mission-invitation {
+  text-align: center;
+  background-color: var(--eggshell);
+  padding: 50px 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.mission-invitation h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 15px;
+}
+
+.mission-invitation p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.mission-invitation .cta {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mission-invitation .cta:hover {
+  background-color: var(--deep-plum);
+}
