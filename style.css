@@ -357,3 +357,65 @@ footer {
   color: var(--resilience-teal);
 }
 
+/* 🛤️ The Origin Journey */
+.mission-origin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 30px;
+  background-color: #ffffff;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+  align-items: flex-start;
+}
+
+/* ✍️ Text Side (Left Column) */
+.origin-left {
+  flex: 1 1 55%;
+  box-sizing: border-box;
+}
+
+.origin-left h2 {
+  font-size: 30px;
+  color: var(--deep-plum);
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* 🧾 Individual Story Blocks */
+.story-block {
+  margin-bottom: 28px;
+  padding-left: 10px;
+  border-left: 4px solid var(--resilience-teal);
+}
+
+.story-block p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+/* ✨ Emphasis Inside Blocks */
+.story-block strong {
+  font-weight: bold;
+  color: var(--deep-plum);
+}
+
+.story-block em {
+  font-style: italic;
+  color: var(--connection-purple);
+}
+
+/* 📷 Image Side (Right Column) */
+.origin-right {
+  flex: 1 1 40%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.origin-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
