@@ -1,4 +1,4 @@
-/* 🌱 THEME COLORS & VARIABLES */
+/* 🌱 GLOBAL COLORS & VARIABLES */
 :root {
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -12,7 +12,7 @@
   --text-dark: #333333;
 }
 
-/* ✍️ BASE TYPOGRAPHY & BODY */
+/* ✍️ GLOBAL TYPOGRAPHY & BODY */
 body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 17px;
@@ -23,325 +23,44 @@ body {
   padding: 0;
 }
 
-/* 🧁 HEADER STRUCTURE */
-.site-header {
-  background-color: var(--deep-plum);
-  padding: 30px 20px;
-  color: #ffffff;
-}
+/* 🧁 HEADER (Shared Across Pages) */
+.site-header { ... }
+.header-grid { ... }
+.logo { ... }
+.title-cell { ... }
+.title-cell h1 { ... }
+.title-cell .tagline { ... }
 
-.header-grid {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  align-items: center;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+/* 🧭 NAVIGATION BAR (Shared Across Pages) */
+.nav-buttons { ... }
+.nav-buttons a { ... }
+.nav-buttons a[href="index.html"] { ... }
+.nav-buttons a[href="menu.html"] { ... }
+.nav-buttons a[href="calendar.html"] { ... }
+.nav-buttons a[href="Our-Mission.html"] { ... }
 
-.logo {
-  max-width: 120px;
-  height: auto;
-  display: block;
-}
-
-.title-cell {
-  text-align: center;
-}
-
-.title-cell h1 {
-  font-size: 38px;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.title-cell .tagline {
-  font-size: 20px;
-  font-style: italic;
-  margin-top: 8px;
-}
-
-/* 🧭 NAVIGATION BUTTONS */
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 20px 0;
-}
-
-.nav-buttons a {
-  padding: 12px 24px;
-  font-weight: bold;
-  font-size: 17px;
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: transparent;
-  border: 2px solid transparent;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-/* ✅ Nav Button Colors */
-.nav-buttons a[href="index.html"] {
-  border-color: var(--india-green);
-  color: var(--india-green);
-}
-.nav-buttons a[href="index.html"]:hover {
-  color: var(--deep-plum);
-}
-
-.nav-buttons a[href="menu.html"] {
-  border-color: var(--resilience-teal);
-  color: var(--resilience-teal);
-}
-.nav-buttons a[href="menu.html"]:hover {
-  color: var(--deep-plum);
-}
-
-.nav-buttons a[href="calendar.html"] {
-  border-color: var(--connection-purple);
-  color: var(--connection-purple);
-}
-.nav-buttons a[href="calendar.html"]:hover {
-  color: var(--deep-plum);
-}
-
-.nav-buttons a[href="Our-Mission.html"] {
-  border-color: var(--mocha-brown);
-  color: var(--mocha-brown);
-}
-.nav-buttons a[href="Our-Mission.html"]:hover {
-  color: var(--deep-plum);
-}
-
-/* 📐 MAIN CONTAINER LAYOUT */
+/* 📐 MAIN PAGE CONTAINER */
 .main-layout {
   margin: 0 auto;
   padding: 20px 40px;
   box-sizing: border-box;
 }
 
-/* 🖼️ MAIN CONTENT BLOCK */
-.main-content {
-  flex: 1;
-  padding: 0 30px;
-}
+/* 🔗 LINK DEFAULTS */
+a { ... }
+a:hover { ... }
 
-/* 💬 VIDEO CAPTION */
-.video-caption {
-  font-size: 18px;
-  text-align: center;
-  margin-top: 12px;
-  font-style: italic;
-  color: var(--deep-plum);
-}
-
-.main-layout,
-.two-column,
-.mission-section,
-.video-wrapper,
-section {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 20px 40px;
-  box-sizing: border-box;
-}
-
-/* 🧱 TWO-COLUMN SECTION */
-.two-column {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1800px;
-  margin: 40px auto;
-  padding-top: 20px;
-  border-top: 2px solid #ccc;
-}
-
-/* 🎥 VIDEO WRAPPER & SIZING */
-.video-wrapper {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.video-wrapper video {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-/* 🌿 MISSION COLUMNS */
-.mission-left,
-.mission-right {
-  flex: 1 1 45%;
-  box-sizing: border-box;
-}
-
-.mission-right {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-dark);
-}
-
-.founder-name {
-  font-weight: bold;
-  font-size: 20px;
-  color: #4B2E83;
-}
-
-/* 🧾 SECTION BLOCK STYLING (with Teal Accent) */
-section {
-  position: relative;
-  padding: 20px 30px;
-  margin: 0 auto;
-  max-width: 1800px;
-  border-radius: 6px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-dark);
-}
-
-/* 🎯 Teal Accent Pseudo-Element */
-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 100%;
-  background-color: var(--resilience-teal);
-  border-radius: 6px 0 0 6px;
-}
-
-/* 🌟 FOUNDING CIRCLE */
-#founding-circle {
-  border-left-color: var(--healing-green);
-  margin-top: 20px;
-}
-
-/* 🔗 LINK STYLING */
-a {
-  color: var(--deep-plum);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: var(--resilience-teal);
-  text-decoration: underline;
-}
-
-/* ⏳ COUNTDOWN BLOCK */
-#countdown {
-  text-align: center;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 6px;
-  background-color: transparent;
-
-  /* 🪞 Gentle plum-tinted border */
-  border: 1px solid rgba(102, 51, 153, 0.2);
-
-  /* 🧹 Accent line removed for a cleaner look */
-  /* border-left: 8px solid var(--connection-purple); */
-}
-
-/* 🎯 Optional hover glow */
-#countdown:hover {
-  box-shadow: 0 0 12px rgba(102, 51, 153, 0.15);
-}
-
-/* 📝 Countdown Title */
-#countdown h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: var(--deep-plum);
-}
-
-/* ⏱️ Timer Value */
-#timer {
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--text-dark);
-}
-
-/* 🔘 ACCORDION STYLING */
-.accordion {
-  background-color: var(--mocha-brown);
-  color: #fff;
-  cursor: pointer;
-  padding: 20px;
-  width: 100%;
-  text-align: left;
-  font-size: 20px;
-  font-weight: bold;
-  border-left: 8px solid var(--resilience-teal);
-  transition: background-color 0.3s ease;
-  margin: 30px 0;
-}
-
-.accordion:hover {
-  background-color: var(--deep-plum);
-  color: #fff;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  background-color: var(--eggshell);
-  padding: 0 20px;
-  border-left: 8px solid var(--resilience-teal);
-}
-
-/* 🤝 FOOTER */
-footer {
-  background-color: var(--mocha-brown);
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  font-size: 15px;
-}
+/* 🤝 FOOTER (Shared Across Pages) */
+footer { ... }
 
 /* 📱 RESPONSIVE STYLING */
 @media (max-width: 768px) {
-  .header-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+  .header-grid { ... }
+  .logo-cell { ... }
+  .nav-buttons { ... }
+  .main-layout { ... }
+}
 
-  .logo-cell {
-    margin-bottom: 15px;
-  }
-
-  .two-column {
-    flex-direction: column;
-  }
-
-  .mission-left,
-  .mission-right {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .founder-name {
-    font-size: 21px;
-  }
-
-  .main-layout {
-    flex-direction: column;
-  }
-
-  .main-content {
-    padding: 20px;
-  }
-
-  .nav-buttons {
-    flex-direction: column;
     align-items: center;
   }
 }
