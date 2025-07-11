@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Founding Circle — Coffee & Connections</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🧁 Header -->
+  <header class="site-header">
+    <div class="header-grid">
+      <div class="logo-cell">
+        <img src="asset/logo-stripped.png" alt="Coffee & Connections Logo" class="logo">
+      </div>
+      <div class="title-cell">
+        <h1>Coffee & Connections</h1>
+        <p class="tagline">Where Coffee Meets Compassion, & Connections Change Lives</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🧭 Navigation -->
+  <nav class="site-nav">
+    <div class="nav-buttons">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="Our-Mission.html">Our Mission</a>
+      <a href="Founding-Circle.html" class="active">Founding Circle</a>
+    </div>
+  </nav>
+
+  <!-- 🤝 Founding Circle Introduction -->
+  <section class="founding-intro">
+    <h2>The Founding Circle</h2>
+    <p>Where lived experience, ethical leadership, and shared healing come to the table.  
+    Every seat honors a voice committed to trust, dignity, and community-first growth.</p>
+  </section>
+
+  <!-- 🪑 Founding Seats Section -->
+  <section class="founding-seats">
+    <!-- We’ll add Ben’s seat and others here -->
+  </section>
+
+  <!-- 📖 Guestbook Section -->
+  <section class="guestbook-signin">
+    <!-- Form and entry display coming soon -->
+  </section>
+
+  <!-- 🤝 Footer -->
+  <footer>
+    <p>Built with purpose. Created with care.<br>&copy; 2025 Coffee & Connections El Paso</p>
+  </footer>
+
+</body>
+</html>
 
