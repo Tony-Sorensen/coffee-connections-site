@@ -121,8 +121,11 @@ body {
 }
 
 .main-content {
-  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 30px;
+  box-sizing: border-box;
 }
 
 /* 💬 Mission + Video Two-Column Layout */
@@ -131,7 +134,6 @@ body {
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start;
-  margin-top: 40px;
 }
 
 /* Left Column */
