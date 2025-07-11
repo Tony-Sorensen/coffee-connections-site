@@ -357,6 +357,33 @@ footer {
   }
 }
 
+/* 📱 Mobile Layout Tweaks */
+@media (max-width: 768px) {
+  .journal-form {
+    padding: 40px 20px;
+  }
+
+  .journal-form h2 {
+    font-size: 24px;
+  }
+
+  .journal-form p,
+  .journal-form label {
+    font-size: 16px;
+  }
+
+  .journal-form input,
+  .journal-form textarea {
+    font-size: 15px;
+  }
+
+  .journal-tags li {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+
   /* 🧡 Foundational Words */
 .mission-hero {
   background-color: var(--eggshell);
