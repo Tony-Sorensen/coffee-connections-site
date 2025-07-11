@@ -653,3 +653,31 @@ footer {
   color: var(--deep-plum);
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .founding-seat {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .founding-intro h2 {
+    font-size: 28px;
+  }
+
+  .founding-intro p {
+    font-size: 18px;
+  }
+}
+
+.guestbook-signin {
+  background-color: #f7f2e7; /* parchment tone */
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-image: url('asset/coffee-ring.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 120px;
+}
