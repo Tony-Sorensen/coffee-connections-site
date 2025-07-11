@@ -736,8 +736,6 @@ footer {
   background-size: 120px;
 }
 
-
-
 /* 📄 Individual Page Styling */
 .journal-page {
   background-color: #f7f2e7;
@@ -815,3 +813,25 @@ footer {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
 }
+
+.journal-nav {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* 📄 Journal Nav Button */
+.journal-nav button {
+  background-color: var(--deep-plum);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.journal-nav button:hover {
+  background-color: var(--resilience-teal);
+}
+
