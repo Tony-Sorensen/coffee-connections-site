@@ -183,10 +183,25 @@
       <label><input type="checkbox" name="entry-topics" value="Mental Health Journey"> Mental Health Journey</label>
       <label><input type="checkbox" name="entry-topics" value="Domestic Violence Survivor"> Domestic Violence Survivor</label>
       <label><input type="checkbox" name="entry-topics" value="Sexual Assault Survivor"> Sexual Assault Survivor</label>
+      <label><input type="checkbox" name="entry-topics" value="PTSD & Complex Trauma"> Sexual Assault Survivor</label>      
       <label><input type="checkbox" name="entry-topics" value="Anxiety & Depression"> Anxiety & Depression</label>
       <label><input type="checkbox" name="entry-topics" value="Grief & Loss"> Grief & Loss</label>
       <label><input type="checkbox" name="entry-topics" value="Addiction Recovery"> Addiction Recovery</label>
       <label><input type="checkbox" name="entry-topics" value="Healing as a Caregiver"> Healing as a Caregiver</label>
+       <!-- ✅ This adds the “Other” checkbox -->
+<label>
+  <input type="checkbox" id="other-topic-checkbox" name="entry-topics" value="Other">
+  Other
+</label>
+
+<!-- ✅ This is the hidden text box for custom input -->
+<input
+  type="text"
+  id="other-topic-text"
+  name="other-topic-text"
+  placeholder="Add your own tag..."
+  style="display:none;">
+
     </div>
 
     <label for="entry-message">Your Message:</label>
@@ -210,9 +225,19 @@ document.getElementById("journal-entry-form").addEventListener("submit", functio
   const location = document.getElementById("entry-location").value || "Unknown";
   const message = document.getElementById("entry-message").value;
 
-  const topics = Array.from(document.querySelectorAll("input[name='entry-topics']:checked"))
-                      .map(cb => cb.value)
-                      .join(", ");
+  let topics = Array.from(document.querySelectorAll("input[name='entry-topics']:checked"))
+                  .map(cb => cb.value);
+
+// ✅ Check if "Other" is selected and add custom value
+const otherValue = document.getElementById("other-topic-text").value.trim();
+
+if (topics.includes("Other") && otherValue) {
+  topics = topics.filter(t => t !== "Other"); // remove generic "Other"
+  topics.push(otherValue); // add the custom phrase they wrote
+}
+
+const formattedTopics = topics.join(", ");
+
 
   // 🛑 Block empty submissions
   if (!message.trim()) {
@@ -237,10 +262,12 @@ document.getElementById("journal-entry-form").addEventListener("submit", functio
   `;
 
   // 📌 Add topic tags to right page
-  rightPage.innerHTML = `
-    <h3>Topics</h3>
-    <p>${topics || "No tags provided"}</p>
-  `;
+rightPage.innerHTML = `
+  <h3>Topics</h3>
+  <ul class="journal-tags">
+    ${formattedTopics.split(", ").map(tag => `<li>${tag}</li>`).join("")}
+  </ul>
+`;
 
   // 📘 Add to journal
   newSpread.appendChild(leftPage);
@@ -257,6 +284,12 @@ document.getElementById("journal-entry-form").addEventListener("submit", functio
   // 📖 Scroll to new entry
   newSpread.scrollIntoView({ behavior: "smooth" });
 });
+    // 🎯 Show/Hide 'Other' topic input
+document.getElementById("other-topic-checkbox").addEventListener("change", function() {
+  const otherInput = document.getElementById("other-topic-text");
+  otherInput.style.display = this.checked ? "block" : "none";
+});
+
 </script>
   
 </body>
