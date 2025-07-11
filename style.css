@@ -898,3 +898,12 @@ footer {
   background-color: var(--deep-plum);
 }
 
+.highlighted-entry {
+  animation: pulseGlow 2s ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+  50% { box-shadow: 0 0 20px var(--resilience-teal); }
+  100% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+}
