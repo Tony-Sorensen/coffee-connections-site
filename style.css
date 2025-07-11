@@ -323,3 +323,37 @@ footer {
 #timer {
   font-size: 22px;
   font-weight: bold;
+
+  /* 🧡 Foundational Words */
+.mission-hero {
+  background-color: var(--eggshell);
+  text-align: center;
+  padding: 80px 30px 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.mission-hero h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 30px;
+  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2); /* subtle depth */
+}
+
+.mission-subtext {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* Optional: emphasized phrases */
+.mission-subtext strong {
+  font-weight: 700;
+  color: var(--resilience-teal);
+}
+
