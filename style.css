@@ -587,12 +587,12 @@ footer {
   }
 }
 
-/* 🧱 Founding Circle Section */
+/* 🧱 Founding Circle Introduction */
 .founding-intro {
   background-color: var(--eggshell);
   padding: 60px 30px;
   text-align: center;
-  border-bottom: 2px solid rgba(0,0,0,0.05);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .founding-intro h2 {
@@ -610,28 +610,50 @@ footer {
   font-style: italic;
 }
 
-<!-- 🪑 Founding Seat Block -->
+
+/* 🪑 Founding Circle Seats Layout */
+.founding-seats {
+  padding: 60px 30px;
+  background-color: #ffffff;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+
+/* 🪑 Individual Seat Card Styling */
 .founding-seat {
   background-color: #ffffff;
   border-left: 8px solid var(--resilience-teal);
   padding: 30px;
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 900px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+.founding-seat:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+
+/* 🎙️ Seat Title & Summary */
 .founding-seat h3 {
+  font-size: 26px;
   color: var(--deep-plum);
-  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .founding-seat p {
   font-size: 19px;
-  margin-bottom: 14px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 16px;
 }
 
+
+/* 🔗 Member Contact Links */
 .founding-links {
   list-style: none;
   padding: 0;
@@ -647,6 +669,7 @@ footer {
   color: var(--india-green);
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .founding-links a:hover {
@@ -654,6 +677,8 @@ footer {
   text-decoration: underline;
 }
 
+
+/* 📱 Founding Circle Mobile Adjustments */
 @media (max-width: 768px) {
   .founding-seat {
     margin: 20px;
