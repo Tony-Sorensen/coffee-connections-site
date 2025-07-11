@@ -125,6 +125,37 @@ body {
   padding: 0 30px;
 }
 
+/* 💬 Mission + Video Two-Column Layout */
+#mission-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 60px 0;
+}
+
+/* Left Column – Video */
+.mission-left {
+  flex: 1 1 50%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Right Column – Text */
+.mission-right {
+  flex: 1 1 50%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Optional caption styling */
+.video-caption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-dark);
+}
+
 /* 🔗 SHARED LINK STYLING */
 a {
   color: var(--deep-plum);
