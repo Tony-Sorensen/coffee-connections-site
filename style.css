@@ -21,13 +21,14 @@ body {
   color: var(--text-dark);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* 🧁 SHARED HEADER STYLES (All Pages) */
+/* 🧁 HEADER */
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .header-grid {
@@ -61,7 +62,7 @@ body {
   margin-top: 8px;
 }
 
-/* 🧭 SHARED NAVIGATION BAR STYLES (All Pages) */
+/* 🧭 NAVIGATION */
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -80,7 +81,6 @@ body {
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-/* 🎨 Nav Button Colors by Page */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
@@ -113,11 +113,10 @@ body {
   color: var(--deep-plum);
 }
 
-/* 📐 SHARED LAYOUT CONTAINER */
+/* 📐 LAYOUT WRAPPERS */
 .main-layout {
   margin: 0 auto;
   padding: 20px 40px;
-  box-sizing: border-box;
 }
 
 .main-content {
@@ -125,40 +124,23 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
-  box-sizing: border-box;
 }
 
-/* 💬 Mission + Video Two-Column Layout */
+/* 💬 Mission + Video Section */
 #mission-pair {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start;
+  margin-top: 40px;
 }
 
-/* Left Column */
-.mission-left {
+.mission-left, .mission-right {
   flex: 1 1 50%;
-  box-sizing: border-box;
   min-width: 300px;
-}
-
-/* Right Column */
-.mission-right {
-  flex: 1 1 50%;
   box-sizing: border-box;
-  min-width: 300px;
 }
 
-/* Caption under video */
-.video-caption {
-  font-style: italic;
-  text-align: center;
-  margin-top: 10px;
-  color: var(--text-dark);
-}
-
-/* Optional caption styling */
 .video-caption {
   font-style: italic;
   text-align: center;
@@ -172,7 +154,7 @@ body {
   }
 }
 
-/* 🔗 SHARED LINK STYLING */
+/* 🔗 LINKS */
 a {
   color: var(--deep-plum);
   text-decoration: none;
@@ -183,19 +165,19 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 🤝 SHARED FOOTER STYLES */
+/* 🤝 FOOTER */
 footer {
   background-color: var(--mocha-brown);
-  color: #ffffff;
+  color: #fff;
   padding: 10px;
   text-align: center;
   font-size: 15px;
 }
 
-/* 🍽 MENU PAGE STYLES */
+/* 🍽 MENU PAGE */
 .menu-section {
   padding: 40px 30px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .item-card {
@@ -206,7 +188,7 @@ footer {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* 🗓️ CALENDAR PAGE STYLES */
+/* 🗓️ CALENDAR */
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -220,164 +202,12 @@ footer {
   border-left: 6px solid var(--connection-purple);
 }
 
-/* 🌟 OUR MISSION PAGE STYLES */
-.mission-hero {
-  text-align: center;
-  background-color: var(--eggshell);
-  padding: 60px 30px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-}
-
-.mission-hero h1 {
-  font-size: 34px;
-  color: var(--deep-plum);
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.mission-hero .mission-subtext {
-  font-size: 20px;
-  color: var(--text-dark);
-  margin-top: 12px;
-  font-style: italic;
-}
-
-.mission-origin {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 50px 30px;
-  background-color: #ffffff;
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-}
-
-.origin-left, .origin-right {
-  flex: 1 1 45%;
-  box-sizing: border-box;
-}
-
-.origin-left h2 {
-  font-size: 28px;
-  color: var(--deep-plum);
-  margin-bottom: 10px;
-}
-
-.origin-left p {
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-.origin-right img {
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-.mission-pillars {
-  background-color: var(--eggshell);
-  padding: 50px 30px;
-  text-align: center;
-}
-
-.mission-pillars h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
-  color: var(--deep-plum);
-}
-
-.mission-pillars ul {
-  list-style: none;
-  padding: 0;
-  font-size: 20px;
-}
-
-.mission-pillars ul li {
-  margin-bottom: 12px;
-  color: var(--text-dark);
-}
-
-.mission-founders {
-  background-color: #ffffff;
-  padding: 40px 30px;
-  border-left: 8px solid var(--resilience-teal);
-  font-style: italic;
-  font-size: 19px;
-  line-height: 1.8;
-  color: var(--text-dark);
-}
-
-.mission-invitation {
-  text-align: center;
-  background-color: var(--eggshell);
-  padding: 50px 30px;
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-}
-
-.mission-invitation h2 {
-  font-size: 28px;
-  color: var(--deep-plum);
-  margin-bottom: 15px;
-}
-
-.mission-invitation p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.mission-invitation .cta {
-  display: inline-block;
-  padding: 14px 30px;
-  font-size: 17px;
-  font-weight: bold;
-  background-color: var(--resilience-teal);
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.mission-invitation .cta:hover {
-  background-color: var(--deep-plum);
-}
-
-/* 🔐 FOUNDING CIRCLE PAGE STYLES */
-#founding-circle {
-  background-color: #ffffff;
-  border-left: 8px solid var(--healing-green);
-  padding: 40px 30px;
-  margin-top: 20px;
-}
-
-/* ⏳ HOMEPAGE COUNTDOWN STYLES */
-#countdown {
-  text-align: center;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 6px;
-  background-color: transparent;
-  border: 1px solid rgba(102, 51, 153, 0.2);
-}
-
-#countdown:hover {
-  box-shadow: 0 0 12px rgba(102, 51, 153, 0.15);
-}
-
-#countdown h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: var(--deep-plum);
-}
-
-#timer {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-  /* 🧡 Foundational Words */
+/* 🧡 FOUNDATIONAL WORDS */
 .mission-hero {
   background-color: var(--eggshell);
   text-align: center;
   padding: 80px 30px 60px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .mission-hero h1 {
@@ -386,7 +216,7 @@ footer {
   font-weight: 700;
   color: var(--deep-plum);
   margin-bottom: 30px;
-  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2); /* subtle depth */
+  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2);
 }
 
 .mission-subtext {
@@ -399,24 +229,22 @@ footer {
   opacity: 0.95;
 }
 
-/* Optional: emphasized phrases */
 .mission-subtext strong {
   font-weight: 700;
   color: var(--resilience-teal);
 }
 
-/* 🛤️ The Origin Journey */
+/* 🛤️ ORIGIN JOURNEY */
 .mission-origin {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   padding: 60px 30px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-top: 2px solid rgba(0, 0, 0, 0.04);
   align-items: flex-start;
 }
 
-/* ✍️ Text Side (Left Column) */
 .origin-left {
   flex: 1 1 55%;
   box-sizing: border-box;
@@ -430,7 +258,6 @@ footer {
   text-align: left;
 }
 
-/* 🧾 Individual Story Blocks */
 .story-block {
   margin-bottom: 28px;
   padding-left: 10px;
@@ -443,10 +270,9 @@ footer {
   color: var(--text-dark);
 }
 
-/* ✨ Emphasis Inside Blocks */
 .story-block strong {
-  font-weight: bold;
   color: var(--deep-plum);
+  font-weight: bold;
 }
 
 .story-block em {
@@ -454,7 +280,6 @@ footer {
   color: var(--connection-purple);
 }
 
-/* 📷 Image Side (Right Column) */
 .origin-right {
   flex: 1 1 40%;
   box-sizing: border-box;
@@ -468,7 +293,7 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* 🎯 Mission Pillars */
+/* 🎯 MISSION PILLARS */
 .mission-pillars {
   background-color: var(--eggshell);
   padding: 60px 30px;
@@ -499,46 +324,5 @@ footer {
   padding: 16px 24px;
   border-left: 6px solid var(--resilience-teal);
   text-align: left;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.mission-pillars ul li:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
-}
-
-.mission-pillars ul li strong {
-  display: block;
-  color: var(--deep-plum);
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-/* ✍️ Founders' Message */
-.mission-founders {
-  background-color: #ffffff;
-  padding: 60px 30px;
-  border-left: 8px solid var(--resilience-teal);
-  font-style: italic;
-  font-size: 19px;
-  line-height: 1.8;
-  color: var(--text-dark);
-  max-width: 900px;
-  margin: 0 auto 60px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-}
-
-.mission-founders p {
-  margin-bottom: 30px;
-}
-
-.mission-founders strong {
-  display: block;
-  font-style: normal;
-  font-weight: bold;
-  color: var(--deep-plum);
-  margin-bottom: 8px;
-}
+  background-color: #fff;
+  border-radius:
