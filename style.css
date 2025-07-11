@@ -470,3 +470,28 @@ footer {
   margin-bottom: 6px;
 }
 
+/* ✍️ Founders' Message */
+.mission-founders {
+  background-color: #ffffff;
+  padding: 60px 30px;
+  border-left: 8px solid var(--resilience-teal);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.mission-founders p {
+  margin-bottom: 30px;
+}
+
+.mission-founders strong {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--deep-plum);
+  margin-bottom: 8px;
+}
