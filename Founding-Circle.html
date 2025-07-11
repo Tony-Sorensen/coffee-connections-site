@@ -193,12 +193,65 @@
   </form>
 </section>
 
-
   <!-- 🤝 Footer -->
   <footer>
     <p>Built with purpose. Created with care.<br>&copy; 2025 Coffee & Connections El Paso</p>
   </footer>
 
+  <script>
+document.getElementById("journal-entry-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // 📝 Gather form data
+  const name = document.getElementById("entry-name").value || "Anonymous";
+  const location = document.getElementById("entry-location").value || "Unknown";
+  const message = document.getElementById("entry-message").value;
+
+  const topics = Array.from(document.querySelectorAll("input[name='entry-topics']:checked"))
+                      .map(cb => cb.value)
+                      .join(", ");
+
+  // 🛑 Block empty submissions
+  if (!message.trim()) {
+    alert("Please write a message before submitting.");
+    return;
+  }
+
+  // 🧱 Create new journal spread
+  const newSpread = document.createElement("div");
+  newSpread.className = "journal-spread";
+
+  const leftPage = document.createElement("div");
+  leftPage.className = "journal-page left-page";
+
+  const rightPage = document.createElement("div");
+  rightPage.className = "journal-page right-page";
+
+  // 💬 Format message onto left page
+  leftPage.innerHTML = `
+    <h3>New Entry</h3>
+    <p>“${message}”<br><em>— ${name}, ${location}</em></p>
+  `;
+
+  // 📌 Add topic tags to right page
+  rightPage.innerHTML = `
+    <h3>Topics</h3>
+    <p>${topics || "No tags provided"}</p>
+  `;
+
+  // 📘 Add to journal
+  newSpread.appendChild(leftPage);
+  newSpread.appendChild(rightPage);
+  document.getElementById("journal-book").appendChild(newSpread);
+
+  // ✨ Reset form
+  document.getElementById("journal-entry-form").reset();
+
+  // 📖 Scroll to new entry
+  newSpread.scrollIntoView({ behavior: "smooth" });
+});
+</script>
+  
 </body>
 </html>
 
