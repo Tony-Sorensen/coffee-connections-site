@@ -835,3 +835,66 @@ footer {
   background-color: var(--resilience-teal);
 }
 
+/* 📄 Journal Submission */
+.journal-form {
+  background-color: #f7f2e7;
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.journal-form h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
+
+.journal-form p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.journal-form label {
+  font-size: 17px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.journal-form input,
+.journal-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.journal-form button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: var(--india-green);
+  color: white;
+  border: none;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.journal-form button:hover {
+  background-color: var(--deep-plum);
+}
+
