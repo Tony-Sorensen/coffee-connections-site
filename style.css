@@ -694,18 +694,68 @@ footer {
   }
 }
 
-<!-- 📖 Guestbook Form Block -->
-.guestbook-signin {
-  background-color: #f7f2e7; /* parchment tone */
+/* 📖 Journal Introduction */
+.journal-intro {
+  background-color: var(--eggshell);
   padding: 60px 30px;
-  max-width: 900px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+.journal-intro h2 {
+  font-size: 32px;
+  color: var(--deep-plum);
+  margin-bottom: 8px;
+}
+
+.journal-intro p {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--connection-purple);
+}
+
+
+/* 📘 Book Container */
+#journal-book {
+  position: relative;
+  width: 900px;
   margin: 60px auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  background-image: url('asset/coffee-ring.png');
+  background-color: #f5f0e6;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background-image: url('asset/coffee-ring.png'); /* swap with correct file path */
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 120px;
+  font-family: 'Georgia', serif;
 }
 
-<!-- 📚 Guestbook Entries Block -->
+
+/* 📄 Individual Page Styling */
+.journal-page {
+  background-color: #f7f2e7;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.journal-page:hover {
+  transform: scale(1.01);
+}
+
+.journal-page h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--deep-plum);
+}
+
+.journal-page p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  font-style: italic;
+}
+
