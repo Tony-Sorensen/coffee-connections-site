@@ -716,20 +716,26 @@ footer {
 
 
 /* 📘 Book Container */
+/* 📘 Book Container — Unified Styles */
 #journal-book {
   position: relative;
-  width: 900px;
+  width: 100%;
+  max-width: 960px;
   margin: 60px auto;
+  padding: 40px 30px; /* breathing room left/right */
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   background-color: #f5f0e6;
-  padding: 40px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  background-image: url('asset/coffee-ring.png'); /* swap with correct file path */
+  font-family: 'Georgia', serif;
+  background-image: url('asset/coffee-ring.png');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 120px;
-  font-family: 'Georgia', serif;
 }
+
 
 
 /* 📄 Individual Page Styling */
@@ -757,5 +763,28 @@ footer {
   line-height: 1.7;
   color: var(--text-dark);
   font-style: italic;
+}
+
+/* 📄 Spread View – Two Pages Side-by-Side */
+.journal-spread {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.journal-page {
+  flex: 1;
+  background-color: #f7f2e7;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+}
+
+.left-page {
+  margin-right: 10px;
+}
+
+.right-page {
+  margin-left: 10px;
 }
 
