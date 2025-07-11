@@ -131,21 +131,29 @@ body {
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start;
-  margin: 60px 0;
+  margin-top: 40px;
 }
 
-/* Left Column – Video */
+/* Left Column */
 .mission-left {
   flex: 1 1 50%;
-  min-width: 300px;
   box-sizing: border-box;
+  min-width: 300px;
 }
 
-/* Right Column – Text */
+/* Right Column */
 .mission-right {
   flex: 1 1 50%;
-  min-width: 300px;
   box-sizing: border-box;
+  min-width: 300px;
+}
+
+/* Caption under video */
+.video-caption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-dark);
 }
 
 /* Optional caption styling */
@@ -154,6 +162,12 @@ body {
   text-align: center;
   margin-top: 10px;
   color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  #mission-pair {
+    flex-direction: column;
+  }
 }
 
 /* 🔗 SHARED LINK STYLING */
