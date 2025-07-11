@@ -61,9 +61,8 @@ footer { ... }
   .main-layout { ... }
 }
 
-    align-items: center;
-  }
-}
+/* align-items: center; */ /* ← misaligned orphan rule */
+
 
 /* 🌟 OUR MISSION: Hero Message */
 .mission-hero {
