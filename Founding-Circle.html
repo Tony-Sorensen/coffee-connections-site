@@ -247,6 +247,10 @@ document.getElementById("journal-entry-form").addEventListener("submit", functio
   // ✨ Reset form
   document.getElementById("journal-entry-form").reset();
 
+  // 💡 Highlight animation
+  newSpread.classList.add("highlighted-entry");
+  setTimeout(() => newSpread.classList.remove("highlighted-entry"), 2500);
+
   // 📖 Scroll to new entry
   newSpread.scrollIntoView({ behavior: "smooth" });
 });
