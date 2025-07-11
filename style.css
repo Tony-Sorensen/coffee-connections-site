@@ -113,6 +113,16 @@ body {
   color: var(--deep-plum);
 }
 
+.nav-buttons a[href="Founding-Circle.html"] {
+  border-color: var(--viridian);
+  color: var(--viridian);
+}
+
+.nav-buttons a[href="Founding-Circle.html"]:hover {
+  color: var(--deep-plum);
+}
+
+
 /* 📐 MAIN CONTAINER LAYOUT */
 .main-layout {
   margin: 0 auto;
