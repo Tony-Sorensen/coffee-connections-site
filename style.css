@@ -880,6 +880,19 @@ footer {
   background-color: #fff;
 }
 
+/* 🧩 Other Topic Text Field */
+#other-topic-text {
+  display: none; /* hidden by default */
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
 /* 🧩 Topic Tags */
 .checkbox-group {
   display: flex;
