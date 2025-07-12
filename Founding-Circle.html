@@ -116,47 +116,45 @@
   </section>
 
   <!-- 📖 Survivor Journal Introduction -->
-  <section class="journal-intro">
-    <h2>The Survivor Journal</h2>
-    <p><em>Your Stories of Triumph, Healing & Survival</em></p>
-  </section>
+<section class="journal-intro">
+  <h2>The Survivor Journal</h2>
+  <p><em>Your Stories of Triumph, Healing & Survival</em></p>
+</section>
 
-  <!-- 📘 Survivor Journal Book Container -->
-  <div id="journal-book">
+<!-- 📘 Survivor Journal Book Container -->
+<div id="journal-book">
 
-    <!-- 📖 Spread 1 — Founders' Messages -->
-    <div class="journal-spread">
-      <div class="journal-page left-page">
-        <h3>From Anthony</h3>
-        <p>I tried to die to make someone care.<br>
-        Now I live to make sure no one feels alone again.</p>
-      </div>
-
-      <div class="journal-page right-page">
-        <h3>From Marylou</h3>
-        <p>I survived what never should’ve happened.<br>
-        So now I build what never existed—a space that sees the whole person before the crisis.</p>
-      </div>
+  <!-- 📖 Spread 1 — Founders' Messages -->
+  <div class="journal-spread active">
+    <div class="journal-page left-page">
+      <h3>From Anthony</h3>
+      <p>I tried to die to make someone care.<br>
+      Now I live to make sure no one feels alone again.</p>
     </div>
-
-    <!-- 📖 Spread 2 — Guest Voices -->
-    <div class="journal-spread">
-      <div class="journal-page left-page">
-        <h3>First Entry</h3>
-        <p>“I came here not knowing if I’d be believed.<br>
-        Now I tell others—this café gave me a place to exhale.”<br>
-        <em>— Guest, El Paso</em></p>
-      </div>
-
-      <div class="journal-page right-page">
-        <h3>Second Entry</h3>
-        <p>“I’ve battled PTSD and addiction.<br>
-        Coffee & Connections didn’t ask for paperwork—they asked how I was. That changed everything.”<br>
-        <em>— Guest, Unknown</em></p>
-      </div>
+    <div class="journal-page right-page">
+      <h3>From Marylou</h3>
+      <p>I survived what never should’ve happened.<br>
+      So now I build what never existed—a space that sees the whole person before the crisis.</p>
     </div>
+  </div>
 
-    <!-- 📖 Spread 3 — Jas J -->  
+  <!-- 📖 Spread 2 — Guest Voices -->
+  <div class="journal-spread">
+    <div class="journal-page left-page">
+      <h3>First Entry</h3>
+      <p>“I came here not knowing if I’d be believed.<br>
+      Now I tell others—this café gave me a place to exhale.”<br>
+      <em>— Guest, El Paso</em></p>
+    </div>
+    <div class="journal-page right-page">
+      <h3>Second Entry</h3>
+      <p>“I’ve battled PTSD and addiction.<br>
+      Coffee & Connections didn’t ask for paperwork—they asked how I was. That changed everything.”<br>
+      <em>— Guest, Unknown</em></p>
+    </div>
+  </div>
+
+  <!-- 📖 Spread 3 — Jas J -->
   <div class="journal-spread">
     <div class="journal-page left-page">
       <h3>New Entry</h3>
@@ -170,16 +168,16 @@
         <li class="tag-sexual-assault">Sexual Assault Survivor</li>
       </ul>
     </div>
-
-    <!-- 📘 Journal Page Navigation (Prep for JS flip logic) -->
-    <div class="journal-nav">
-      <button class="prev-page">‹</button>
-      <button class="next-page">›</button>
-    </div>
-
   </div>
+</div>
 
-  <!-- 🖊️ Journal Submission Form -->
+<!-- 📘 Journal Page Navigation (Flip Logic) -->
+<div class="journal-nav">
+  <button class="prev-page">‹</button>
+  <button class="next-page">›</button>
+</div>
+
+<!-- 🖊️ Journal Submission Form -->
 <section class="journal-form">
   <h2>Lend Your Voice to the Journal</h2>
   <p>Share your story, reflection, or message of hope. Your page may help someone finally feel seen.</p>
@@ -201,135 +199,52 @@
       <label><input type="checkbox" name="entry-topics" value="Grief & Loss"> Grief & Loss</label>
       <label><input type="checkbox" name="entry-topics" value="Addiction Recovery"> Addiction Recovery</label>
       <label><input type="checkbox" name="entry-topics" value="Healing as a Caregiver"> Healing as a Caregiver</label>
-       <!-- ✅ This adds the “Other” checkbox -->
-<label>
-  <input type="checkbox" id="other-topic-checkbox" name="entry-topics" value="Other">
-  Other
-</label>
-
-<!-- ✅ This is the hidden text box for custom input -->
-<input
-  type="text"
-  id="other-topic-text"
-  name="other-topic-text"
-  placeholder="Add your own tag..."
-  style="display:none;">
-
+      <label>
+        <input type="checkbox" id="other-topic-checkbox" name="entry-topics" value="Other">
+        Other
+      </label>
+      <input
+        type="text"
+        id="other-topic-text"
+        name="other-topic-text"
+        placeholder="Add your own tag..."
+        style="display:none;">
     </div>
 
     <label for="entry-message">Your Message:</label>
     <textarea id="entry-message" name="entry-message" rows="6" placeholder="What would you say to someone walking a similar path?"></textarea>
 
     <button type="submit">Add My Story</button>
-    
-    <p id="submission-confirmation" class="confirmation-message">Thank you for sharing your story. It has been safely received.</p>
 
-    <!-- ✅ Journal book re-enabled – manual entry for Jas J preserved
-Once backend is built, entries here can be rendered dynamically from database.
-This section was previously commented out. Now active with hard-coded entry.
--->
-  
-    
-  </div>
+    <p id="submission-confirmation" class="confirmation-message">Thank you for sharing your story. It has been safely received.</p>
+  </form>
 </section>
 
-  <!-- 🤝 Footer -->
-  <footer>
-    <p>Built with purpose. Created with care.<br>&copy; 2025 Coffee & Connections El Paso</p>
-  </footer>
+<!-- 🤝 Footer -->
+<footer>
+  <p>Built with purpose. Created with care.<br>&copy; 2025 Coffee & Connections El Paso</p>
+</footer>
 
-<!-- ⚠️ Dev Note (Line 213) – Journal Submission Handling
-As of July 11, 2025, journal entries are submitted via Getform.io (https://getform.io/f/allzdmra) and securely stored offsite.
+<!-- 🛠️ Survivor Journal Page Flip Script -->
+<script>
+const spreads = document.querySelectorAll(".journal-spread");
+let currentIndex = 0;
 
-Previous logic injected entries into <section id="journal-book"> via JavaScript. This has been commented out to prevent confusion and accidental data loss.
-
-When backend infrastructure is established (e.g. Firebase, Supabase, custom API), uncomment the placeholder section near line 183 and reinstate dynamic rendering.
-
-DO NOT DELETE the commented block titled "Journal injection placeholder" below the form. It is a future anchor for persistent DOM-based journal spreads.
-
-Contact: Tony Sorensen – El Paso 915-262-9834 anthony.e.sorensen@operationresilience.com 
-Site: https://connectionsep.coffee
--->
- 
-  <script>
-document.getElementById("journal-entry-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  // 📝 Gather form data
-  const name = document.getElementById("entry-name").value || "Anonymous";
-  const location = document.getElementById("entry-location").value || "Unknown";
-  const message = document.getElementById("entry-message").value;
-
-  let topics = Array.from(document.querySelectorAll("input[name='entry-topics']:checked"))
-                  .map(cb => cb.value);
-
-// ✅ Check if "Other" is selected and add custom value
-const otherValue = document.getElementById("other-topic-text").value.trim();
-
-if (topics.includes("Other") && otherValue) {
-  topics = topics.filter(t => t !== "Other"); // remove generic "Other"
-  topics.push(otherValue); // add the custom phrase they wrote
+function showSpread(index) {
+  spreads.forEach((spread, i) => {
+    spread.classList.toggle("active", i === index);
+  });
 }
 
-const formattedTopics = topics.join(", ");
-
-
-  // 🛑 Block empty submissions
-  if (!message.trim()) {
-    alert("Please write a message before submitting.");
-    return;
-  }
-
-  // 🧱 Create new journal spread
-  const newSpread = document.createElement("div");
-  newSpread.className = "journal-spread";
-
-  const leftPage = document.createElement("div");
-  leftPage.className = "journal-page left-page";
-
-  const rightPage = document.createElement("div");
-  rightPage.className = "journal-page right-page";
-
-  // 💬 Format message onto left page
-  leftPage.innerHTML = `
-    <h3>New Entry</h3>
-    <p>“${message}”<br><em>— ${name}, ${location}</em></p>
-  `;
-
-  // 📌 Add topic tags to right page
-rightPage.innerHTML = `
-  <h3>Topics</h3>
-  <ul class="journal-tags">
-    ${formattedTopics.split(", ").map(tag => `<li>${tag}</li>`).join("")}
-  </ul>
-`;
-
-  // 📘 Add to journal
-  newSpread.appendChild(leftPage);
-  newSpread.appendChild(rightPage);
-  document.getElementById("journal-book").appendChild(newSpread);
-
-  // ✨ Reset form
-  document.getElementById("journal-entry-form").reset();
-
-  // 💡 Highlight animation
-  newSpread.classList.add("highlighted-entry");
-  setTimeout(() => newSpread.classList.remove("highlighted-entry"), 2500);
-
-  // 📖 Scroll to new entry
-  newSpread.scrollIntoView({ behavior: "smooth" });
-});
-    // 🎯 Show/Hide 'Other' topic input
-document.getElementById("other-topic-checkbox").addEventListener("change", function() {
-  const otherInput = document.getElementById("other-topic-text");
-  otherInput.style.display = this.checked ? "block" : "none";
+document.querySelector(".prev-page").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + spreads.length) % spreads.length;
+  showSpread(currentIndex);
 });
 
-    console.log("Current script is loaded and working!");
+document.querySelector(".next-page").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % spreads.length;
+  showSpread(currentIndex);
+});
 
+showSpread(currentIndex); // 🔥 Show first spread
 </script>
-  
-</body>
-</html>
-
-
