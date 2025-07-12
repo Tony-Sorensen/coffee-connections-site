@@ -741,18 +741,13 @@ footer {
   color: var(--connection-purple);
 }
 
-
 /* 📘 Book Container */
-/* 📘 Book Container — Unified Styles */
 #journal-book {
   position: relative;
   width: 100%;
   max-width: 960px;
   margin: 60px auto;
-  padding: 40px 30px; /* breathing room left/right */
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  padding: 40px 30px;
   background-color: #f5f0e6;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -763,14 +758,44 @@ footer {
   background-size: 120px;
 }
 
-/* 📄 Individual Page Styling */
+/* 📄 Spread Flip Logic */
+.journal-spread {
+  display: none; /* hide by default */
+  gap: 32px;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.6s ease, transform 0.4s ease;
+}
+
+.journal-spread.active {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 📄 Visual Spine */
+.journal-spread::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  width: 2px;
+  background: rgba(0,0,0,0.08);
+  transform: translateX(-1px);
+}
+
+/* 📄 Page Styling */
 .journal-page {
+  flex: 1;
   background-color: #f7f2e7;
   padding: 30px;
-  margin-bottom: 40px;
   border-radius: 12px;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.07);
+  border: 1px solid rgba(0,0,0,0.04);
   transition: transform 0.3s ease;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
 }
 
 .journal-page:hover {
@@ -787,66 +812,18 @@ footer {
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-dark);
-  font-style: italic;
 }
 
-/* 📄 Spread View – Two Pages Side-by-Side */
-.journal-spread {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
+/* 👈 Left & 👉 Right Page Margins */
+.left-page { margin-right: 10px; }
+.right-page { margin-left: 10px; }
 
-.journal-page {
-  flex: 1;
-  background-color: #f7f2e7;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
-}
-
-.left-page {
-  margin-right: 10px;
-}
-
-.right-page {
-  margin-left: 10px;
-}
-
-.journal-page {
-  border: 1px solid rgba(0,0,0,0.04);
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.07);
-}
-
-.journal-spread {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  position: relative;
-}
-
-.journal-spread::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: rgba(0,0,0,0.08);
-  transform: translateX(-1px); /* centers the spine line */
-}
-
-.journal-page p {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-}
-
+/* 🧭 Navigation Buttons */
 .journal-nav {
   text-align: center;
   margin-top: 40px;
 }
 
-/* 📄 Journal Nav Button */
 .journal-nav button {
   background-color: var(--deep-plum);
   color: #fff;
@@ -862,7 +839,7 @@ footer {
   background-color: var(--resilience-teal);
 }
 
-/* 📄 Journal Submission */
+/* 📝 Journal Submission Form */
 .journal-form {
   background-color: #f7f2e7;
   padding: 60px 30px;
@@ -903,6 +880,7 @@ footer {
   background-color: #fff;
 }
 
+/* 🧩 Topic Tags */
 .checkbox-group {
   display: flex;
   gap: 20px;
@@ -920,7 +898,7 @@ footer {
 }
 
 .journal-tags li {
-  background-color: #dcebe2; /* Soft healing green */
+  background-color: #dcebe2;
   color: #2f4f4f;
   font-size: 15px;
   padding: 8px 14px;
@@ -929,6 +907,7 @@ footer {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
+/* 📤 Form Button & Hover */
 .journal-form button {
   margin-top: 30px;
   padding: 12px 20px;
@@ -940,11 +919,11 @@ footer {
   cursor: pointer;
 }
 
-/* ✨ Journal form confirmation styling */
 .journal-form button:hover {
   background-color: var(--deep-plum);
 }
 
+/* ✨ Form Submission Confirmation */
 .confirmation-message {
   display: none;
   color: #2d7634;
@@ -958,6 +937,7 @@ footer {
   to { opacity: 1; }
 }
 
+/* ✨ Entry Glow Animation */
 .highlighted-entry {
   animation: pulseGlow 2s ease-in-out;
 }
@@ -967,3 +947,4 @@ footer {
   50% { box-shadow: 0 0 20px var(--resilience-teal); }
   100% { box-shadow: 0 0 0 rgba(0,0,0,0); }
 }
+
