@@ -226,18 +226,30 @@
 </footer>
 
 <!-- 🛠️ Survivor Journal Page Flip Script -->
-<script>
-const spreads = document.querySelectorAll(".journal-spread");
-let currentIndex = 0;
-
-function showSpread(index) {
-  spreads.forEach((spread, i) => {
-    spread.classList.toggle("active", i === index);
-  });
-}
-
-  // 🧩 Show/Hide 'Other' Topic Input
 document.addEventListener("DOMContentLoaded", function () {
+  // Flip Logic
+  const spreads = document.querySelectorAll(".journal-spread");
+  let currentIndex = 0;
+
+  function showSpread(index) {
+    spreads.forEach((spread, i) => {
+      spread.classList.toggle("active", i === index);
+    });
+  }
+
+  document.querySelector(".prev-page").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + spreads.length) % spreads.length;
+    showSpread(currentIndex);
+  });
+
+  document.querySelector(".next-page").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % spreads.length;
+    showSpread(currentIndex);
+  });
+
+  showSpread(currentIndex); // 🔥 Show first spread
+
+  // 'Other' Tag Logic
   const otherCheckbox = document.getElementById("other-topic-checkbox");
   const otherInput = document.getElementById("other-topic-text");
 
@@ -247,16 +259,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-document.querySelector(".prev-page").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + spreads.length) % spreads.length;
-  showSpread(currentIndex);
-});
-
-document.querySelector(".next-page").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % spreads.length;
-  showSpread(currentIndex);
-});
-
-showSpread(currentIndex); // 🔥 Show first spread
-</script>
