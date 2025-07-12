@@ -940,6 +940,7 @@ footer {
   cursor: pointer;
 }
 
+/* ✨ Journal form confirmation styling */
 .journal-form button:hover {
   background-color: var(--deep-plum);
 }
