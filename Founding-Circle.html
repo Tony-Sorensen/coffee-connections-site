@@ -169,7 +169,7 @@
   <h2>Lend Your Voice to the Journal</h2>
   <p>Share your story, reflection, or message of hope. Your page may help someone finally feel seen.</p>
 
-  <form id="journal-entry-form">
+  <form id="journal-entry-form" action="https://getform.io/f/allzdmra" method="POST">
     <label for="entry-name">Name or Initials:</label>
     <input type="text" id="entry-name" name="entry-name" placeholder="Optional">
 
@@ -206,6 +206,16 @@
     <textarea id="entry-message" name="entry-message" rows="6" placeholder="What would you say to someone walking a similar path?"></textarea>
 
     <button type="submit">Add My Story</button>
+    
+    <p id="submission-confirmation" class="confirmation-message">Thank you for sharing your story. It has been safely received.</p>
+
+    
+<!-- ⚠️ Journal injection placeholder – do not delete
+<section id="journal-book" class="journal-book">
+  <!-- New entries will be injected here when backend is active -->
+</section>
+-->
+    
   </form>
 </section>
 
@@ -214,6 +224,19 @@
     <p>Built with purpose. Created with care.<br>&copy; 2025 Coffee & Connections El Paso</p>
   </footer>
 
+<!-- ⚠️ Dev Note (Line 213) – Journal Submission Handling
+As of July 11, 2025, journal entries are submitted via Getform.io (https://getform.io/f/allzdmra) and securely stored offsite.
+
+Previous logic injected entries into <section id="journal-book"> via JavaScript. This has been commented out to prevent confusion and accidental data loss.
+
+When backend infrastructure is established (e.g. Firebase, Supabase, custom API), uncomment the placeholder section near line 183 and reinstate dynamic rendering.
+
+DO NOT DELETE the commented block titled "Journal injection placeholder" below the form. It is a future anchor for persistent DOM-based journal spreads.
+
+Contact: Tony Sorensen – El Paso 915-262-9834 anthony.e.sorensen@operationresilience.com 
+Site: https://connectionsep.coffee
+-->
+ 
   <script>
 document.getElementById("journal-entry-form").addEventListener("submit", function(event) {
   event.preventDefault();
