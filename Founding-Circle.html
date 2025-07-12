@@ -236,6 +236,18 @@ function showSpread(index) {
   });
 }
 
+  // 🧩 Show/Hide 'Other' Topic Input
+document.addEventListener("DOMContentLoaded", function () {
+  const otherCheckbox = document.getElementById("other-topic-checkbox");
+  const otherInput = document.getElementById("other-topic-text");
+
+  if (otherCheckbox && otherInput) {
+    otherCheckbox.addEventListener("change", function () {
+      otherInput.style.display = this.checked ? "block" : "none";
+    });
+  }
+});
+
 document.querySelector(".prev-page").addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + spreads.length) % spreads.length;
   showSpread(currentIndex);
