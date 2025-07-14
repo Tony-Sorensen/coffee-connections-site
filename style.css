@@ -528,6 +528,11 @@ footer {
   background-color: var(--healing-green);
 }
 
+/* ✨ EMOTIONAL HIGHLIGHT CLASS */
+.highlight {
+  font-weight: bold;
+  color: var(--deep-plum);
+}
 
 /* ✍️ Text Side (Left Column) */
 .origin-left {
