@@ -41,3 +41,5 @@ jobs:
             This pull request adds or updates the sitemap.xml file for Coffee & Connections.
             Once merged, it ensures search engines can index the site efficiently.
           add-paths: |
+
+          
