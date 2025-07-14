@@ -1144,15 +1144,21 @@ footer {
   background-color: var(--deep-plum);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
+/* 📐 Section Spacing */
+section:not(:first-of-type) {
+  margin-top: 80px;
+}
+
+
 /* 🛍️ Resilience on Display */
-.product-grid {
+.grid-resilience {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  margin: 40px 0;
 }
 
-.product-card {
+.grid-resilience .product-card {
   background-color: #ffffff;
   border-left: 6px solid var(--healing-green);
   border-radius: 10px;
@@ -1162,131 +1168,43 @@ footer {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.product-card:hover {
+.grid-resilience .product-card:hover {
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transform: translateY(-3px);
 }
 
-.product-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-}
-
-.product-card h3 {
-  font-size: 22px;
-  color: var(--deep-plum);
-  margin-bottom: 10px;
-}
-
-.product-card p {
-  font-size: 17px;
-  color: var(--text-dark);
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 18px;
-  color: var(--india-green);
-}
-
-.product-card .cta {
-  display: inline-block;
-  background-color: var(--resilience-teal);
-  color: #ffffff;
-  padding: 10px 18px;
-  font-size: 17px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card .cta:hover {
-  background-color: var(--deep-plum);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
 
 /* ☕ Sip with Purpose */
-.product-grid {
+.grid-sip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  margin: 40px 0;
 }
 
-.product-card {
+.grid-sip .product-card {
   background-color: #ffffff;
   border-left: 6px solid var(--resilience-teal);
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 20px;
   text-align: center;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.product-card:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+.grid-sip .product-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transform: translateY(-3px);
 }
 
-.product-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-}
-
-.product-card h3 {
-  font-size: 22px;
-  color: var(--deep-plum);
-  margin-bottom: 10px;
-}
-
-.product-card p {
-  font-size: 17px;
-  color: var(--text-dark);
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 18px;
-  color: var(--india-green);
-}
-
-.product-card .cta {
-  display: inline-block;
-  background-color: var(--resilience-teal);
-  color: #ffffff;
-  padding: 10px 18px;
-  font-size: 17px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card .cta:hover {
-  background-color: var(--deep-plum);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* 📓 Pages of Healing */
-.product-grid {
+.grid-pages {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  margin: 40px 0;
 }
 
-.product-card {
+.grid-pages .product-card {
   background-color: #f9f6f3;
   border-left: 6px solid var(--connection-purple);
   border-radius: 10px;
@@ -1296,11 +1214,36 @@ footer {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.product-card:hover {
+.grid-pages .product-card:hover {
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transform: translateY(-3px);
 }
 
+
+/* 🖼️ Voices on the Wall */
+.grid-voices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.grid-voices .product-card {
+  background-color: #ffffff;
+  border-left: 6px solid var(--viridian);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.grid-voices .product-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+
+/* 🎨 Shared Styling for Cards */
 .product-image {
   max-width: 100%;
   height: auto;
@@ -1325,12 +1268,11 @@ footer {
 .price {
   font-weight: bold;
   font-size: 18px;
-  color: var(--resilience-teal);
+  color: var(--india-green);
 }
 
 .product-card .cta {
   display: inline-block;
-  background-color: var(--connection-purple);
   color: #ffffff;
   padding: 10px 18px;
   font-size: 17px;
@@ -1338,6 +1280,19 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-resilience .cta {
+  background-color: var(--resilience-teal);
+}
+.grid-sip .cta {
+  background-color: var(--resilience-teal);
+}
+.grid-pages .cta {
+  background-color: var(--connection-purple);
+}
+.grid-voices .cta {
+  background-color: var(--viridian);
 }
 
 .product-card .cta:hover {
@@ -1345,69 +1300,3 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* 🖼️ Voices on the Wall */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
-}
-
-.product-card {
-  background-color: #ffffff;
-  border-left: 6px solid var(--viridian);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  text-align: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.product-card:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
-}
-
-.product-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-}
-
-.product-card h3 {
-  font-size: 22px;
-  color: var(--deep-plum);
-  margin-bottom: 10px;
-}
-
-.product-card p {
-  font-size: 17px;
-  color: var(--text-dark);
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 18px;
-  color: var(--viridian);
-}
-
-.product-card .cta {
-  display: inline-block;
-  background-color: var(--viridian);
-  color: #ffffff;
-  padding: 10px 18px;
-  font-size: 17px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card .cta:hover {
-  background-color: var(--deep-plum);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
