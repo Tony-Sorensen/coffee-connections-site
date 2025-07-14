@@ -42,6 +42,3 @@ jobs:
             Once merged, it ensures search engines can index the site efficiently.
           add-paths: |
             sitemap.xml
-
-
-          
