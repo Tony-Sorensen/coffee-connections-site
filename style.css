@@ -241,6 +241,11 @@ section::before {
   margin-top: 20px;
 }
 
+.highlight {
+  font-weight: bold;
+  color: var(--deep-plum);
+}
+
 /* ✨ Founding Section Enhancement */
 .founding-section {
   background-color: #f9f6f3;
