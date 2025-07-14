@@ -30,17 +30,18 @@ jobs:
       - name: Checkout main branch
         run: git checkout main
 
-      - name: Commit sitemap
+            - name: Commit sitemap
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git diff --quiet sitemap.xml; then
-             echo "No changes to commit"
+            echo "No changes to commit"
           else
-             git add sitemap.xml
-             git commit -m "Automated sitemap update"
-             git push
+            git add sitemap.xml
+            git commit -m "Automated sitemap update"
+            git push
           fi
+
 
 
 
