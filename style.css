@@ -488,6 +488,47 @@ footer {
   align-items: flex-start;
 }
 
+/* 📢 SOCIAL SHARE BLOCK */
+.social-share {
+  padding: 2rem;
+  margin: 3rem auto;
+  background-color: #fdf8f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 700px;
+  text-align: center;
+}
+
+.share-title {
+  font-size: 1.8rem;
+  color: var(--healing-green);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.share-text {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.share-buttons a:hover {
+  background-color: var(--healing-green);
+}
+
+
 /* ✍️ Text Side (Left Column) */
 .origin-left {
   flex: 1 1 55%;
