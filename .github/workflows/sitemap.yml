@@ -1,3 +1,6 @@
+permissions:
+  contents: write
+
 name: Generate Sitemap
 
 on:
@@ -19,13 +22,15 @@ jobs:
         with:
           base-url-path: https://connectionsep.coffee
 
+      - name: Setup Git for Push
+        uses: actions/setup-git@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit sitemap
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sitemap.xml
           git commit -m "Add sitemap.xml" || echo "No changes to commit"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
