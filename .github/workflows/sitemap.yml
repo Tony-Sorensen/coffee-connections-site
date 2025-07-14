@@ -30,15 +30,21 @@ jobs:
       - name: Stage sitemap.xml explicitly
         run: git add sitemap.xml
 
+      - name: Move sitemap.xml and add .nojekyll
+        run: |
+          mv sitemap.xml ./sitemap.xml
+          touch .nojekyll
+
       - name: Create Pull Request with sitemap
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          commit-message: Add or update sitemap.xml
+          commit-message: Add sitemap.xml and .nojekyll for Pages visibility
           branch: sitemap-update
           title: Add sitemap.xml
           body: |
-            This pull request adds or updates the sitemap.xml file for Coffee & Connections.
-            Once merged, it ensures search engines can index the site efficiently.
+            This pull request adds sitemap.xml to the root directory
+            and includes a .nojekyll file to ensure GitHub Pages serves it properly.
           add-paths: |
             sitemap.xml
+            .nojekyll
