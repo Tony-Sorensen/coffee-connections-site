@@ -22,26 +22,19 @@ jobs:
         with:
           base-url-path: https://connectionsep.coffee
 
-      - name: Setup Git for Push
-        uses: actions/setup-git@v1
+      - name: Create Pull Request with sitemap
+        uses: peter-evans/create-pull-request@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Add or update sitemap.xml
+          branch: sitemap-update
+          title: Add sitemap.xml
+          body: |
+            This pull request adds or updates the sitemap.xml file for Coffee & Connections.
+            Once merged, Google Search Console will be able to fetch and index your site accurately.
+          add-paths: |
+            sitemap.xml
 
-      - name: Commit sitemap
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git fetch origin main
-          git checkout main
-          git pull
-          if git diff --quiet sitemap.xml; then
-            echo "No changes to commit"
-          else
-            git add sitemap.xml
-            git commit -m "Automated sitemap update"
-            git push origin main
-          fi
 
 
 
