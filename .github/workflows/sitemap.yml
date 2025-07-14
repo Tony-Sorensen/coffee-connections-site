@@ -29,8 +29,15 @@ jobs:
 
       - name: Commit sitemap
         run: |
-          git add sitemap.xml
-          git commit -m "Add sitemap.xml" || echo "No changes to commit"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ `git status --porcelain sitemap.xml` ]]; then
+            git add sitemap.xml
+            git commit -m "Automated sitemap update"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
 
 
