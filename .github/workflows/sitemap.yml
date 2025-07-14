@@ -18,3 +18,11 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://connectionsep.coffee
+
+      - name: Commit sitemap
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add sitemap.xml
+          git commit -m "Add sitemap.xml"
+          git push
