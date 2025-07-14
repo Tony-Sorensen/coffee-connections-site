@@ -30,10 +30,8 @@ jobs:
       - name: Stage sitemap.xml explicitly
         run: git add sitemap.xml
 
-      - name: Move sitemap.xml and add .nojekyll
-        run: |
-          mv sitemap.xml ./sitemap.xml
-          touch .nojekyll
+      - name: Add .nojekyll for GitHub Pages
+        run: touch .nojekyll
 
       - name: Create Pull Request with sitemap
         uses: peter-evans/create-pull-request@v5
