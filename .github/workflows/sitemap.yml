@@ -17,13 +17,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate sitemap
+            - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://connectionsep.coffee
 
-      - name: Debug - List generated files
-        run: ls -la
+      - name: Debug - List files in workspace
+        run: |
+          echo "Listing files in workspace:"
+          ls -la
 
       - name: Create Pull Request with sitemap
         uses: peter-evans/create-pull-request@v5
