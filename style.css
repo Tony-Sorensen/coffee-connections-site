@@ -81,6 +81,11 @@ body {
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
+.nav-buttons a:focus {
+  outline: 3px solid var(--deep-plum);
+  outline-offset: 2px;
+}
+
 /* ✅ Nav Button Colors */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
@@ -123,6 +128,17 @@ body {
   color: var(--deep-plum);
 }
 
+@media (max-width: 600px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* 📐 MAIN CONTAINER LAYOUT */
 .main-layout {
@@ -146,30 +162,33 @@ body {
   color: var(--deep-plum);
 }
 
-.main-layout,
-.two-column,
-.mission-section,
-.video-wrapper,
-section {
+/* 🧱 TWO-COLUMN SECTION */
+.mission-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: start;
   max-width: 1800px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px 40px;
+  border-top: 2px solid #ccc;
   box-sizing: border-box;
 }
 
-/* 🧱 TWO-COLUMN SECTION */
-.two-column {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1800px;
-  margin: 40px auto;
-  padding-top: 20px;
-  border-top: 2px solid #ccc;
+.video-cell,
+.mission-cell {
+  flex: 1 1 45%;
+  min-width: 300px;
+  box-sizing: border-box;
 }
 
+.responsive-iframe iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
 /* 🎥 VIDEO WRAPPER & SIZING */
 .video-wrapper {
   width: 100%;
@@ -186,40 +205,11 @@ section {
   border-radius: 10px;
 }
 
-/* 🌿 MISSION COLUMNS */
-.mission-left,
-.mission-right {
-  flex: 1 1 45%;
-  box-sizing: border-box;
-}
-
-.mission-right {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-dark);
-}
-
 .founder-name {
   font-weight: bold;
   font-size: 20px;
   color: #4B2E83;
 }
-
-.responsive-iframe {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-}
-
-.responsive-iframe iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 
 /* 🧾 SECTION BLOCK STYLING (with Teal Accent) */
 section {
@@ -302,12 +292,6 @@ a {
   transition: color 0.3s ease;
 }
 
-/* 🔗 LINK STYLING */
-a {
-  color: var(--deep-plum);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 a:hover {
   color: var(--resilience-teal);
   text-decoration: underline;
@@ -320,6 +304,12 @@ a:hover {
   padding: 25px;
   border-radius: 6px;
   background-color: transparent;
+}
+
+#countdown strong {
+  font-size: 22px;
+  color: var(--deep-plum);
+}
 
   /* 🪞 Gentle plum-tinted border */
   border: 1px solid rgba(102, 51, 153, 0.2);
@@ -399,12 +389,6 @@ footer {
 
   .two-column {
     flex-direction: column;
-  }
-
-  .mission-left,
-  .mission-right {
-    width: 100%;
-    padding: 0 15px;
   }
 
   .founder-name {
@@ -747,7 +731,6 @@ footer {
   margin-bottom: 16px;
 }
 
-
 /* 🔗 Member Contact Links */
 .founding-links {
   list-style: none;
@@ -986,6 +969,17 @@ footer {
   border-radius: 20px;
   font-family: 'Cormorant Garamond', serif;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  .journal-spread {
+    flex-direction: column;
+  }
+
+  .left-page,
+  .right-page {
+    margin: 0;
+  }
 }
 
 /* 📤 Form Button & Hover */
