@@ -33,7 +33,7 @@ jobs:
       - name: Create Pull Request with sitemap
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: token: ${{ secrets.PAT_TOKEN }}
           commit-message: Add or update sitemap.xml
           branch: sitemap-update
           title: Add sitemap.xml
