@@ -27,19 +27,20 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout main branch
-        run: git checkout main
-
-            - name: Commit sitemap
+      - name: Commit sitemap
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git fetch origin main
+          git checkout main
+          git pull
           if git diff --quiet sitemap.xml; then
             echo "No changes to commit"
           else
             git add sitemap.xml
             git commit -m "Automated sitemap update"
-            git push
+            git push origin main
           fi
 
 
