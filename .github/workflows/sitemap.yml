@@ -27,17 +27,21 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Checkout main branch
+        run: git checkout main
+
       - name: Commit sitemap
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [[ `git status --porcelain sitemap.xml` ]]; then
-            git add sitemap.xml
-            git commit -m "Automated sitemap update"
-            git push
+          if git diff --quiet sitemap.xml; then
+             echo "No changes to commit"
           else
-            echo "No changes to commit"
+             git add sitemap.xml
+             git commit -m "Automated sitemap update"
+             git push
           fi
+
 
 
 
