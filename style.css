@@ -312,7 +312,7 @@ a:hover {
 }
 
   /* 🪞 Gentle plum-tinted border */
-  border: 1px solid rgba(102, 51, 153, 0.2);
+/*  border: 1px solid rgba(102, 51, 153, 0.2); */
 
   /* 🧹 Accent line removed for a cleaner look */
   /* border-left: 8px solid var(--connection-purple); */
@@ -387,9 +387,10 @@ footer {
     margin-bottom: 15px;
   }
 
-  .two-column {
+/* Legacy two-column commited out */
+  /*  .two-column {
     flex-direction: column;
-  }
+  } */ 
 
   .founder-name {
     font-size: 21px;
@@ -643,14 +644,15 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+/* Duplicate footer section so commited out for now */
+/* footer {
   background-color: var(--mocha-brown);
   color: #ffffff;
   padding: 16px 30px;
   text-align: center;
   font-size: 15px;
   border-top: 2px solid rgba(0, 0, 0, 0.05);
-}
+} */
 
 @media (max-width: 768px) {
   .mission-origin,
