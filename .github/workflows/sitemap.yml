@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
 
-            - name: Generate sitemap
+       - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://connectionsep.coffee
