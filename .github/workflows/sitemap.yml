@@ -33,7 +33,7 @@ jobs:
       - name: Create Pull Request with sitemap
         uses: peter-evans/create-pull-request@v5
         with:
-          token: token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           commit-message: Add or update sitemap.xml
           branch: sitemap-update
           title: Add sitemap.xml
@@ -41,5 +41,7 @@ jobs:
             This pull request adds or updates the sitemap.xml file for Coffee & Connections.
             Once merged, it ensures search engines can index the site efficiently.
           add-paths: |
+            sitemap.xml
+
 
           
