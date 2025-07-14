@@ -251,6 +251,57 @@ section::before {
   margin-top: 20px;
 }
 
+/* ✨ Founding Section Enhancement */
+.founding-section {
+  background-color: #f9f6f3;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.founding-section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.founding-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.founding-section li {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.founding-section li em {
+  display: block;
+  margin-top: 0.25rem;
+  font-style: italic;
+  color: #555;
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🔗 LINK STYLING */
+a {
+  color: var(--deep-plum);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 /* 🔗 LINK STYLING */
 a {
   color: var(--deep-plum);
