@@ -6,7 +6,7 @@ name: Generate Sitemap
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
 
-       - name: Generate sitemap
+      - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://connectionsep.coffee
@@ -36,13 +36,6 @@ jobs:
           title: Add sitemap.xml
           body: |
             This pull request adds or updates the sitemap.xml file for Coffee & Connections.
-            Once merged, the sitemap will be available to search engines to improve site indexing.
+            Once merged, it ensures search engines can index the site efficiently.
           add-paths: |
             sitemap.xml
-
-
-
-
-
-
-
