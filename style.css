@@ -241,7 +241,7 @@ section::before {
 .founding-section {
   background-color: #f9f6f3;
   padding: 3rem 2rem;
-  max-width: 1600px; /* Increased from 900px */
+  max-width: 1600px; /* Increased from 900px 
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -426,7 +426,7 @@ footer {
   font-weight: 700;
   color: var(--deep-plum);
   margin-bottom: 30px;
-  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2); /* subtle depth */
+  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2); 
 }
 
 .mission-subtext {
@@ -655,7 +655,7 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-} */
+} 
 
 @media (max-width: 768px) {
   .mission-origin,
@@ -803,7 +803,7 @@ footer {
 }
 
 .journal-spread {
-  display: none; /* hide by default */
+  display: none; 
   gap: 32px;
   justify-content: center;
   position: relative;
@@ -919,7 +919,7 @@ footer {
 }
 
 #other-topic-text {
-  display: none; /* hidden by default */
+  display: none; 
   width: 100%;
   margin-top: 10px;
   padding: 10px;
