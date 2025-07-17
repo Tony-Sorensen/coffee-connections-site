@@ -5,7 +5,7 @@
 .cta {
   display: inline-block;
   padding: 14px 30px;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: bold;
   background-color: var(--resilience-teal);
   color: #ffffff;
