@@ -124,9 +124,9 @@
 */
 #survivor-journal {
   background-color: var(--eggshell);
-  text-align: center;
-  padding: 80px 30px 60px;
+  padding: 80px clamp(30px, 6vw, 80px) 60px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+  text-align: left;
 }
 
 #survivor-journal h1 {
@@ -134,7 +134,7 @@
   line-height: 1.4;
   font-weight: 700;
   color: var(--deep-plum);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2);
 }
 
@@ -142,44 +142,39 @@
   font-size: 20px;
   line-height: 1.8;
   color: var(--text-dark);
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 800px;
   font-style: italic;
   opacity: 0.95;
+  margin-bottom: 40px;
 }
 
+/* 📚 Journal Entries Styled Like Pages */
 .mission-origin {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
-  padding: 60px 30px;
+  padding: 0 clamp(30px, 6vw, 80px);
   background-color: #ffffff;
   border-top: 2px solid rgba(0, 0, 0, 0.04);
-  align-items: flex-start;
-}
-
-.origin-left {
-  flex: 1 1 55%;
-  box-sizing: border-box;
-}
-
-.origin-left h2 {
-  font-size: 30px;
-  color: var(--deep-plum);
-  margin-bottom: 25px;
-  font-weight: 700;
-  text-align: left;
 }
 
 .story-block {
-  margin-bottom: 28px;
-  padding-left: 10px;
-  border-left: 4px solid var(--resilience-teal);
+  background-color: var(--dignity-cream);
+  padding: 30px;
+  border-left: 6px solid var(--resilience-teal);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.story-block h2 {
+  font-size: 24px;
+  color: var(--deep-plum);
+  margin-bottom: 12px;
 }
 
 .story-block p {
-  font-size: 19px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.75;
   color: var(--text-dark);
 }
 
@@ -193,40 +188,25 @@
   color: var(--connection-purple);
 }
 
-.origin-right {
-  flex: 1 1 40%;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.journal-tags li {
-  font-size: 16px;
-  padding: 8px 16px;
-  background-color: var(--resilience-teal);
-  color: #fff;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-/* 📱 Mobile Adjustments for Survivor Journal */
+/* 📱 Mobile Adjustments */
 @media (max-width: 768px) {
+  #survivor-journal {
+    padding: 60px 20px;
+  }
+
   .mission-origin {
-    flex-direction: column;
-    padding: 40px 20px;
+    padding: 0 20px;
   }
 
-  .origin-left h2 {
-    font-size: 24px;
+  .story-block {
+    padding: 20px;
   }
 
-  .story-block p,
-  .story-block label {
+  .story-block h2 {
+    font-size: 20px;
+  }
+
+  .story-block p {
     font-size: 16px;
-  }
-
-  .journal-tags li {
-    font-size: 14px;
-    padding: 6px 12px;
   }
 }
