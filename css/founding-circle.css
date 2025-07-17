@@ -149,29 +149,34 @@
 }
 
 /* 📚 Journal Entries Styled Like Pages */
+/* 📚 Survivor Journal Entries — Book-Like Layout */
 .mission-origin {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 40px;
+  display: block;
   padding: 0 clamp(30px, 6vw, 80px);
+  background-color: #ffffff;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
 }
 
 .story-block {
-  min-width: 80%;
-  scroll-snap-align: start;
-  flex-shrink: 0;
+  background-color: var(--dignity-cream);
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-left: 6px solid var(--resilience-teal);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 12px;
 }
 
 .story-block h2 {
-  font-size: 24px;
+  font-size: 26px;
   color: var(--deep-plum);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .story-block p {
   font-size: 18px;
-  line-height: 1.75;
+  line-height: 1.8;
   color: var(--text-dark);
 }
 
