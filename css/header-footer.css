@@ -43,7 +43,7 @@
 }
 
 .title-cell .tagline {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-style: italic;
   margin-top: 8px;
 }
@@ -62,7 +62,7 @@
 .nav-buttons a {
   padding: 12px 24px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.125rem; /* 18px */
   border-radius: 8px;
   text-decoration: none;
   background-color: transparent;
@@ -139,7 +139,7 @@
 */
 footer {
   background-color: var(--mocha-brown);
-  color: #ffffff;
+  color: var(--dignity-cream);
   padding: 16px 30px;
   text-align: center;
   font-size: 15px;
