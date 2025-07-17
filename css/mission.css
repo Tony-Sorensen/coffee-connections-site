@@ -95,7 +95,8 @@
 
 .video-wrapper {
   aspect-ratio: 16 / 9;
-  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px;
 }
 
 .video-wrapper iframe {
@@ -110,7 +111,7 @@
   font-style: italic;
   color: var(--deep-plum);
   margin-bottom: 16px;
-  text-align: left;
+  text-align: center;
 }
 
 /* 💬 Mission Welcome Text */
@@ -129,7 +130,7 @@
 /* 💜 Right Column — Founder Statement */
 .mission-right {
   flex: 1 1 48%;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .mission-right h2 {
