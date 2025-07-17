@@ -43,7 +43,7 @@
    Purpose: Visual styling for drinks, bundles, and pricing blocks
 */
 .menu-card {
-  background-color: #ffffff;
+  background-color: var(--dignity-cream);
   border-left: 6px solid var(--resilience-teal);
   border-radius: 10px;
   padding: 20px;
