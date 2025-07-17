@@ -27,7 +27,7 @@
 
 <body>
 
-  <!-- 🧁 Header -->
+ <!-- 🧁 Header -->
 <header class="site-header">
   <div class="header-grid">
     <div class="logo-cell">
@@ -40,6 +40,25 @@
   </div>
 </header>
 
+<main class="main-layout">
+
+  <section class="mission-hero">
+    <h1>Trauma-Informed Design Principles</h1>
+    <p class="mission-subtext">
+      From layout to language, our design choices center dignity, transparency, and healing.
+    </p>
+  </section>
+
+  <section class="mission-pillars">
+    <h2>Design Commitments</h2>
+    <ul>
+      <li>Muted backgrounds foster safety and readability.</li>
+      <li>Accessible font sizes and contrast for trauma-informed clarity.</li>
+      <li>Emotionally safe language and layout spacing.</li>
+    </ul>
+  </section>
+
+</main>
 
  <!-- 🤝 Footer -->
  <footer>
