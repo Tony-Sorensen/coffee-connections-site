@@ -1,4 +1,7 @@
-/* 🌱 THEME COLORS & VARIABLES */
+/* 🔒 LEGACY STYLE.CSS FILE — COMMENTED OUT FOR MODULAR MIGRATION
+   Keeping this in place in case rollback or reference is needed.
+---------------------------------------------------------------
+
 :root {
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -12,7 +15,6 @@
   --text-dark: #333333;
 }
 
-/* ✍️ BASE TYPOGRAPHY & BODY */
 body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 17px;
@@ -23,7 +25,6 @@ body {
   padding: 0;
 }
 
-/* 🧁 HEADER STRUCTURE */
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
@@ -62,7 +63,6 @@ body {
   margin-top: 8px;
 }
 
-/* 🧭 NAVIGATION BUTTONS */
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -86,7 +86,6 @@ body {
   outline-offset: 2px;
 }
 
-/* ✅ Nav Button Colors */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
@@ -140,20 +139,17 @@ body {
   }
 }
 
-/* 📐 MAIN CONTAINER LAYOUT */
 .main-layout {
   margin: 0 auto;
   padding: 20px 40px;
   box-sizing: border-box;
 }
 
-/* 🖼️ MAIN CONTENT BLOCK */
 .main-content {
   flex: 1;
   padding: 0 30px;
 }
 
-/* 💬 VIDEO CAPTION */
 .video-caption {
   font-size: 18px;
   text-align: center;
@@ -162,7 +158,6 @@ body {
   color: var(--deep-plum);
 }
 
-/* 🧱 TWO-COLUMN SECTION */
 .mission-grid {
   display: flex;
   flex-wrap: wrap;
@@ -189,7 +184,7 @@ body {
   aspect-ratio: 16 / 9;
   border: none;
 }
-/* 🎥 VIDEO WRAPPER & SIZING */
+
 .video-wrapper {
   width: 100%;
   max-width: 900px;
@@ -211,7 +206,6 @@ body {
   color: #4B2E83;
 }
 
-/* 🧾 SECTION BLOCK STYLING (with Teal Accent) */
 section {
   position: relative;
   padding: 20px 30px;
@@ -223,7 +217,6 @@ section {
   color: var(--text-dark);
 }
 
-/* 🎯 Teal Accent Pseudo-Element */
 section::before {
   content: "";
   position: absolute;
@@ -235,7 +228,6 @@ section::before {
   border-radius: 6px 0 0 6px;
 }
 
-/* 🌟 FOUNDING CIRCLE */
 #founding-circle {
   border-left-color: var(--healing-green);
   margin-top: 20px;
@@ -246,7 +238,6 @@ section::before {
   color: var(--deep-plum);
 }
 
-/* ✨ Founding Section Enhancement */
 .founding-section {
   background-color: #f9f6f3;
   padding: 3rem 2rem;
@@ -292,7 +283,6 @@ section::before {
   transform: translateY(0);
 }
 
-/* 🔗 LINK STYLING */
 a {
   color: var(--deep-plum);
   text-decoration: none;
@@ -304,7 +294,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ⏳ COUNTDOWN BLOCK */
 #countdown {
   text-align: center;
   margin: 20px;
@@ -318,33 +307,22 @@ a:hover {
   color: var(--deep-plum);
 }
 
-  /* 🪞 Gentle plum-tinted border */
-/*  border: 1px solid rgba(102, 51, 153, 0.2); */
-
-  /* 🧹 Accent line removed for a cleaner look */
-  /* border-left: 8px solid var(--connection-purple); */
-}
-
-/* 🎯 Optional hover glow */
 #countdown:hover {
   box-shadow: 0 0 12px rgba(102, 51, 153, 0.15);
 }
 
-/* 📝 Countdown Title */
 #countdown h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: var(--deep-plum);
 }
 
-/* ⏱️ Timer Value */
 #timer {
   font-size: 22px;
   font-weight: bold;
   color: var(--text-dark);
 }
 
-/* 🔘 ACCORDION STYLING */
 .accordion {
   background-color: var(--mocha-brown);
   color: #fff;
@@ -373,7 +351,6 @@ a:hover {
   border-left: 8px solid var(--resilience-teal);
 }
 
-/* 🤝 FOOTER */
 footer {
   background-color: var(--mocha-brown);
   color: #ffffff;
@@ -383,7 +360,6 @@ footer {
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
-/* 📱 RESPONSIVE STYLING */
 @media (max-width: 768px) {
   .header-grid {
     grid-template-columns: 1fr;
@@ -393,11 +369,6 @@ footer {
   .logo-cell {
     margin-bottom: 15px;
   }
-
-/* Legacy two-column commited out */
-  /*  .two-column {
-    flex-direction: column;
-  } */ 
 
   .founder-name {
     font-size: 21px;
@@ -417,7 +388,6 @@ footer {
   }
 }
 
-/* 📱 Mobile Layout Tweaks */
 @media (max-width: 768px) {
   .journal-form {
     padding: 40px 20px;
@@ -443,8 +413,6 @@ footer {
   }
 }
 
-
-  /* 🧡 Foundational Words */
 .mission-hero {
   background-color: var(--eggshell);
   text-align: center;
@@ -471,13 +439,11 @@ footer {
   opacity: 0.95;
 }
 
-/* Optional: emphasized phrases */
 .mission-subtext strong {
   font-weight: 700;
   color: var(--resilience-teal);
 }
 
-/* 🛤️ The Origin Journey */
 .mission-origin {
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +454,6 @@ footer {
   align-items: flex-start;
 }
 
-/* 📢 SOCIAL SHARE BLOCK */
 .social-share {
   padding: 2rem;
   margin: 3rem auto;
@@ -528,13 +493,11 @@ footer {
   background-color: var(--healing-green);
 }
 
-/* ✨ EMOTIONAL HIGHLIGHT CLASS */
 .highlight {
   font-weight: bold;
   color: var(--deep-plum);
 }
 
-/* ✍️ Text Side (Left Column) */
 .origin-left {
   flex: 1 1 55%;
   box-sizing: border-box;
@@ -548,7 +511,6 @@ footer {
   text-align: left;
 }
 
-/* 🧾 Individual Story Blocks */
 .story-block {
   margin-bottom: 28px;
   padding-left: 10px;
@@ -561,7 +523,6 @@ footer {
   color: var(--text-dark);
 }
 
-/* ✨ Emphasis Inside Blocks */
 .story-block strong {
   font-weight: bold;
   color: var(--deep-plum);
@@ -572,7 +533,6 @@ footer {
   color: var(--connection-purple);
 }
 
-/* 📷 Image Side (Right Column) */
 .origin-right {
   flex: 1 1 40%;
   box-sizing: border-box;
@@ -586,7 +546,6 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* 🎯 Mission Pillars */
 .mission-pillars {
   background-color: var(--eggshell);
   padding: 60px 30px;
@@ -635,7 +594,6 @@ footer {
   margin-bottom: 6px;
 }
 
-/* ✍️ Founders' Message */
 .mission-founders {
   background-color: #ffffff;
   padding: 60px 30px;
@@ -697,14 +655,6 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Duplicate footer section so commited out for now */
-/* footer {
-  background-color: var(--mocha-brown);
-  color: #ffffff;
-  padding: 16px 30px;
-  text-align: center;
-  font-size: 15px;
-  border-top: 2px solid rgba(0, 0, 0, 0.05);
 } */
 
 @media (max-width: 768px) {
@@ -721,7 +671,6 @@ footer {
   }
 }
 
-/* 🧱 Founding Circle Introduction */
 .founding-intro {
   background-color: var(--eggshell);
   padding: 60px 30px;
@@ -744,8 +693,6 @@ footer {
   font-style: italic;
 }
 
-
-/* 🪑 Founding Circle Seats Layout */
 .founding-seats {
   padding: 60px 30px;
   background-color: #ffffff;
@@ -753,8 +700,6 @@ footer {
   border-bottom: 2px solid rgba(0, 0, 0, 0.04);
 }
 
-
-/* 🪑 Individual Seat Card Styling */
 .founding-seat {
   background-color: #ffffff;
   border-left: 8px solid var(--resilience-teal);
@@ -771,8 +716,6 @@ footer {
   transform: translateY(-3px);
 }
 
-
-/* 🎙️ Seat Title & Summary */
 .founding-seat h3 {
   font-size: 26px;
   color: var(--deep-plum);
@@ -786,7 +729,6 @@ footer {
   margin-bottom: 16px;
 }
 
-/* 🔗 Member Contact Links */
 .founding-links {
   list-style: none;
   padding: 0;
@@ -810,8 +752,6 @@ footer {
   text-decoration: underline;
 }
 
-
-/* 📱 Founding Circle Mobile Adjustments */
 @media (max-width: 768px) {
   .founding-seat {
     margin: 20px;
@@ -827,7 +767,6 @@ footer {
   }
 }
 
-/* 📖 Journal Introduction */
 .journal-intro {
   background-color: var(--eggshell);
   padding: 60px 30px;
@@ -847,7 +786,6 @@ footer {
   color: var(--connection-purple);
 }
 
-/* 📘 Book Container */
 #journal-book {
   position: relative;
   width: 100%;
@@ -864,7 +802,6 @@ footer {
   background-size: 120px;
 }
 
-/* 📄 Spread Flip Logic */
 .journal-spread {
   display: none; /* hide by default */
   gap: 32px;
@@ -881,7 +818,6 @@ footer {
   transform: scale(1);
 }
 
-/* 📄 Visual Spine */
 .journal-spread::before {
   content: "";
   position: absolute;
@@ -891,7 +827,6 @@ footer {
   transform: translateX(-1px);
 }
 
-/* 📄 Page Styling */
 .journal-page {
   flex: 1;
   background-color: #f7f2e7;
@@ -920,11 +855,9 @@ footer {
   color: var(--text-dark);
 }
 
-/* 👈 Left & 👉 Right Page Margins */
 .left-page { margin-right: 10px; }
 .right-page { margin-left: 10px; }
 
-/* 🧭 Navigation Buttons */
 .journal-nav {
   text-align: center;
   margin-top: 40px;
@@ -945,7 +878,6 @@ footer {
   background-color: var(--resilience-teal);
 }
 
-/* 📝 Journal Submission Form */
 .journal-form {
   background-color: #f7f2e7;
   padding: 60px 30px;
@@ -986,7 +918,6 @@ footer {
   background-color: #fff;
 }
 
-/* 🧩 Other Topic Text Field */
 #other-topic-text {
   display: none; /* hidden by default */
   width: 100%;
@@ -999,7 +930,6 @@ footer {
   transition: all 0.3s ease;
 }
 
-/* 🧩 Topic Tags */
 .checkbox-group {
   display: flex;
   gap: 20px;
@@ -1037,7 +967,6 @@ footer {
   }
 }
 
-/* 📤 Form Button & Hover */
 .journal-form button {
   margin-top: 30px;
   padding: 12px 20px;
@@ -1053,7 +982,6 @@ footer {
   background-color: var(--deep-plum);
 }
 
-/* ✨ Form Submission Confirmation */
 .confirmation-message {
   display: none;
   color: #2d7634;
@@ -1067,7 +995,6 @@ footer {
   to { opacity: 1; }
 }
 
-/* ✨ Entry Glow Animation */
 .highlighted-entry {
   animation: pulseGlow 2s ease-in-out;
 }
@@ -1078,7 +1005,6 @@ footer {
   100% { box-shadow: 0 0 0 rgba(0,0,0,0); }
 }
 
-/* 🛍️ Resilience on Display */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1145,16 +1071,12 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* 📐 Section Spacing */
 section:not(:first-of-type) {
   margin-top: 80px;
   border-top: 1px solid var(--light-gray);
   padding-top: 40px;
 }
 
-
-
-/* 🛍️ Resilience on Display */
 .grid-resilience {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1176,8 +1098,6 @@ section:not(:first-of-type) {
   transform: translateY(-3px);
 }
 
-
-/* ☕ Sip with Purpose */
 .grid-sip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1199,8 +1119,6 @@ section:not(:first-of-type) {
   transform: translateY(-3px);
 }
 
-
-/* 📓 Pages of Healing */
 .grid-pages {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1222,8 +1140,6 @@ section:not(:first-of-type) {
   transform: translateY(-3px);
 }
 
-
-/* 🖼️ Voices on the Wall */
 .grid-voices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1245,8 +1161,6 @@ section:not(:first-of-type) {
   transform: translateY(-3px);
 }
 
-
-/* 🎨 Shared Styling for Cards */
 .product-image {
   max-width: 100%;
   height: auto;
@@ -1302,4 +1216,4 @@ section:not(:first-of-type) {
   background-color: var(--deep-plum);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
+*/ 
