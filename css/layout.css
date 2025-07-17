@@ -74,3 +74,54 @@
   font-style: italic;
   color: var(--deep-plum);
 }
+
+/* 💬 Section Layout Padding & Breathing Room
+   Used in: index.html, Founding-Circle.html
+   Purpose: Ensures readable margins, emotional spacing, and clarity across lower-half sections
+*/
+
+.social-share,
+#founding-circle,
+#survivor-journal {
+  padding: 40px clamp(20px, 4vw, 60px);
+}
+
+/* 🔲 Section Borders & Spacing Rhythm
+   Used in: index.html
+   Purpose: Visual divider and emotional pause between major sections
+*/
+
+.social-share {
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+#founding-circle {
+  margin-top: 40px;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+/* 🕊️ Survivor Journal Highlight Block
+   Used in: Founding-Circle.html
+   Purpose: Personal testimonials from community members — styled for quiet power
+*/
+
+#survivor-journal {
+  background-color: var(--dignity-cream);
+  border-left: 8px solid var(--resilience-teal);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-top: 40px;
+}
+
+#survivor-journal h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 20px;
+}
+
+#survivor-journal .journal-entry {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text-dark);
+  font-style: italic;
+  margin-bottom: 24px;
+}
