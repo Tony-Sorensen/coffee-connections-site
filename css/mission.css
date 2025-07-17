@@ -1,1 +1,121 @@
+/* 📜 Mission Intro Hero
+   Used in: Our-Mission.html
+   Purpose: Welcoming block with main headline and subtext
+*/
+.mission-hero {
+  background-color: var(--dignity-cream);
+  text-align: center;
+  padding: 80px 30px 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+}
 
+.mission-hero h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 30px;
+  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2);
+}
+
+.mission-subtext {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* 🎯 Mission Pillars List
+   Used in: Our-Mission.html
+   Purpose: Highlighting key commitments through styled blocks
+*/
+.mission-pillars {
+  background-color: var(--eggshell);
+  padding: 60px 30px;
+  text-align: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.03);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+}
+
+.mission-pillars h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: var(--deep-plum);
+  font-weight: 700;
+}
+
+.mission-pillars ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.mission-pillars li {
+  margin-bottom: 25px;
+  color: var(--text-dark);
+  padding: 16px 24px;
+  border-left: 6px solid var(--resilience-teal);
+  text-align: left;
+  background-color: var(--dignity-cream);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.mission-pillars li:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* ✨ Founders' Message Block
+   Used in: Founding-Circle.html
+   Purpose: Personal statement container with emotional tone
+*/
+.mission-founders {
+  background-color: #ffffff; /* Optional: Swap with var(--dignity-cream) */
+  padding: 60px 30px;
+  border-left: 8px solid var(--resilience-teal);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.mission-founders strong {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--deep-plum);
+  margin-bottom: 8px;
+}
+
+/* 💌 Invitation to Engage
+   Used in: Our-Mission.html
+   Purpose: CTA block to invite community action
+*/
+.mission-invitation {
+  text-align: center;
+  background-color: var(--dignity-cream);
+  padding: 50px 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.mission-invitation h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-bottom: 15px;
+}
+
+.mission-invitation p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
