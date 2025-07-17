@@ -95,6 +95,7 @@
 .video-wrapper {
   margin: 0;
   text-align: left;
+  aspect-ratio: 16 / 9;
 }
 
 .video-wrapper iframe {
