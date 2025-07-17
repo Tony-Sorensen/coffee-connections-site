@@ -61,21 +61,21 @@
   }
 
   .journal-form h2 {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
   }
 
   .journal-form p,
   .journal-form label {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
   }
 
   .journal-form input,
   .journal-form textarea {
-    font-size: 15px;
+    font-size: 1rem; /* 16px */
   }
 
   .journal-tags li {
-    font-size: 14px;
+    font-size: 1rem; /* 16px */
     padding: 6px 12px;
   }
 
@@ -100,11 +100,11 @@
   }
 
   .founding-intro h2 {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
   }
 
   .founding-intro p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
   }
 }
 
