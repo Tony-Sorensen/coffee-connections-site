@@ -10,14 +10,14 @@
 }
 
 .founding-intro h2 {
-  font-size: 34px;
+  font-size: 2.125rem; /* 34px */
   color: var(--deep-plum);
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .founding-intro p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
@@ -93,13 +93,13 @@
 }
 
 .journal-intro h2 {
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
   color: var(--deep-plum);
   margin-bottom: 12px;
 }
 
 .journal-intro p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-style: italic;
   color: var(--text-dark);
   opacity: 0.95;
@@ -134,13 +134,13 @@
 }
 
 .journal-page h3 {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   color: var(--deep-plum);
   margin-bottom: 12px;
 }
 
 .journal-page p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   line-height: 1.8;
   color: var(--text-dark);
 }
@@ -168,7 +168,7 @@
 }
 
 .journal-nav button {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   padding: 10px 20px;
   margin: 0 10px;
   background-color: var(--resilience-teal);
@@ -196,20 +196,20 @@
 }
 
 .journal-form h2 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   color: var(--deep-plum);
   margin-bottom: 20px;
 }
 
 .journal-form p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   color: var(--text-dark);
   margin-bottom: 30px;
 }
 
 .journal-form label {
   display: block;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   margin-bottom: 8px;
   color: var(--deep-plum);
 }
@@ -241,7 +241,7 @@
   padding: 12px 24px;
   border: none;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -251,7 +251,7 @@
 }
 
 .confirmation-message {
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   color: var(--healing-green);
   margin-top: 20px;
   font-style: italic;
@@ -277,7 +277,7 @@
 }
 
 .share-text {
-  font-size: 18px;
+  font-size: 1.75rem; /* 28px */
   color: #444;
   margin-bottom: 24px;
 }
@@ -306,11 +306,11 @@
   }
 
   .founding-intro h2 {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
   }
 
   .founding-intro p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
   }
 
   .journal-spread {
@@ -323,11 +323,11 @@
   }
 
   .journal-page h3 {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
   }
 
   .journal-page p {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
   }
 
   .journal-form {
@@ -335,21 +335,21 @@
   }
 
   .journal-form h2 {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
   }
 
   .journal-form p,
   .journal-form label {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
   }
 
   .journal-form input,
   .journal-form textarea {
-    font-size: 15px;
+    font-size: 1rem; /* 16px */
   }
 
   .journal-tags li {
-    font-size: 14px;
+    font-size: 1rem; /* 16px */
     padding: 6px 12px;
   }
 
@@ -358,15 +358,15 @@
   }
 
   .share-title {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
   }
 
   .share-text {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
   }
 
   .share-buttons a {
-    font-size: 14px;
+    font-size: 1rem; /* 16px */
     padding: 0.5rem 0.8rem;
   }
 }
