@@ -1,0 +1,75 @@
+/* 🧱 Main Page Layout Container
+   Used in: All pages (index.html, Our-Mission.html, etc.)
+   Purpose: Wraps main content blocks with padding and width control
+*/
+.main-layout {
+  margin: 0 auto;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* 📐 Two-Column Mission Grid
+   Used in: Our-Mission.html
+   Purpose: Positions mission content and embedded video side by side
+*/
+.mission-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1800px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  border-top: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.video-cell,
+.mission-cell {
+  flex: 1 1 45%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+/* 🎥 Responsive Video Embed
+   Used in: Our-Mission.html
+   Purpose: Ensures embedded YouTube/Vimeo clips scale properly
+*/
+.responsive-iframe iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+/* 📺 Direct Video Wrapper Layout
+   Used in: index.html, Our-Mission.html
+   Purpose: Contains hero videos with proper sizing
+*/
+.video-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* 💬 Caption Below Video
+   Used in: Our-Mission.html
+   Purpose: Descriptive note under video embeds
+*/
+.video-caption {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+  color: var(--deep-plum);
+}
