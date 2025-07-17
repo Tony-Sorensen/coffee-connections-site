@@ -8,7 +8,7 @@
   font-size: 1.125rem; /* 18px */
   font-weight: bold;
   background-color: var(--resilience-teal);
-  color: #ffffff;
+  color: var(--dignity-cream);
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
