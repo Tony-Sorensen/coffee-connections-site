@@ -4,7 +4,8 @@
 */
 .main-layout {
   margin: 0 auto;
-  padding: 20px 40px;
+  padding-left: clamp(20px, 4vw, 60px);
+  padding-right: clamp(20px, 4vw, 60px);
   box-sizing: border-box;
 }
 
