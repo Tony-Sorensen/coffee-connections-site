@@ -1,1 +1,120 @@
+/* 🧑‍🤝‍🧑 Founding Circle Introduction Block
+   Used in: Founding-Circle.html
+   Purpose: Welcoming statement for values and collective purpose
+*/
+.founding-intro {
+  background-color: var(--dignity-cream);
+  padding: 60px 30px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.founding-intro h2 {
+  font-size: 34px;
+  color: var(--deep-plum);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.founding-intro p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* 🪑 Founding Seats Section Wrapper
+   Used in: Founding-Circle.html
+   Purpose: Contains individual leader cards
+*/
+.founding-seats {
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+/* 🪑 Individual Seat Cards
+   Used in: Founding-Circle.html
+   Purpose: Display name, summary, and contact links for founding voices
+*/
+.founding-seat {
+  background-color: var(--dignity-cream); /* Refactored from #ffffff */
+  border-left: 8px solid var(--resilience-teal);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.founding-seat:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* 🎙️ Seat Titles & Text
+   Used in: Founding-Circle.html
+   Purpose: Adds clarity and hierarchy to each founding member card
+*/
+.founding-seat h3 {
+  font-size: 26px;
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
+
+.founding-seat p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+/* 🔗 Contact Link List
+   Used in: Founding-Circle.html
+   Purpose: Clickable ways to connect with each voice
+*/
+.founding-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.founding-links li {
+  margin-bottom: 8px;
+}
+
+.founding-links a {
+  color: var(--india-green);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.founding-links a:hover {
+  color: var(--deep-plum);
+  text-decoration: underline;
+}
+
+/* 📱 Mobile Adjustments for Seat Cards
+   Used in: Founding-Circle.html
+   Purpose: Ensures comfort and readability across devices
+*/
+@media (max-width: 768px) {
+  .founding-seat {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .founding-intro h2 {
+    font-size: 28px;
+  }
+
+  .founding-intro p {
+    font-size: 18px;
+  }
+}
 
