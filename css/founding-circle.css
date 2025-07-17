@@ -118,3 +118,115 @@
   }
 }
 
+/* 📖 Survivor Journal Layout
+   Used in: Founding-Circle.html
+   Purpose: Reflective storytelling with book-like flow and emotional clarity
+*/
+#survivor-journal {
+  background-color: var(--eggshell);
+  text-align: center;
+  padding: 80px 30px 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+#survivor-journal h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 30px;
+  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2);
+}
+
+#survivor-journal .mission-subtext {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.mission-origin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 30px;
+  background-color: #ffffff;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+  align-items: flex-start;
+}
+
+.origin-left {
+  flex: 1 1 55%;
+  box-sizing: border-box;
+}
+
+.origin-left h2 {
+  font-size: 30px;
+  color: var(--deep-plum);
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.story-block {
+  margin-bottom: 28px;
+  padding-left: 10px;
+  border-left: 4px solid var(--resilience-teal);
+}
+
+.story-block p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.story-block strong {
+  font-weight: bold;
+  color: var(--deep-plum);
+}
+
+.story-block em {
+  font-style: italic;
+  color: var(--connection-purple);
+}
+
+.origin-right {
+  flex: 1 1 40%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.journal-tags li {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* 📱 Mobile Adjustments for Survivor Journal */
+@media (max-width: 768px) {
+  .mission-origin {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .origin-left h2 {
+    font-size: 24px;
+  }
+
+  .story-block p,
+  .story-block label {
+    font-size: 16px;
+  }
+
+  .journal-tags li {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
