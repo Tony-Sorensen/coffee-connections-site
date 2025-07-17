@@ -81,15 +81,35 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  margin: 60px auto;
-  padding: 0 30px;
+  padding: 60px 30px;
 }
 
 .mission-left, .mission-right {
-  flex: 1 1 400px;
+  flex: 1 1 48%;
   max-width: 600px;
+}
+
+/* Override default centering */
+.video-wrapper {
+  margin: 0;
+  text-align: left;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--deep-plum);
+  font-style: italic;
+  text-align: left;
 }
 
 .mission-left h2,
@@ -107,11 +127,16 @@
   color: var(--text-dark);
 }
 
-.video-caption {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: var(--deep-plum);
-  font-style: italic;
+/* 📱 Responsive Stack */
+@media (max-width: 768px) {
+  #mission-pair.mission-grid {
+    flex-direction: column;
+  }
+
+  .mission-left,
+  .mission-right {
+    max-width: 100%;
+  }
 }
 
 /* ✨ Founders' Message Block
@@ -119,7 +144,7 @@
    Purpose: Personal statement container with emotional tone
 */
 .mission-founders {
-  background-color: #ffffff; /* Optional: Swap with var(--dignity-cream) */
+  background-color: #ffffff;
   padding: 60px 30px;
   border-left: 8px solid var(--resilience-teal);
   font-style: italic;
