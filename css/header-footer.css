@@ -5,7 +5,7 @@
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
-  color: #ffffff;
+  color: var(--dignity-cream);
 }
 
 .header-grid {
@@ -37,7 +37,7 @@
 }
 
 .title-cell h1 {
-  font-size: 38px;
+  font-size: 2.375rem; /* 38px */
   margin: 0;
   line-height: 1.2;
 }
