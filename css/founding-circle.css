@@ -24,10 +24,7 @@
   font-style: italic;
 }
 
-/* 🪑 Founding Seats Section Wrapper
-   Used in: Founding-Circle.html
-   Purpose: Contains individual leader cards
-*/
+/* 🪑 Founding Seats Section */
 .founding-seats {
   padding: 60px 30px;
   background-color: var(--eggshell);
@@ -35,12 +32,8 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0.04);
 }
 
-/* 🪑 Individual Seat Cards
-   Used in: Founding-Circle.html
-   Purpose: Display name, summary, and contact links for founding voices
-*/
 .founding-seat {
-  background-color: var(--dignity-cream); /* Refactored from #ffffff */
+  background-color: var(--dignity-cream);
   border-left: 8px solid var(--resilience-teal);
   padding: 30px;
   margin: 40px auto;
@@ -55,10 +48,6 @@
   transform: translateY(-3px);
 }
 
-/* 🎙️ Seat Titles & Text
-   Used in: Founding-Circle.html
-   Purpose: Adds clarity and hierarchy to each founding member card
-*/
 .founding-seat h3 {
   font-size: 26px;
   color: var(--deep-plum);
@@ -72,10 +61,6 @@
   margin-bottom: 16px;
 }
 
-/* 🔗 Contact Link List
-   Used in: Founding-Circle.html
-   Purpose: Clickable ways to connect with each voice
-*/
 .founding-links {
   list-style: none;
   padding: 0;
@@ -99,10 +84,221 @@
   text-decoration: underline;
 }
 
-/* 📱 Mobile Adjustments for Seat Cards
-   Used in: Founding-Circle.html
-   Purpose: Ensures comfort and readability across devices
-*/
+/* 📖 Survivor Journal Introduction */
+.journal-intro {
+  background-color: var(--eggshell);
+  padding: 60px clamp(30px, 6vw, 80px);
+  text-align: left;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.journal-intro h2 {
+  font-size: 36px;
+  color: var(--deep-plum);
+  margin-bottom: 12px;
+}
+
+.journal-intro p {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-dark);
+  opacity: 0.95;
+}
+
+/* 📘 Survivor Journal Book Layout */
+#journal-book {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px clamp(30px, 6vw, 80px);
+  background-color: #ffffff;
+}
+
+.journal-spread {
+  display: none;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.journal-spread.active {
+  display: flex;
+}
+
+.journal-page {
+  flex: 1 1 48%;
+  background-color: var(--dignity-cream);
+  padding: 30px;
+  border-left: 6px solid var(--resilience-teal);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 12px;
+}
+
+.journal-page h3 {
+  font-size: 24px;
+  color: var(--deep-plum);
+  margin-bottom: 12px;
+}
+
+.journal-page p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.journal-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.journal-tags li {
+  display: inline-block;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+/* 📘 Navigation Buttons */
+.journal-nav {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.journal-nav button {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.journal-nav button:hover {
+  background-color: var(--deep-plum);
+}
+
+.journal-nav button:focus {
+  outline: 2px solid var(--connection-purple);
+  outline-offset: 2px;
+}
+
+/* 🖊️ Journal Submission Form */
+.journal-form {
+  background-color: var(--eggshell);
+  padding: 60px clamp(30px, 6vw, 80px);
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.journal-form h2 {
+  font-size: 30px;
+  color: var(--deep-plum);
+  margin-bottom: 20px;
+}
+
+.journal-form p {
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+}
+
+.journal-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--deep-plum);
+}
+
+.journal-form input,
+.journal-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#other-topic-text {
+  margin-top: 10px;
+}
+
+.journal-form button {
+  background-color: var(--resilience-teal);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.journal-form button:hover {
+  background-color: var(--deep-plum);
+}
+
+.confirmation-message {
+  font-size: 16px;
+  color: var(--healing-green);
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* 📢 Social Share Block */
+.social-share {
+  padding: 60px clamp(30px, 6vw, 80px);
+  background-color: #fdf8f4;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.share-title {
+  font-size: 28px;
+  color: var(--healing-green);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.share-text {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  background-color: var(--resilience-teal);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.share-buttons a:hover {
+  background-color: var(--healing-green);
+}
+
+/* 📱 Mobile Adjustments */
 @media (max-width: 768px) {
   .founding-seat {
     margin: 20px;
@@ -116,99 +312,61 @@
   .founding-intro p {
     font-size: 18px;
   }
-}
 
-/* 📖 Survivor Journal Layout
-   Used in: Founding-Circle.html
-   Purpose: Reflective storytelling with book-like flow and emotional clarity
-*/
-#survivor-journal {
-  background-color: var(--eggshell);
-  padding: 80px clamp(30px, 6vw, 80px) 60px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
-  text-align: left;
-}
-
-#survivor-journal h1 {
-  font-size: 36px;
-  line-height: 1.4;
-  font-weight: 700;
-  color: var(--deep-plum);
-  margin-bottom: 20px;
-  text-shadow: 0.5px 0.5px rgba(78, 39, 83, 0.2);
-}
-
-#survivor-journal .mission-subtext {
-  font-size: 20px;
-  line-height: 1.8;
-  color: var(--text-dark);
-  max-width: 800px;
-  font-style: italic;
-  opacity: 0.95;
-  margin-bottom: 40px;
-}
-
-/* 📚 Journal Entries Styled Like Pages */
-/* 📚 Survivor Journal Entries — Book-Like Layout */
-.mission-origin {
-  display: block;
-  padding: 0 clamp(30px, 6vw, 80px);
-  background-color: #ffffff;
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-}
-
-.story-block {
-  background-color: var(--dignity-cream);
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 800px;
-  border-left: 6px solid var(--resilience-teal);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-radius: 12px;
-}
-
-.story-block h2 {
-  font-size: 26px;
-  color: var(--deep-plum);
-  margin-bottom: 16px;
-  font-weight: 700;
-}
-
-.story-block p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-dark);
-}
-
-.story-block strong {
-  font-weight: bold;
-  color: var(--deep-plum);
-}
-
-.story-block em {
-  font-style: italic;
-  color: var(--connection-purple);
-}
-
-/* 📱 Mobile Adjustments */
-@media (max-width: 768px) {
-  #survivor-journal {
-    padding: 60px 20px;
+  .journal-spread {
+    flex-direction: column;
   }
 
-  .mission-origin {
-    padding: 0 20px;
-  }
-
-  .story-block {
+  .journal-page {
     padding: 20px;
+    margin-bottom: 20px;
   }
 
-  .story-block h2 {
+  .journal-page h3 {
     font-size: 20px;
   }
 
-  .story-block p {
+  .journal-page p {
     font-size: 16px;
+  }
+
+  .journal-form {
+    padding: 40px 20px;
+  }
+
+  .journal-form h2 {
+    font-size: 24px;
+  }
+
+  .journal-form p,
+  .journal-form label {
+    font-size: 16px;
+  }
+
+  .journal-form input,
+  .journal-form textarea {
+    font-size: 15px;
+  }
+
+  .journal-tags li {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .social-share {
+    padding: 40px 20px;
+  }
+
+  .share-title {
+    font-size: 24px;
+  }
+
+  .share-text {
+    font-size: 16px;
+  }
+
+  .share-buttons a {
+    font-size: 14px;
+    padding: 0.5rem 0.8rem;
   }
 }
