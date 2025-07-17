@@ -1,1 +1,148 @@
+/* 🧁 Site Header Container
+   Used in: All pages
+   Purpose: Brand bar with logo, title, and tagline
+*/
+.site-header {
+  background-color: var(--deep-plum);
+  padding: 30px 20px;
+  color: #ffffff;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 🎨 Logo Styling
+   Used in: All pages
+   Purpose: Displays brand logo in header
+*/
+.logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 🎯 Title and Tagline
+   Used in: All pages
+   Purpose: Mission-driven intro and context branding
+*/
+.title-cell {
+  text-align: center;
+}
+
+.title-cell h1 {
+  font-size: 38px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.title-cell .tagline {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* 🧭 Navigation Button Bar
+   Used in: All pages with nav (index.html, menu.html, etc.)
+   Purpose: Visually organized nav with color-coded buttons
+*/
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.nav-buttons a {
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 🎯 Focus Visibility */
+.nav-buttons a:focus {
+  outline: 3px solid var(--deep-plum);
+  outline-offset: 2px;
+}
+
+/* 🎨 Color-Linked Navigation Buttons */
+.nav-buttons a[href="index.html"] {
+  border-color: var(--india-green);
+  color: var(--india-green);
+}
+.nav-buttons a[href="index.html"]:hover {
+  color: var(--deep-plum);
+}
+
+.nav-buttons a[href="menu.html"] {
+  border-color: var(--resilience-teal);
+  color: var(--resilience-teal);
+}
+.nav-buttons a[href="menu.html"]:hover {
+  color: var(--deep-plum);
+}
+
+.nav-buttons a[href="calendar.html"] {
+  border-color: var(--connection-purple);
+  color: var(--connection-purple);
+}
+.nav-buttons a[href="calendar.html"]:hover {
+  color: var(--deep-plum);
+}
+
+.nav-buttons a[href="Our-Mission.html"] {
+  border-color: var(--mocha-brown);
+  color: var(--mocha-brown);
+}
+.nav-buttons a[href="Our-Mission.html"]:hover {
+  color: var(--deep-plum);
+}
+
+.nav-buttons a[href="Founding-Circle.html"] {
+  border-color: var(--viridian);
+  color: var(--viridian);
+}
+.nav-buttons a[href="Founding-Circle.html"]:hover {
+  color: var(--deep-plum);
+}
+
+/* 📱 Responsive Navigation Adjustments
+   Used in: All pages on mobile
+   Purpose: Stack nav buttons vertically for smaller screens
+*/
+@media (max-width: 600px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🤝 Footer Styling Block
+   Used in: All pages
+   Purpose: Consistent footer presentation with soft visual hierarchy
+*/
+footer {
+  background-color: var(--mocha-brown);
+  color: #ffffff;
+  padding: 16px 30px;
+  text-align: center;
+  font-size: 15px;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+}
 
