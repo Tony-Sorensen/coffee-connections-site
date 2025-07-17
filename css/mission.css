@@ -73,65 +73,82 @@
   transform: translateY(-2px);
 }
 
-/* 🧠 Mission Grid — Trauma-Informed Welcome + Founder Message
+/* 🧠 Side-by-Side Mission Layout
    Used in: Our-Mission.html
-   Purpose: Aligns video and text content side-by-side for clarity and emotional connection
+   Purpose: Left side = video + intro. Right side = personal message.
 */
-#mission-pair.mission-grid {
+.mission-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
   align-items: flex-start;
   padding: 60px 30px;
+  background-color: var(--dignity-cream);
 }
 
-.mission-left, .mission-right {
+/* 🌿 Left Column — Video + Welcome */
+.mission-left {
   flex: 1 1 48%;
   max-width: 600px;
 }
 
-/* Override default centering */
 .video-wrapper {
-  margin: 0;
-  text-align: left;
   aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
 }
 
 .video-wrapper iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .video-caption {
-  margin-top: 12px;
   font-size: 1rem;
-  color: var(--deep-plum);
   font-style: italic;
+  color: var(--deep-plum);
+  margin-bottom: 16px;
   text-align: left;
 }
 
-.mission-left h2,
-.mission-right h2 {
-  font-size: 28px;
+/* 💬 Mission Welcome Text */
+.mission-left h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
   color: var(--deep-plum);
-  margin-top: 24px;
-  margin-bottom: 16px;
 }
 
-.mission-left p,
-.mission-right p {
-  line-height: 1.75;
+.mission-left p {
   font-size: 18px;
+  line-height: 1.75;
   color: var(--text-dark);
 }
 
-/* 📱 Responsive Stack */
+/* 💜 Right Column — Founder Statement */
+.mission-right {
+  flex: 1 1 48%;
+  max-width: 600px;
+}
+
+.mission-right h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: var(--deep-plum);
+}
+
+.mission-right p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text-dark);
+}
+
+/* 📱 Mobile Stack */
 @media (max-width: 768px) {
-  #mission-pair.mission-grid {
+  .mission-grid {
     flex-direction: column;
+    padding: 40px 20px;
   }
 
   .mission-left,
