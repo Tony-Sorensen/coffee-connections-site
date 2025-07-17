@@ -13,13 +13,13 @@
 }
 
 .journal-form h2 {
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
   color: var(--deep-plum);
   margin-bottom: 10px;
 }
 
 .journal-form p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-style: italic;
   margin-bottom: 24px;
 }
@@ -29,7 +29,7 @@
    Purpose: Consistent styling across input UI
 */
 .journal-form label {
-  font-size: 17px;
+  font-size: 1.125rem; /* 18px */
   display: block;
   margin-top: 20px;
   margin-bottom: 6px;
@@ -42,7 +42,7 @@
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 1.125rem; /* 18px */
   background-color: #fff;
 }
 
@@ -79,7 +79,7 @@
 .journal-tags li {
   background-color: #dcebe2;
   color: #2f4f4f;
-  font-size: 15px;
+  font-size: 1rem; /* 16px */
   padding: 8px 14px;
   border-radius: 20px;
   font-family: 'Cormorant Garamond', serif;
@@ -96,7 +96,7 @@
   background-color: var(--india-green);
   color: white;
   border: none;
-  font-size: 17px;
+  font-size: 1.125rem; /* 18px */
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
