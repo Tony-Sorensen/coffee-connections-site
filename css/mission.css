@@ -73,6 +73,46 @@
   transform: translateY(-2px);
 }
 
+/* 🧠 Mission Grid — Trauma-Informed Welcome + Founder Message
+   Used in: Our-Mission.html
+   Purpose: Aligns video and text content side-by-side for clarity and emotional connection
+*/
+#mission-pair.mission-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+.mission-left, .mission-right {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.mission-left h2,
+.mission-right h2 {
+  font-size: 28px;
+  color: var(--deep-plum);
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.mission-left p,
+.mission-right p {
+  line-height: 1.75;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.video-caption {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--deep-plum);
+  font-style: italic;
+
 /* ✨ Founders' Message Block
    Used in: Founding-Circle.html
    Purpose: Personal statement container with emotional tone
