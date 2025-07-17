@@ -113,13 +113,13 @@
 }
 
 #survivor-journal h2 {
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
   color: var(--deep-plum);
   margin-bottom: 20px;
 }
 
 #survivor-journal .journal-entry {
-  font-size: 18px;
+  1.125rem	font-size: 1.125rem; /* 18px */
   line-height: 1.75;
   color: var(--text-dark);
   font-style: italic;
