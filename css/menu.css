@@ -1,1 +1,86 @@
+/* 🍽️ Menu Page Container
+   Used in: menu.html
+   Purpose: Overall layout and spacing for the full menu section
+*/
+.menu-section {
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  text-align: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+}
 
+/* 🧾 Menu Title & Subtext
+   Used in: menu.html
+   Purpose: Menu page headers with emotional branding
+*/
+.menu-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 20px;
+}
+
+.menu-subtext {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+}
+
+/* ☕ Menu Grid Layout
+   Used in: menu.html
+   Purpose: Organizes menu items in responsive columns
+*/
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* 🧋 Individual Item Card
+   Used in: menu.html
+   Purpose: Visual styling for drinks, bundles, and pricing blocks
+*/
+.menu-card {
+  background-color: #ffffff;
+  border-left: 6px solid var(--resilience-teal);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.menu-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* 🎨 Item Title, Description, Price */
+.menu-card h3 {
+  font-size: 22px;
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
+
+.menu-card p {
+  font-size: 17px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.menu-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--india-green);
+}
+
+/* 🟢 Optional: Seasonal or Featured Modifier */
+.menu-card--seasonal {
+  border-left-color: var(--healing-green);
+}
+
+.menu-card--featured {
+  border-left-color: var(--connection-purple);
+}
