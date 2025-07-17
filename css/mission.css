@@ -107,7 +107,7 @@
 }
 
 .video-caption {
-  font-size: 1rem;
+  font-size: 1rem; /* 16px */
   font-style: italic;
   color: var(--deep-plum);
   margin-bottom: 16px;
@@ -116,13 +116,13 @@
 
 /* 💬 Mission Welcome Text */
 .mission-left h2 {
-  font-size: 26px;
+  font-size: 1.625rem; /* 26px */
   margin-bottom: 12px;
   color: var(--deep-plum);
 }
 
 .mission-left p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   line-height: 1.75;
   color: var(--text-dark);
 }
@@ -134,13 +134,13 @@
 }
 
 .mission-right h2 {
-  font-size: 26px;
+  font-size: 1.625rem; /* 26px */
   margin-bottom: 12px;
   color: var(--deep-plum);
 }
 
 .mission-right p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   line-height: 1.75;
   color: var(--text-dark);
 }
@@ -163,11 +163,11 @@
    Purpose: Personal statement container with emotional tone
 */
 .mission-founders {
-  background-color: #ffffff;
+  background-color: var(--dignity-cream);
   padding: 60px 30px;
   border-left: 8px solid var(--resilience-teal);
   font-style: italic;
-  font-size: 19px;
+  font-size: 1.25rem; /* 20px */
   line-height: 1.8;
   color: var(--text-dark);
   max-width: 900px;
@@ -195,12 +195,12 @@
 }
 
 .mission-invitation h2 {
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
   color: var(--deep-plum);
   margin-bottom: 15px;
 }
 
 .mission-invitation p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   margin-bottom: 20px;
 }
