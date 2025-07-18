@@ -20,15 +20,28 @@
   .nav-buttons a {
     width: 100%;
     text-align: center;
+    padding: 10px;
+    font-size: 1rem;
   }
 
   .main-layout {
     flex-direction: column;
     padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .main-content {
     padding: 20px;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -41,6 +54,10 @@
   .mission-origin {
     flex-direction: column;
     padding: 40px 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .origin-left,
@@ -58,6 +75,10 @@
 @media (max-width: 600px) {
   .journal-form {
     padding: 40px 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .journal-form h2 {
@@ -97,6 +118,10 @@
   .founding-seat {
     margin: 20px;
     padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .founding-intro h2 {
@@ -107,4 +132,37 @@
     font-size: 1.125rem; /* 18px */
   }
 }
+
+/* 📱 Final Mobile Catch-All
+   Used in: All pages
+   Purpose: Ensures clean layout and readability on very small screens
+*/
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .nav-buttons a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .main-layout,
+  .mission-grid,
+  .journal-form,
+  .founding-seat {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
+
 
