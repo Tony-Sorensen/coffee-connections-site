@@ -84,3 +84,41 @@
 .menu-card--featured {
   border-left-color: var(--connection-purple);
 }
+
+/* ☕ Accordion Trigger Button */
+.accordion {
+  background-color: var(--mocha-brown);
+  color: #fff;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  border-left: 8px solid var(--resilience-teal);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 30px 0;
+  border-radius: 6px;
+}
+
+/* 🖱️ Hover State */
+.accordion:hover {
+  background-color: var(--deep-plum);
+  color: #fff;
+}
+
+/* 📦 Accordion Content Container */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease-out;
+  background-color: var(--eggshell);
+  padding: 0 20px;
+  border-left: 8px solid var(--resilience-teal);
+  border-radius: 0 0 6px 6px;
+}
+
+/* 📖 Expanded State */
+.accordion.active + .accordion-content {
+  padding: 20px;
+}
