@@ -124,7 +124,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-content: flex-start; /* Left-aligns the buttons */
   margin-top: 16px;
 }
 
@@ -140,4 +140,11 @@
 
 .share-buttons a:hover {
   background-color: #e0d6c5;
+}
+
+.share-context {
+  font-style: italic;
+  color: var(--deep-plum);
+  margin-top: 12px;
+  text-align: left;
 }
