@@ -44,7 +44,9 @@
 .video-wrapper {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 20px;
+  border-radius: 10px;
 }
 
 .video-wrapper video {
