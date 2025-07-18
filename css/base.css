@@ -19,7 +19,6 @@
   --teal-mist: #EBF2FD;
   --plum-veil: #E9E5F8;
   --dignity-cream: #F6F2EC;
-
 }
 
 /* ✍️ Base Typography & Page Setup
@@ -51,12 +50,20 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 🧩 Utility Classes and Resets [add as needed]
+/* 🧩 Utility Classes & Resets
    Used in: Throughout components
    Purpose: Small reusable helpers and resets
 */
-/* Example: 
-.text-center { text-align: center; }
-.hidden { display: none; }
-.highlight { font-weight: bold; color: var(--deep-plum); }
-*/
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--deep-plum);
+}
+
