@@ -145,10 +145,6 @@
   transition: max-height 0.3s ease;
 }
 
-.accordion.active + .accordion-content {
-  max-height: 1000px; /* or use JS to set scrollHeight */
-}
-
 /* 🖱️ Hover State */
 .accordion:hover {
   background-color: var(--deep-plum);
