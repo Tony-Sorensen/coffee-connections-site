@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0BKM8ZWW8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K0BKM8ZWW8');
-  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-K0BKM8ZWW8";
+  script.async = true;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-K0BKM8ZWW8');
+});
+</script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Discover how Coffee & Connections fosters trauma-informed spaces that build trust, dignity, and community in El Paso and beyond.">
@@ -279,9 +285,7 @@
 </footer>
 
 <script>
-<!-- 🛠️ Survivor Journal Page Flip Script -->
 document.addEventListener("DOMContentLoaded", function () {
-  // Flip Logic
   const spreads = document.querySelectorAll(".journal-spread");
   let currentIndex = 0;
 
@@ -291,21 +295,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  document.querySelector(".prev-page").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + spreads.length) % spreads.length;
+  const prevBtn = document.querySelector(".prev-page");
+  const nextBtn = document.querySelector(".next-page");
+
+  if (prevBtn && nextBtn && spreads.length > 0) {
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + spreads.length) % spreads.length;
+      showSpread(currentIndex);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % spreads.length;
+      showSpread(currentIndex);
+    });
+
     showSpread(currentIndex);
-  });
+  }
 
-  document.querySelector(".next-page").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % spreads.length;
-    showSpread(currentIndex);
-  });
-
-  console.log("🔍 Checkbox toggled — input visibility should change.");
-
-  showSpread(currentIndex); // 🔥 Show first spread
-
-  // 'Other' Tag Logic
   const otherCheckbox = document.getElementById("other-topic-checkbox");
   const otherInput = document.getElementById("other-topic-text");
 
@@ -315,4 +321,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-</script> 
+</script>
+
