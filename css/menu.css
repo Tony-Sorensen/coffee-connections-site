@@ -1,3 +1,12 @@
+/* ✅ Force Left Alignment for Accordion Content */
+.accordion-content,
+.accordion-content p,
+.accordion-list,
+.accordion-list ul,
+.accordion-list ul li {
+  text-align: left;
+}
+
 /* 🍽️ Menu Page Container
    Used in: menu.html
    Purpose: Overall layout and spacing for the full menu section
