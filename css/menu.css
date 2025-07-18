@@ -157,7 +157,3 @@
   border-radius: 0 0 6px 6px;
 }
 
-/* 📖 Expanded State */
-.accordion.active + .accordion-content {
-  padding: 20px;
-}
