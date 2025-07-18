@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0BKM8ZWW8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K0BKM8ZWW8');
-  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-K0BKM8ZWW8";
+  script.async = true;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-K0BKM8ZWW8');
+});
+</script>
 
   <title>Menu | Coffee & Connections El Paso</title>
   <meta name="description" content="Explore ethically sourced coffee, handcrafted drinks, and local favorites—all served in a trauma-informed space built for healing and community.">
@@ -630,12 +636,21 @@
 
 <!-- ✅ Accordion Script -->
 <script>
+document.addEventListener("DOMContentLoaded", function () {
   const accordions = document.querySelectorAll(".accordion");
+
+  if (accordions.length === 0) return;
+
   accordions.forEach(btn => {
     btn.addEventListener("click", () => {
       btn.classList.toggle("active");
+
       const section = btn.closest(".menu-section");
+      if (!section) return;
+
       const content = section.querySelector(".accordion-content");
+      if (!content) return;
+
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
       } else {
@@ -643,6 +658,7 @@
       }
     });
   });
+});
 </script>
 
 </body>
