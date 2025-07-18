@@ -1,6 +1,6 @@
 /* 🧱 Main Page Layout Container
-   Used in: All pages (index.html, Our-Mission.html, etc.)
-   Purpose: Wraps main content blocks with padding and width control
+   Used in: All pages
+   Purpose: Wraps content with horizontal padding and width control
 */
 .main-layout {
   margin: 0 auto;
@@ -9,9 +9,9 @@
   box-sizing: border-box;
 }
 
-/* 📐 Two-Column Mission Grid
+/* 📐 Mission Grid Layout
    Used in: index.html, Our-Mission.html
-   Purpose: Positions mission content and embedded video side by side
+   Purpose: Displays video and mission statement side by side
 */
 .mission-grid {
   display: flex;
@@ -28,7 +28,7 @@
 
 /* 🧩 Mission Grid Columns
    Used in: index.html
-   Purpose: Ensures video and mission text sit side by side
+   Purpose: Defines sizing for left and right content blocks
 */
 .mission-left,
 .mission-right {
@@ -58,7 +58,7 @@
 
 /* 🎥 Responsive Video Embed
    Used in: Our-Mission.html
-   Purpose: Ensures embedded YouTube/Vimeo clips scale properly
+   Purpose: Ensures Vimeo/Youtube iframe videos scale properly
 */
 .responsive-iframe iframe {
   width: 100%;
@@ -69,7 +69,7 @@
 
 /* 💬 Caption Below Video
    Used in: index.html, Our-Mission.html
-   Purpose: Descriptive note under video embeds
+   Purpose: Small text note below video embeds
 */
 .video-caption {
   font-size: 18px;
@@ -79,9 +79,9 @@
   color: var(--deep-plum);
 }
 
-/* 💬 Section Layout Padding & Breathing Room
+/* 💬 Section Layout Padding
    Used in: index.html, Founding-Circle.html
-   Purpose: Ensures readable margins, emotional spacing, and clarity across lower-half sections
+   Purpose: Ensures breathing room across supporting sections
 */
 .social-share,
 #founding-circle,
@@ -89,9 +89,9 @@
   padding: 40px clamp(20px, 4vw, 60px);
 }
 
-/* 🔲 Section Borders & Spacing Rhythm
-   Used in: index.html
-   Purpose: Visual divider and emotional pause between major sections
+/* 🔲 Section Borders & Dividers
+   Used in: index.html, Founding-Circle.html
+   Purpose: Creates visual rhythm between sections
 */
 .social-share {
   border-top: 2px solid rgba(0, 0, 0, 0.05);
@@ -102,19 +102,19 @@
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
-/* 🕊️ Survivor Journal Highlight Block
+/* 🕊️ Survivor Journal Block
    Used in: Founding-Circle.html
-   Purpose: Personal testimonials from community members — styled for quiet power
+   Purpose: Highlights community testimonials and journal entries
 */
 #survivor-journal {
   background-color: var(--dignity-cream);
   border-left: 8px solid var(--resilience-teal);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   margin-top: 40px;
 }
 
 #survivor-journal h2 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
   color: var(--deep-plum);
   margin-bottom: 20px;
 }
@@ -124,9 +124,6 @@
   line-height: 1.75;
   color: var(--text-dark);
   font-style: italic;
-  margin-bottom: 24px;
-}
-
   margin-bottom: 24px;
 }
 
