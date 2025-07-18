@@ -628,21 +628,22 @@
     <p>© 2025 Coffee & Connections | El Paso, TX</p>
   </footer>
 
-  <!-- ✅ Accordion Script -->
-  <script>
-    const accordions = document.querySelectorAll(".accordion");
-    accordions.forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-        const content = btn.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
+<!-- ✅ Accordion Script -->
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+      const section = btn.closest(".menu-section");
+      const content = section.querySelector(".accordion-content");
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
