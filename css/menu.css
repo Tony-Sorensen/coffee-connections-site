@@ -85,6 +85,11 @@
   border-left-color: var(--connection-purple);
 }
 
+/* 🧋 Individual Item Card
+   Used in: menu.html
+   Purpose: Visual styling for drinks, bundles, and pricing blocks
+*/
+
 /* ☕ Accordion Trigger Button */
 .accordion {
   background-color: var(--mocha-brown);
@@ -99,7 +104,41 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 30px 0;
   border-radius: 6px;
+  position: relative;
 }
+
+/* 🔽 Arrow Indicator */
+.accordion::after {
+  content: "▼";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+/* 🔼 Arrow Flip on Active */
+.accordion.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* 📦 Accordion Content Container */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease-out;
+  background-color: var(--eggshell);
+  padding: 0 20px;
+  border-left: 8px solid var(--resilience-teal);
+  border-radius: 0 0 6px 6px;
+}
+
+/* 📖 Expanded State Padding */
+.accordion.active + .accordion-content {
+  padding: 20px;
+}
+
 
 /* 🖱️ Hover State */
 .accordion:hover {
