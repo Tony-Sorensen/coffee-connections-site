@@ -59,20 +59,20 @@
 
 /* 🎨 Item Title, Description, Price */
 .menu-card h3 {
-  font-size: 22px;
+  font-size: 1.375rem; /* 22px */
   color: var(--deep-plum);
   margin-bottom: 10px;
 }
 
 .menu-card p {
-  font-size: 17px;
+  font-size: 1.125rem; /* 18px */
   color: var(--text-dark);
   margin-bottom: 12px;
 }
 
 .menu-price {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   color: var(--india-green);
 }
 
