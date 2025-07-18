@@ -157,3 +157,7 @@
   border-radius: 0 0 6px 6px;
 }
 
+.accordion {
+  text-indent: -0.25rem;
+  padding-left: 2.25rem; /* creates space for emoji */
+}
