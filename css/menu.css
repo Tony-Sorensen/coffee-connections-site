@@ -161,3 +161,9 @@
   text-indent: -0.25rem;
   padding-left: 2.25rem; /* creates space for emoji */
 }
+
+.share-note {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--deep-plum);
+}
