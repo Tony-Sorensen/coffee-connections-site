@@ -115,3 +115,29 @@
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* 📢 Social Share Buttons
+   Used in: Founding-Circle.html, Journal outreach
+   Purpose: Provides clean, accessible layout for social sharing links
+*/
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.share-buttons a {
+  padding: 8px 14px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #2C1E1E;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.share-buttons a:hover {
+  background-color: #e0d6c5;
+}
