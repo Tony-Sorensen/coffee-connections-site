@@ -78,6 +78,8 @@
    Purpose: Video intro and founder statement pairing
 */
 .mission-grid {
+  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -85,16 +87,6 @@
   align-items: flex-start;
   padding: 60px 30px;
   background-color: var(--dignity-cream);
-}
-
-.mission-left {
-  flex: 1 1 48%;
-  max-width: 600px;
-}
-
-.mission-right {
-  flex: 1 1 48%;
-  max-width: 800px;
 }
 
 /* 🌿 Welcome Video Styling */
