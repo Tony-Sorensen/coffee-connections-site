@@ -1,4 +1,4 @@
-/* 🧑‍🤝‍🧑 Founding Circle Introduction Block
+/* 🧑‍🤝‍🧑 Founding Circle Intro Block
    Used in: Founding-Circle.html
    Purpose: Welcoming statement for values and collective purpose
 */
@@ -24,7 +24,10 @@
   font-style: italic;
 }
 
-/* 🪑 Founding Seats Section */
+/* 🪑 Founding Seat Cards
+   Used in: Founding-Circle.html
+   Purpose: Personal reflections & onboarding stories
+*/
 .founding-seats {
   padding: 60px 30px;
   background-color: var(--eggshell);
@@ -49,23 +52,27 @@
 }
 
 .founding-seat h3 {
-  font-size: 26px;
+  font-size: 1.625rem; /* 26px */
   color: var(--deep-plum);
   margin-bottom: 10px;
 }
 
 .founding-seat p {
-  font-size: 19px;
+  font-size: 1.1875rem; /* ~19px */
   line-height: 1.6;
   color: var(--text-dark);
   margin-bottom: 16px;
 }
 
+/* 🔗 Founding Circle Resource Links
+   Used in: Founding-Circle.html
+   Purpose: Navigational anchors to deeper stories or shared values
+*/
 .founding-links {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
 }
 
 .founding-links li {
@@ -82,291 +89,4 @@
 .founding-links a:hover {
   color: var(--deep-plum);
   text-decoration: underline;
-}
-
-/* 📖 Survivor Journal Introduction */
-.journal-intro {
-  background-color: var(--eggshell);
-  padding: 60px clamp(30px, 6vw, 80px);
-  text-align: left;
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-}
-
-.journal-intro h2 {
-  font-size: 2.25rem; /* 36px */
-  color: var(--deep-plum);
-  margin-bottom: 12px;
-}
-
-.journal-intro p {
-  font-size: 1.25rem; /* 20px */
-  font-style: italic;
-  color: var(--text-dark);
-  opacity: 0.95;
-}
-
-/* 📘 Survivor Journal Book Layout */
-#journal-book {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 60px clamp(30px, 6vw, 80px);
-  color: var(--dignity-cream);
-}
-
-.journal-spread {
-  display: none;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.journal-spread.active {
-  display: flex;
-}
-
-.journal-page {
-  flex: 1 1 48%;
-  background-color: var(--dignity-cream);
-  padding: 30px;
-  border-left: 6px solid var(--resilience-teal);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-radius: 12px;
-}
-
-.journal-page h3 {
-  font-size: 1.5rem; /* 24px */
-  color: var(--deep-plum);
-  margin-bottom: 12px;
-}
-
-.journal-page p {
-  font-size: 1.125rem; /* 18px */
-  line-height: 1.8;
-  color: var(--text-dark);
-}
-
-.journal-tags {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.journal-tags li {
-  display: inline-block;
-  background-color: var(--resilience-teal);
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  margin-right: 8px;
-}
-
-/* 📘 Navigation Buttons */
-.journal-nav {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.journal-nav button {
-  font-size: 1.5rem; /* 24px */
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: var(--resilience-teal);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.journal-nav button:hover {
-  background-color: var(--deep-plum);
-}
-
-.journal-nav button:focus {
-  outline: 2px solid var(--connection-purple);
-  outline-offset: 2px;
-}
-
-/* 🖊️ Journal Submission Form */
-.journal-form {
-  background-color: var(--eggshell);
-  padding: 60px clamp(30px, 6vw, 80px);
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-}
-
-.journal-form h2 {
-  font-size: 1.875rem; /* 30px */
-  color: var(--deep-plum);
-  margin-bottom: 20px;
-}
-
-.journal-form p {
-  font-size: 1.125rem; /* 18px */
-  color: var(--text-dark);
-  margin-bottom: 30px;
-}
-
-.journal-form label {
-  display: block;
-  font-size: 1rem; /* 16px */
-  margin-bottom: 8px;
-  color: var(--deep-plum);
-}
-
-.journal-form input,
-.journal-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 6px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-.checkbox-group label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-#other-topic-text {
-  margin-top: 10px;
-}
-
-.journal-form button {
-  background-color: var(--resilience-teal);
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.125rem; /* 18px */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.journal-form button:hover {
-  background-color: var(--deep-plum);
-}
-
-.confirmation-message {
-  font-size: 1rem; /* 16px */
-  color: var(--healing-green);
-  margin-top: 20px;
-  font-style: italic;
-}
-
-/* 📢 Social Share Block */
-.social-share {
-  padding: 60px clamp(30px, 6vw, 80px);
-  background-color: #fdf8f4;
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  border-radius: 8px;
-  max-width: 900px;
-  margin: 60px auto;
-}
-
-.share-title {
-  font-size: 28px;
-  color: var(--healing-green);
-  margin-bottom: 12px;
-  font-weight: 700;
-}
-
-.share-text {
-  font-size: 1.75rem; /* 28px */
-  color: #444;
-  margin-bottom: 24px;
-}
-
-.share-buttons a {
-  display: inline-block;
-  margin: 0.3rem;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  background-color: var(--resilience-teal);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.share-buttons a:hover {
-  background-color: var(--healing-green);
-}
-
-/* 📱 Mobile Adjustments */
-@media (max-width: 768px) {
-  .founding-seat {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .founding-intro h2 {
-    font-size: 1.75rem; /* 28px */
-  }
-
-  .founding-intro p {
-    font-size: 1.125rem; /* 18px */
-  }
-
-  .journal-spread {
-    flex-direction: column;
-  }
-
-  .journal-page {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-  .journal-page h3 {
-    font-size: 1.25rem; /* 20px */
-  }
-
-  .journal-page p {
-    font-size: 1rem; /* 16px */
-  }
-
-  .journal-form {
-    padding: 40px 20px;
-  }
-
-  .journal-form h2 {
-    font-size: 1.5rem; /* 24px */
-  }
-
-  .journal-form p,
-  .journal-form label {
-    font-size: 1rem; /* 16px */
-  }
-
-  .journal-form input,
-  .journal-form textarea {
-    font-size: 1rem; /* 16px */
-  }
-
-  .journal-tags li {
-    font-size: 1rem; /* 16px */
-    padding: 6px 12px;
-  }
-
-  .social-share {
-    padding: 40px 20px;
-  }
-
-  .share-title {
-    font-size: 1.5rem; /* 24px */
-  }
-
-  .share-text {
-    font-size: 1rem; /* 16px */
-  }
-
-  .share-buttons a {
-    font-size: 1rem; /* 16px */
-    padding: 0.5rem 0.8rem;
-  }
 }
