@@ -1,4 +1,4 @@
-/* 🌱 Theme Colors & Global Variables
+/* 🌈 Theme Colors & Global Variables
    Used in: All pages
    Purpose: Defines brand color palette for consistency and emotional resonance
 */
@@ -52,7 +52,7 @@ a:hover {
 
 /* 🧩 Utility Classes & Resets
    Used in: Throughout components
-   Purpose: Small reusable helpers and resets
+   Purpose: Small reusable helpers and structural resets
 */
 .text-center {
   text-align: center;
@@ -66,17 +66,3 @@ a:hover {
   font-weight: bold;
   color: var(--deep-plum);
 }
-
-:root {
-  --breakpoint-mobile: 768px;
-}
-
-.iframe-responsive {
-  width: 100%;
-  max-width: 1000px;
-  height: 520px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  display: block;
-}
-
