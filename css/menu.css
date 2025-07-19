@@ -1,15 +1,6 @@
-/* ✅ Force Left Alignment for Accordion Content */
-.accordion-content,
-.accordion-content p,
-.accordion-list,
-.accordion-list ul,
-.accordion-list ul li {
-  text-align: left;
-}
-
-/* 🍽️ Menu Page Container
+/* 🍽️ Menu Page Section Container
    Used in: menu.html
-   Purpose: Overall layout and spacing for the full menu section
+   Purpose: Provides structure and spacing for the entire menu content
 */
 .menu-section {
   padding: 60px 30px;
@@ -20,17 +11,17 @@
 
 /* 🧾 Menu Title & Subtext
    Used in: menu.html
-   Purpose: Menu page headers with emotional branding
+   Purpose: Emotional branding above product cards
 */
 .menu-section h1 {
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
   font-weight: 700;
   color: var(--deep-plum);
   margin-bottom: 20px;
 }
 
 .menu-subtext {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-style: italic;
   color: var(--text-dark);
   margin-bottom: 40px;
@@ -38,7 +29,7 @@
 
 /* ☕ Menu Grid Layout
    Used in: menu.html
-   Purpose: Organizes menu items in responsive columns
+   Purpose: Responsive layout for drink items, bundles, categories
 */
 .menu-grid {
   display: grid;
@@ -47,9 +38,9 @@
   margin-bottom: 60px;
 }
 
-/* 🧋 Individual Item Card
+/* 🧋 Individual Menu Cards
    Used in: menu.html
-   Purpose: Visual styling for drinks, bundles, and pricing blocks
+   Purpose: Visual styling for drinks, bundles, pricing blocks
 */
 .menu-card {
   background-color: var(--dignity-cream);
@@ -66,7 +57,10 @@
   transform: translateY(-3px);
 }
 
-/* 🎨 Item Title, Description, Price */
+/* 🎨 Menu Card Content
+   Used in: menu.html
+   Purpose: Text structure inside each drink or bundle card
+*/
 .menu-card h3 {
   font-size: 1.375rem; /* 22px */
   color: var(--deep-plum);
@@ -81,11 +75,14 @@
 
 .menu-price {
   font-weight: bold;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   color: var(--india-green);
 }
 
-/* 🟢 Optional: Seasonal or Featured Modifier */
+/* 🟢 Seasonal & Featured Styles
+   Used in: menu.html
+   Purpose: Color-coded modifiers for seasonal or spotlight items
+*/
 .menu-card--seasonal {
   border-left-color: var(--healing-green);
 }
@@ -94,12 +91,10 @@
   border-left-color: var(--connection-purple);
 }
 
-/* 🧋 Individual Item Card
+/* 📖 Accordion Triggers
    Used in: menu.html
-   Purpose: Visual styling for drinks, bundles, and pricing blocks
+   Purpose: Expandable filters or long-form details
 */
-
-/* ☕ Accordion Trigger Button */
 .accordion {
   background-color: var(--mocha-brown);
   color: #fff;
@@ -107,16 +102,20 @@
   padding: 20px;
   width: 100%;
   text-align: left;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   font-weight: bold;
   border-left: 8px solid var(--resilience-teal);
-  transition: background-color 0.3s ease, color 0.3s ease;
   margin: 30px 0;
   border-radius: 6px;
   position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 🔽 Arrow Indicator */
+.accordion:hover {
+  background-color: var(--deep-plum);
+  color: #fff;
+}
+
 .accordion::after {
   content: "▼";
   position: absolute;
@@ -127,57 +126,25 @@
   font-size: 1rem;
 }
 
-/* 🔼 Arrow Flip on Active */
 .accordion.active::after {
   transform: translateY(-50%) rotate(180deg);
 }
 
-/* 📦 Accordion Content Container */
+/* 📦 Accordion Expanded Content
+   Used in: menu.html
+   Purpose: Nested visibility for extended descriptions or bundles
+*/
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.3s ease-out;
-  background-color: var(--eggshell);
   padding: 0 20px;
   border-left: 8px solid var(--resilience-teal);
   border-radius: 0 0 6px 6px;
+  background-color: var(--eggshell);
+  transition: max-height 0.4s ease-out, padding 0.3s ease-out;
 }
 
-/* 📖 Expanded State Padding */
 .accordion.active + .accordion-content {
   padding: 20px;
 }
 
-.accordion-content {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
-}
-
-/* 🖱️ Hover State */
-.accordion:hover {
-  background-color: var(--deep-plum);
-  color: #fff;
-}
-
-/* 📦 Accordion Content Container */
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.3s ease-out;
-  background-color: var(--eggshell);
-  padding: 0 20px;
-  border-left: 8px solid var(--resilience-teal);
-  border-radius: 0 0 6px 6px;
-}
-
-.accordion {
-  text-indent: -0.25rem;
-  padding-left: 2.25rem; /* creates space for emoji */
-}
-
-.share-note {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: var(--deep-plum);
-}
