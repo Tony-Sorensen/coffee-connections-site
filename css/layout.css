@@ -9,32 +9,79 @@
   box-sizing: border-box;
 }
 
-/* 📜 Mission Block (Single Column)
+/* 🧠 Mission Grid Container
    Used in: index.html
-   Purpose: Shows mission text in a full-width block
+   Purpose: Positions mission video and founder text side-by-side
 */
 .mission-grid {
-  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1800px;
   margin: 40px auto;
   padding: 20px 40px;
   border-top: 2px solid #ccc;
   box-sizing: border-box;
 }
 
-.mission-grid h2 {
+/* 🎥 Mission Left Column (Video & Caption)
+   Used in: index.html
+   Purpose: Displays embedded video and intro message
+*/
+.mission-left {
+  flex: 1 1 55%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 20px;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.video-caption {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+  color: var(--deep-plum);
+}
+
+/* 💜 Mission Right Column (Founder Statement)
+   Used in: index.html
+   Purpose: Displays mission philosophy and personal story
+*/
+.mission-right {
+  flex: 1 1 45%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.mission-right h2 {
   font-size: 2rem;
   color: var(--deep-plum);
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
-.mission-grid p {
+.mission-right p {
   font-size: 1.1875rem;
   line-height: 1.75;
   color: var(--text-dark);
   font-style: normal;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .founder-name {
@@ -42,7 +89,6 @@
   font-style: italic;
   font-size: 1.125rem;
   margin-top: 12px;
-  text-align: center;
 }
 
 /* 🌿 Section Layout Padding */
@@ -50,6 +96,10 @@
 #founding-circle,
 #survivor-journal {
   padding: 40px clamp(20px, 4vw, 60px);
+}
+
+.mission-grid {
+  border-bottom: 2px solid rgba(0,0,0,0.03);
 }
 
 /* 🔲 Section Borders and Rhythm */
