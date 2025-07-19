@@ -9,79 +9,50 @@
   box-sizing: border-box;
 }
 
-/* 📐 Mission Grid Container
-   Used in: index.html, Our-Mission.html
-   Purpose: Positions mission video and founder text side by side
+/* 📜 Mission Block (Single Column)
+   Used in: index.html
+   Purpose: Shows mission text in a full-width block
 */
 .mission-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: start;
-  max-width: 1800px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 20px 40px;
   border-top: 2px solid #ccc;
   box-sizing: border-box;
 }
 
-/* 🧩 Mission Grid Columns
-   Used in: index.html
-   Purpose: Layout for video and text blocks
-*/
-.mission-left,
-.mission-right {
-  flex: 1 1 55%;
-  min-width: 300px;
-  box-sizing: border-box;
-}
-
-/* 📺 Video Wrapper (MP4 or iframe)
-   Used in: index.html, Our-Mission.html
-   Purpose: Ensures proper sizing and margin for hero videos
-*/
-.video-wrapper {
-  width: 100%;
-  max-width: 1000px;        /* Give it a bit more horizontal room */
-  aspect-ratio: 16 / 8.5;    /* Slightly taller than 16:9 */
-  margin: 0 auto 40px;
-}
-
-.video-wrapper iframe,
-.video-wrapper video {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-/* 💬 Video Caption
-   Used in: index.html, Our-Mission.html
-   Purpose: Emotional framing under welcome video
-*/
-.video-caption {
-  font-size: 18px;
-  text-align: center;
-  margin-top: 12px;
-  font-style: italic;
+.mission-grid h2 {
+  font-size: 2rem;
   color: var(--deep-plum);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* 🌿 Section Layout Padding
-   Used in: Founding-Circle.html, index.html
-   Purpose: Provides consistency across lower-half modules
-*/
+.mission-grid p {
+  font-size: 1.1875rem;
+  line-height: 1.75;
+  color: var(--text-dark);
+  font-style: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.founder-name {
+  display: block;
+  font-style: italic;
+  font-size: 1.125rem;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* 🌿 Section Layout Padding */
 .social-share,
 #founding-circle,
 #survivor-journal {
   padding: 40px clamp(20px, 4vw, 60px);
 }
 
-/* 🔲 Section Borders and Rhythm
-   Used in: index.html, Founding-Circle.html
-   Purpose: Emotional pacing between major blocks
-*/
+/* 🔲 Section Borders and Rhythm */
 .social-share {
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
@@ -89,30 +60,5 @@
 #founding-circle {
   margin-top: 40px;
   border-top: 2px solid rgba(0, 0, 0, 0.05);
-}
-
-/* 🕊️ Survivor Journal Block
-   Used in: Founding-Circle.html
-   Purpose: Showcases quiet testimonials and reader stories
-*/
-#survivor-journal {
-  background-color: var(--dignity-cream);
-  border-left: 8px solid var(--resilience-teal);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  margin-top: 40px;
-}
-
-#survivor-journal h2 {
-  font-size: 1.75rem;
-  color: var(--deep-plum);
-  margin-bottom: 20px;
-}
-
-#survivor-journal .journal-entry {
-  font-size: 1.125rem;
-  line-height: 1.75;
-  color: var(--text-dark);
-  font-style: italic;
-  margin-bottom: 24px;
 }
 
