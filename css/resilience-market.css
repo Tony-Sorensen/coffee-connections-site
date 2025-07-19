@@ -1,6 +1,6 @@
 /* 🎨 Mission-Aligned Colors
    Used in: Resilience-Market.html
-   Purpose: Establish warm neutral tones for background
+   Purpose: Ensures warm tones for all storefront sections
 */
 :root {
   --dignity-cream: #F6F2EC;
@@ -21,22 +21,27 @@
   margin: 40px 0;
 }
 
-/* 🎨 Product Card Styling (Unified)
+/* 🎨 Product Card Styling
    Used in: All storefront sections
-   Purpose: Defines structure and interaction for every item card
+   Purpose: Defines structure and hover state for item cards
 */
 .product-card {
-  background-color: var(--dignity-cream); /* Refactored from #ffffff */
+  background-color: var(--dignity-cream);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* 🖼️ Product Image Presentation
-   Used in: All storefront cards
-   Purpose: Ensures visuals are soft and responsive
+.product-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+/* 🖼️ Product Images
+   Used in: product-card
+   Purpose: Soft visuals with responsive behavior
 */
 .product-image {
   max-width: 100%;
@@ -47,17 +52,17 @@
 }
 
 /* 🧾 Product Text Elements
-   Used in: All cards
-   Purpose: Title, description, and price structure
+   Used in: product-card
+   Purpose: Title, description, and pricing
 */
 .product-card h3 {
-  font-size: 1.375rem; /* 22px */
+  font-size: 1.375rem;
   color: var(--deep-plum);
   margin-bottom: 10px;
 }
 
 .product-card p {
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   color: var(--text-dark);
   line-height: 1.6;
   margin-bottom: 12px;
@@ -65,13 +70,13 @@
 
 .price {
   font-weight: bold;
-  1.125rem	font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   color: var(--india-green);
 }
 
-/* 🟢 Category-Specific Accent Borders
-   Used in: grid-resilience, grid-pages, grid-sip, grid-voices
-   Purpose: Reinforce thematic advocacy tones
+/* 🟢 Category-Specific Borders
+   Used in: storefront sections
+   Purpose: Reinforces thematic storytelling
 */
 .grid-resilience .product-card {
   border-left: 6px solid var(--healing-green);
@@ -86,39 +91,28 @@
   border-left: 6px solid var(--viridian);
 }
 
-/* 💥 Hover Depth Animation
-   Used in: All storefront sections
-   Purpose: Adds organic movement on hover
-*/
-.product-card:hover {
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  transform: translateY(-3px);
-}
-
 /* 🔘 CTA Buttons for Store Actions
-   Used in: Each storefront card
-   Purpose: Guide users toward meaningful engagement
+   Used in: Each product-card
+   Purpose: Drives engagement with warm contrast
 */
 .product-card .cta {
   display: inline-block;
   padding: 10px 18px;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   font-weight: bold;
-  color: var(--deep-plum); /* Refactored from #ffffff */
-  background-color: var(--dignity-cream); /* Warm replacement for default white */
+  background-color: var(--dignity-cream);
+  color: var(--deep-plum);
   border-radius: 6px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🎯 Mission-Themed CTA Backgrounds
-   Used in: Each grid collection
-   Purpose: Visual storytelling through color
+/* 🎯 CTA Background by Collection
+   Used in: grid-resilience, etc.
+   Purpose: Mission-aligned color coding
 */
-.grid-resilience .cta {
-  background-color: var(--resilience-teal);
-}
+.grid-resilience .cta,
 .grid-sip .cta {
   background-color: var(--resilience-teal);
 }
@@ -129,9 +123,9 @@
   background-color: var(--viridian);
 }
 
-/* ✨ CTA Hover Interaction
-   Used in: All storefront cards
-   Purpose: Encourages engagement while preserving warmth
+/* ✨ CTA Hover State
+   Used in: product-card
+   Purpose: Warm call-to-action cue
 */
 .product-card .cta:hover {
   background-color: var(--deep-plum);
