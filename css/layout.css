@@ -44,8 +44,8 @@
 .video-wrapper {
   width: 100%;
   max-width: 1200px;
-  aspect-ratio: 16 / 9;
-  margin: 0 auto 20px;
+  height: 580px;
+  margin: 0 auto 40px;
 }
 
 .video-wrapper iframe,
