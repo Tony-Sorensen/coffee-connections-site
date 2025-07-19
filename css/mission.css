@@ -1,6 +1,6 @@
-/* 📜 Mission Intro Hero
+/* 📜 Mission Hero Block
    Used in: Our-Mission.html
-   Purpose: Welcoming block with main headline and subtext
+   Purpose: Opening headline + context-setting subtext
 */
 .mission-hero {
   background-color: var(--dignity-cream);
@@ -10,7 +10,7 @@
 }
 
 .mission-hero h1 {
-  font-size: 2.375rem; /* 38px */
+  font-size: 2.375rem;
   line-height: 1.4;
   font-weight: 700;
   color: var(--deep-plum);
@@ -19,7 +19,7 @@
 }
 
 .mission-subtext {
-  font-size: 1.375rem; /* 22px */
+  font-size: 1.375rem;
   line-height: 1.8;
   color: var(--text-dark);
   max-width: 900px;
@@ -30,7 +30,7 @@
 
 /* 🎯 Mission Pillars List
    Used in: Our-Mission.html
-   Purpose: Highlighting key commitments through styled blocks
+   Purpose: Key commitments presented as styled blocks
 */
 .mission-pillars {
   background-color: var(--eggshell);
@@ -41,7 +41,7 @@
 }
 
 .mission-pillars h2 {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;
   margin-bottom: 35px;
   color: var(--deep-plum);
   font-weight: 700;
@@ -52,7 +52,7 @@
   padding: 0;
   margin: 0 auto;
   max-width: 900px;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 
@@ -73,9 +73,9 @@
   transform: translateY(-2px);
 }
 
-/* 🧠 Side-by-Side Mission Layout
+/* 🧠 Side-by-Side Mission Grid
    Used in: Our-Mission.html
-   Purpose: Left side = video + intro. Right side = personal message.
+   Purpose: Video intro and founder statement pairing
 */
 .mission-grid {
   display: flex;
@@ -87,12 +87,17 @@
   background-color: var(--dignity-cream);
 }
 
-/* 🌿 Left Column — Video + Welcome */
 .mission-left {
   flex: 1 1 48%;
   max-width: 600px;
 }
 
+.mission-right {
+  flex: 1 1 48%;
+  max-width: 800px;
+}
+
+/* 🌿 Welcome Video Styling */
 .video-wrapper {
   aspect-ratio: 16 / 9;
   max-width: 800px;
@@ -107,7 +112,7 @@
 }
 
 .video-caption {
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   font-style: italic;
   color: var(--deep-plum);
   margin-bottom: 16px;
@@ -116,58 +121,62 @@
 
 /* 💬 Mission Welcome Text */
 .mission-left h2 {
-  font-size: 1.625rem; /* 26px */
+  font-size: 1.625rem;
   margin-bottom: 12px;
   color: var(--deep-plum);
 }
 
 .mission-left p {
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   line-height: 1.75;
   color: var(--text-dark);
 }
 
-/* 💜 Right Column — Founder Statement */
-.mission-right {
-  flex: 1 1 48%;
-  max-width: 800px;
-}
-
+/* 💜 Founder Statement Text */
 .mission-right h2 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
   margin-bottom: 12px;
   color: var(--deep-plum);
 }
 
 .mission-right p {
-  font-size: 1.375rem; /* 22px */
+  font-size: 1.375rem;
   line-height: 1.75;
   color: var(--text-dark);
 }
 
-/* 📱 Mobile Stack */
-@media (max-width: 768px) {
-  .mission-grid {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .mission-left,
-  .mission-right {
-    max-width: 100%;
-  }
+/* 💌 Invitation to Engage
+   Used in: Our-Mission.html
+   Purpose: End-of-page community action prompt
+*/
+.mission-invitation {
+  text-align: center;
+  background-color: var(--dignity-cream);
+  padding: 50px 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
 }
 
-/* ✨ Founders' Message Block
+.mission-invitation h2 {
+  font-size: 1.75rem;
+  color: var(--deep-plum);
+  margin-bottom: 15px;
+}
+
+.mission-invitation p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+/* ✨ Founders' Message Highlight Block
    Used in: Founding-Circle.html
-   Purpose: Personal statement container with emotional tone
+   Purpose: Emotional quote-based narrative statement
 */
 .mission-founders {
   background-color: var(--dignity-cream);
   padding: 60px 30px;
   border-left: 8px solid var(--resilience-teal);
   font-style: italic;
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   line-height: 1.8;
   color: var(--text-dark);
   max-width: 900px;
@@ -183,24 +192,15 @@
   margin-bottom: 8px;
 }
 
-/* 💌 Invitation to Engage
-   Used in: Our-Mission.html
-   Purpose: CTA block to invite community action
-*/
-.mission-invitation {
-  text-align: center;
-  background-color: var(--dignity-cream);
-  padding: 50px 30px;
-  border-top: 2px solid rgba(0, 0, 0, 0.04);
-}
+/* 📱 Responsive Mission Grid Adjustments */
+@media (max-width: 768px) {
+  .mission-grid {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
 
-.mission-invitation h2 {
-  font-size: 1.75rem; /* 28px */
-  color: var(--deep-plum);
-  margin-bottom: 15px;
-}
-
-.mission-invitation p {
-  font-size: 1.125rem; /* 18px */
-  margin-bottom: 20px;
+  .mission-left,
+  .mission-right {
+    max-width: 100%;
+  }
 }
