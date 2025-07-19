@@ -51,7 +51,6 @@
 .video-wrapper iframe,
 .video-wrapper video {
   width: 100%;
-  height: auto;
   border-radius: 10px;
   display: block;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
