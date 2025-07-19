@@ -1,7 +1,6 @@
-/* 📱 Mobile Adjustments: Navigation, Headers
+/* 📱 Layout Adjustments (≤768px)
    Used in: All pages
-   Breakpoint: max-width 768px
-   Purpose: Stack nav buttons, simplify layout
+   Purpose: Stack navigation, simplify mission layout
 */
 @media (max-width: 768px) {
   .header-grid {
@@ -24,24 +23,40 @@
     padding: 10px;
     font-size: 1rem;
   }
-}
 
-/* 🧱 Layout Container Adjustments
-   Used in: All pages
-   Breakpoint: max-width 768px
-   Purpose: Reduce horizontal padding and prevent overflow
-*/
-@media (max-width: 768px) {
   .main-layout {
-    flex-direction: column;
     padding: 20px;
     max-width: 100%;
-    overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .main-content {
     padding: 20px;
+  }
+
+  /* 📺 Mission Grid Responsive Stack */
+  .mission-grid {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .mission-left,
+  .mission-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mission-right h2,
+  .mission-right p,
+  .video-caption {
+    text-align: center;
   }
 
   img,
@@ -52,40 +67,13 @@
   }
 }
 
-/* 🧠 Two-Column Stacking
-   Used in: mission-grid, origin-grid
-   Breakpoint: max-width 768px
-   Purpose: Converts side-by-side sections to vertical
-*/
-@media (max-width: 768px) {
-  .mission-grid,
-  .mission-origin {
-    flex-direction: column;
-    padding: 40px 20px;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-
-  .origin-left,
-  .origin-right,
-  .video-cell,
-  .mission-cell {
-    width: 100%;
-  }
-}
-
-/* 📘 Journal Form Mobile Layout
+/* 📘 Journal Form Layout (≤600px)
    Used in: Pages-of-Healing.html
-   Breakpoint: max-width 600px
-   Purpose: Comfort and clarity for story submissions
 */
 @media (max-width: 600px) {
   .journal-form {
     padding: 40px 20px;
-    width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 
   .journal-form h2 {
@@ -93,10 +81,7 @@
   }
 
   .journal-form p,
-  .journal-form label {
-    font-size: 1rem;
-  }
-
+  .journal-form label,
   .journal-form input,
   .journal-form textarea {
     font-size: 1rem;
@@ -117,11 +102,7 @@
   }
 }
 
-/* 🪑 Founding Seats Responsive Updates
-   Used in: Founding-Circle.html
-   Breakpoint: max-width 768px
-   Purpose: Preserves clarity in testimonial layout
-*/
+/* 🪑 Founding Seats (≤768px) */
 @media (max-width: 768px) {
   .founding-seat {
     margin: 20px;
@@ -139,11 +120,7 @@
   }
 }
 
-/* 📢 Social Sharing Responsiveness
-   Used in: Founding-Circle.html
-   Breakpoint: max-width 768px
-   Purpose: Keeps outreach easy to engage with
-*/
+/* 📢 Social Sharing (≤768px) */
 @media (max-width: 768px) {
   .social-share {
     padding: 40px 20px;
@@ -163,11 +140,7 @@
   }
 }
 
-/* 📱 Final Mobile Catch-All
-   Used in: All pages
-   Breakpoint: max-width 480px
-   Purpose: Ensures text remains readable on tiny screens
-*/
+/* 📱 Final Catch-All (≤480px) */
 @media (max-width: 480px) {
   body {
     font-size: 1rem;
@@ -189,10 +162,10 @@
   .journal-form,
   .founding-seat {
     padding: 10px;
-    max-width: 100%;
     box-sizing: border-box;
   }
 }
+
 
 
 
