@@ -1,6 +1,7 @@
-/* 📱 Global Grid & Layout Adjustments
+/* 📱 Mobile Adjustments: Navigation, Headers
    Used in: All pages
-   Purpose: Ensures header, nav, and content stack cleanly on smaller screens
+   Breakpoint: max-width 768px
+   Purpose: Stack nav buttons, simplify layout
 */
 @media (max-width: 768px) {
   .header-grid {
@@ -23,14 +24,20 @@
     padding: 10px;
     font-size: 1rem;
   }
+}
 
+/* 🧱 Layout Container Adjustments
+   Used in: All pages
+   Breakpoint: max-width 768px
+   Purpose: Reduce horizontal padding and prevent overflow
+*/
+@media (max-width: 768px) {
   .main-layout {
     flex-direction: column;
     padding: 20px;
-    width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
     overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .main-content {
@@ -45,9 +52,10 @@
   }
 }
 
-/* 🧱 Two-Column Sections Become Stacked
+/* 🧠 Two-Column Stacking
    Used in: mission-grid, origin-grid
-   Purpose: Ensures readability on phones and tablets
+   Breakpoint: max-width 768px
+   Purpose: Converts side-by-side sections to vertical
 */
 @media (max-width: 768px) {
   .mission-grid,
@@ -55,9 +63,8 @@
     flex-direction: column;
     padding: 40px 20px;
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
     overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .origin-left,
@@ -70,33 +77,33 @@
 
 /* 📘 Journal Form Mobile Layout
    Used in: Pages-of-Healing.html
+   Breakpoint: max-width 600px
    Purpose: Comfort and clarity for story submissions
 */
 @media (max-width: 600px) {
   .journal-form {
     padding: 40px 20px;
     width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
   }
 
   .journal-form h2 {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
   }
 
   .journal-form p,
   .journal-form label {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
   }
 
   .journal-form input,
   .journal-form textarea {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
   }
 
   .journal-tags li {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
     padding: 6px 12px;
   }
 
@@ -112,30 +119,54 @@
 
 /* 🪑 Founding Seats Responsive Updates
    Used in: Founding-Circle.html
-   Purpose: Preserves layout clarity and spacing
+   Breakpoint: max-width 768px
+   Purpose: Preserves clarity in testimonial layout
 */
 @media (max-width: 768px) {
   .founding-seat {
     margin: 20px;
     padding: 20px;
     width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 
   .founding-intro h2 {
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.75rem;
   }
 
   .founding-intro p {
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
+  }
+}
+
+/* 📢 Social Sharing Responsiveness
+   Used in: Founding-Circle.html
+   Breakpoint: max-width 768px
+   Purpose: Keeps outreach easy to engage with
+*/
+@media (max-width: 768px) {
+  .social-share {
+    padding: 40px 20px;
+  }
+
+  .share-title {
+    font-size: 1.5rem;
+  }
+
+  .share-text {
+    font-size: 1rem;
+  }
+
+  .share-buttons a {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
   }
 }
 
 /* 📱 Final Mobile Catch-All
    Used in: All pages
-   Purpose: Ensures clean layout and readability on very small screens
+   Breakpoint: max-width 480px
+   Purpose: Ensures text remains readable on tiny screens
 */
 @media (max-width: 480px) {
   body {
@@ -158,11 +189,10 @@
   .journal-form,
   .founding-seat {
     padding: 10px;
-    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 }
+
 
 
