@@ -1,6 +1,6 @@
 /* 🧱 Main Page Layout Container
    Used in: All pages
-   Purpose: Wraps content with horizontal padding and width control
+   Purpose: Wraps primary content blocks with width and padding control
 */
 .main-layout {
   margin: 0 auto;
@@ -9,9 +9,9 @@
   box-sizing: border-box;
 }
 
-/* 📐 Mission Grid Layout
+/* 📐 Mission Grid Container
    Used in: index.html, Our-Mission.html
-   Purpose: Displays video and mission statement side by side
+   Purpose: Positions mission video and founder text side by side
 */
 .mission-grid {
   display: flex;
@@ -28,7 +28,7 @@
 
 /* 🧩 Mission Grid Columns
    Used in: index.html
-   Purpose: Defines sizing for left and right content blocks
+   Purpose: Layout for video and text blocks
 */
 .mission-left,
 .mission-right {
@@ -37,41 +37,29 @@
   box-sizing: border-box;
 }
 
-/* 📺 Direct Video Wrapper Layout
+/* 📺 Video Wrapper (MP4 or iframe)
    Used in: index.html, Our-Mission.html
-   Purpose: Contains hero videos with proper sizing
+   Purpose: Ensures proper sizing and margin for hero videos
 */
 .video-wrapper {
   width: 100%;
   max-width: 900px;
   aspect-ratio: 16 / 9;
   margin: 0 auto 20px;
-  border-radius: 10px;
 }
 
+.video-wrapper iframe,
 .video-wrapper video {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
   border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* 🎥 Responsive Video Embed
-   Used in: Our-Mission.html
-   Purpose: Ensures Vimeo/Youtube iframe videos scale properly
-*/
-.responsive-iframe iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  border: none;
-}
-
-/* 💬 Caption Below Video
+/* 💬 Video Caption
    Used in: index.html, Our-Mission.html
-   Purpose: Small text note below video embeds
+   Purpose: Emotional framing under welcome video
 */
 .video-caption {
   font-size: 18px;
@@ -81,9 +69,9 @@
   color: var(--deep-plum);
 }
 
-/* 💬 Section Layout Padding
-   Used in: index.html, Founding-Circle.html
-   Purpose: Ensures breathing room across supporting sections
+/* 🌿 Section Layout Padding
+   Used in: Founding-Circle.html, index.html
+   Purpose: Provides consistency across lower-half modules
 */
 .social-share,
 #founding-circle,
@@ -91,9 +79,9 @@
   padding: 40px clamp(20px, 4vw, 60px);
 }
 
-/* 🔲 Section Borders & Dividers
+/* 🔲 Section Borders and Rhythm
    Used in: index.html, Founding-Circle.html
-   Purpose: Creates visual rhythm between sections
+   Purpose: Emotional pacing between major blocks
 */
 .social-share {
   border-top: 2px solid rgba(0, 0, 0, 0.05);
@@ -106,12 +94,12 @@
 
 /* 🕊️ Survivor Journal Block
    Used in: Founding-Circle.html
-   Purpose: Highlights community testimonials and journal entries
+   Purpose: Showcases quiet testimonials and reader stories
 */
 #survivor-journal {
   background-color: var(--dignity-cream);
   border-left: 8px solid var(--resilience-teal);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   margin-top: 40px;
 }
 
