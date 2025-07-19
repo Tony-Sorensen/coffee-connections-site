@@ -67,3 +67,6 @@ a:hover {
   color: var(--deep-plum);
 }
 
+:root {
+  --breakpoint-mobile: 768px;
+}
