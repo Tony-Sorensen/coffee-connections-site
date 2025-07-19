@@ -43,9 +43,9 @@
 */
 .video-wrapper {
   width: 100%;
-  max-width: 900px;
-  aspect-ratio: 16 / 9;     /* This sets the wrapper’s height based on width */
-  margin: 0 auto 20px;
+  max-width: 1000px;        /* Give it a bit more horizontal room */
+  aspect-ratio: 16 / 8.5;    /* Slightly taller than 16:9 */
+  margin: 0 auto 40px;
 }
 
 .video-wrapper iframe,
