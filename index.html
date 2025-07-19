@@ -1,218 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
+/* 📝 Journal Form Container
+   Used in: journal.html, pages-of-healing.html
+   Purpose: Wraps user-submitted story form
+*/
+.journal-form {
+  background-color: #f7f2e7;
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: 'Cormorant Garamond', serif;
+}
 
-  <!-- Google tag (gtag.js) -->
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-K0BKM8ZWW8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K0BKM8ZWW8');
-  </script>
+.journal-form h2 {
+  font-size: 1.75rem;
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Trauma-informed café and digital platform in El Paso, offering healing, community, and support." />
+.journal-form p {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-bottom: 24px;
+}
 
-  <!-- ✅ Open Graph Meta Tags -->
-<meta property="og:title" content="Coffee & Connections El Paso" />
-<meta property="og:description" content="A trauma-informed café and app ecosystem built for connection, advocacy, and resilience." />
-<meta property="og:image" content="https://connectionsep.coffee/assets/Social-Media_Preview.png" />
-<meta property="og:url" content="https://connectionsep.coffee" />
-<meta property="og:type" content="website" />
+/* ✍️ Form Labels & Fields
+   Used in: journal-form, newsletter sign-up
+   Purpose: Styling for inputs, labels, text areas
+*/
+.journal-form label {
+  font-size: 1.125rem;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
 
-  <title>Coffee & Connections El Paso</title>
+.journal-form input,
+.journal-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  font-size: 1.125rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
 
-  <!-- Modular CSS Files -->
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/header-footer.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/responsive.css">
+/* 🧩 Optional Field (Dynamic Reveal)
+   Used in: journal-form
+   Purpose: Displayed when “Other” topic is selected
+*/
+#other-topic-text {
+  display: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
 
-</head>
+/* 🏷️ Tag-Based Topic Selection
+   Used in: journal-form
+   Purpose: Expressive category labeling via badges
+*/
+.checkbox-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
 
-<body>
+.journal-tags {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 
-  <!-- 🧁 Header -->
-  <header class="site-header">
-    <div class="header-grid">
-      <div class="logo-cell">
-        <img src="asset/CCEP_SVG.svg" alt="Coffee & Connections logo" class="logo" />
-      </div>
-      <div class="title-cell">
-        <h1>Coffee & Connections</h1>
-        <p class="tagline">Where Coffee Meets Compassion, & Connections Change Lives</p>
-      </div>
-    </div>
-  </header>
+.journal-tags li {
+  background-color: #dcebe2;
+  color: #2f4f4f;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
 
-  <!-- 🧭 Navigation -->
-  <nav class="nav-buttons">
-    <a href="index.html" class="button">Home</a>
-    <a href="menu.html" class="button">Menu</a>
-    <a href="Our-Mission.html" class="button">Our Mission</a>
-    <a href="Founding-Circle.html" class="button">Founding Circle</a>
-  </nav>
+/* ✅ Confirmation Message
+   Used in: form submissions
+   Purpose: Validation feedback after user action
+*/
+.confirmation-message {
+  display: none;
+  color: #2d7634;
+  font-weight: bold;
+  margin-top: 1em;
+  animation: fadeIn 1s ease forwards;
+}
 
-<!-- 🌱 Main Content -->
-<main class="main-layout">
-
-  <!-- 💬 Mission Section -->
-<section class="mission-grid">
-
-  <div class="mission-left">
-    <div class="video-wrapper">
-      <iframe 
-        src="https://player.vimeo.com/video/1102277214" 
-        title="Welcome to Coffee & Connections" 
-        frameborder="0" 
-        allow="autoplay; fullscreen; picture-in-picture" 
-        loading="lazy">
-      </iframe>
-    </div>
-
-    <p class="video-caption">Welcome to Coffee & Connections<br>Your seat is waiting.</p>
-
-    <h2>Our Trauma-Informed Welcome</h2>
-    <p>
-      From layout to tone, everything we design is meant to center dignity, connection, and trust. Whether you’re visiting our café or our digital space, we believe you should feel seen, supported, and safe.
-    </p>
-  </div>
-
-  <div class="mission-right">
-    <h2>Our Mission</h2>
-    <p>
-      Through my own journey with PTSD and mental health struggles, I found a purpose rooted in presence, connection, and care.<br><br>
-      <strong>Coffee & Connections</strong> exists to remind you: <strong>It’s okay NOT to be okay.</strong><br>
-      Here, you’ll find a warm cup of coffee, some comfort food, a bunch of kind people to connect with, a game to play, or simply a quiet corner to reflect with a good book.<br>
-      We don’t let people slip through the cracks—we extend hands, offer ears, and lend voices. Because at Coffee & Connections, radical welcome isn’t just a phrase…<br>
-      <strong>It’s a promise!</strong><br><br>
-      <em class="founder-name">—Tony Sorensen</em><br>
-      <em>Founder, Coffee & Connections</em>
-    </p>
-  </div>
-
-</section>
-
-</main>
-
-    <!-- 📢 SOCIAL SHARING: General Site Share -->
-<section class="social-share">
-  <h3 class="share-title">Share a Sip of Compassion</h3>
-  <p class="share-text">
-    Every voice helps build a space rooted in healing, dignity, and radical welcome. Share this mission with someone who might need it today.
-  </p>
-
-        <div class="share-buttons">
-         <a href="https://www.facebook.com/sharer/sharer.php?u=https://connectionsep.coffee/menu.html" target="_blank">💙 Facebook</a>
-         <a href="https://www.linkedin.com/shareArticle?url=https://connectionsep.coffee/menu.html" target="_blank">🤝 LinkedIn</a>
-         <a href="https://www.threads.net/intent/post?text=Coffee%20as%20compassion.%20Explore%20the%20menu%20at%20Coffee%20%26%20Connections.%20https://connectionsep.coffee/menu.html" target="_blank">🧵 Threads</a>
-         <a href="https://www.instagram.com/coffeeconnectionshub" target="_blank">📸 Instagram</a>
-         <a href="mailto:?subject=Coffee & Connections Menu&body=See how a café can be a sanctuary: https://connectionsep.coffee/menu.html" target="_blank">✉️ Email</a>
-
-         <p class="share-note">
-         Some links let you share this page with your community. Others, like Instagram, help you follow our journey.
-        </p>
-  </div>
-
-    <!-- 🌟 Founding Circle -->
-    <section id="founding-circle">
-      <header>
-        <h2>
-  <a href="Founding-Circle.html" style="color: inherit; text-decoration: none;">
-    The Founding Circle
-  </a>
-        </h2>
-
-        <p>Where lived experience, ethical leadership, and shared healing come to the table.</p>
-      </header>
-
-      <section class="founding-section">
-        <p>This initiative is built by those who don’t just understand trauma, resilience, and radical reinvention<span class="highlight">—they’ve lived it.</span></p>
-        <p>Every seat in this circle honors a voice rooted in hard-earned wisdom...</p>
-        <p>Their contributions go far beyond affiliation—they are co-builders of a movement centered on radical welcome, transparency, and peer-powered healing.</p>
-        <p>Together, these seats offer <span class="highlight">not just recognition—but representation.</span></p>
-
-        <ul class="founding-links">
-          <li><strong>Seat #1:</strong> Veteran Advocate <br><em>[Pending Name]</em></li>
-          <li><strong>Seat #2:</strong> Mental Health Champion <br><em>—</em></li>
-          <li><strong>Seat #3:</strong> Voice of Recovery & Artistry <br><em>—</em></li>
-          <li><strong>Seat #4:</strong> Family Systems Navigator <br><em>—</em></li>
-          <li><strong>Seat #5:</strong> Policy + Practice Partner <br><em>—</em></li>
-          <li><strong>Seat #6:</strong> Founding Supplier & Veteran Believer <br><em>Ben “The Beanfather” Riley</em></li>
-        </ul>
-
-        <p>As each seat is confirmed, this page will reflect those joining us in building this sanctuary space.</p>
-      </section>
-
-      <!-- ⏳ Countdown -->
-      <section id="countdown">
-        <h2>Grand Opening Countdown</h2>
-        <p id="timer">Loading...</p>
-      </section>
-    </section>
-  </main>
-
-  <!-- 🤝 Footer -->
-  <footer>
-    <p>Built with purpose. Created with care. &copy; 2025 Coffee & Connections El Paso</p>
-  </footer>
-
-  <!-- ⌛ Countdown Script -->
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const launchDate = new Date("January 9, 2026 10:00:00").getTime();
-  const timer = document.getElementById("timer");
-
-  if (!timer) return;
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = launchDate - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((distance / (1000 * 60)) % 60);
-    const seconds = Math.floor((distance / 1000) % 60);
-
-    timer.textContent = distance > 0
-      ? `${days}d ${hours}h ${minutes}m ${seconds}s`
-      : "We’re Open!";
-  }
-
-  updateCountdown(); // Initial call
-  setInterval(updateCountdown, 5000); // Update every 5 seconds
-});
-</script>
-
-  <!-- ✨ Scroll Fade Script -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const faders = document.querySelectorAll('.scroll-fade');
-
-  if ('IntersectionObserver' in window) {
-    const appearOptions = {
-      threshold: 0.25,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
-  } else {
-    // Fallback for unsupported browsers
-    faders.forEach(fader => fader.classList.add('visible'));
-  }
-});
-</script>
-
-</body>
-</html>
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
