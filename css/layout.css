@@ -11,7 +11,7 @@
 
 /* 🧠 Mission Grid Container
    Used in: index.html
-   Purpose: Positions mission video and founder text side-by-side
+   Purpose: Positions video (left) and mission statement (right) side-by-side
 */
 .mission-grid {
   display: flex;
@@ -23,12 +23,13 @@
   margin: 40px auto;
   padding: 20px 40px;
   border-top: 2px solid #ccc;
+  border-bottom: 2px solid rgba(0,0,0,0.03);
   box-sizing: border-box;
 }
 
 /* 🎥 Mission Left Column (Video & Caption)
    Used in: index.html
-   Purpose: Displays embedded video and intro message
+   Purpose: Displays Google Drive video embed and intro caption
 */
 .mission-left {
   flex: 1 1 55%;
@@ -39,12 +40,12 @@
 .video-wrapper {
   width: 100%;
   max-width: 900px;
-  aspect-ratio: 16 / 9;
   margin: 0 auto 20px;
 }
 
 .video-wrapper iframe {
   width: 100%;
+  height: 520px;
   border-radius: 10px;
   display: block;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -60,7 +61,7 @@
 
 /* 💜 Mission Right Column (Founder Statement)
    Used in: index.html
-   Purpose: Displays mission philosophy and personal story
+   Purpose: Emotional storytelling and personal philosophy
 */
 .mission-right {
   flex: 1 1 45%;
@@ -91,18 +92,20 @@
   margin-top: 12px;
 }
 
-/* 🌿 Section Layout Padding */
+/* 🌿 Section Layout Padding
+   Used in: index.html
+   Purpose: Creates spacing rhythm for follow-up content
+*/
 .social-share,
 #founding-circle,
 #survivor-journal {
   padding: 40px clamp(20px, 4vw, 60px);
 }
 
-.mission-grid {
-  border-bottom: 2px solid rgba(0,0,0,0.03);
-}
-
-/* 🔲 Section Borders and Rhythm */
+/* 🔲 Section Borders and Rhythm
+   Used in: index.html
+   Purpose: Separates and frames mission-centered modules
+*/
 .social-share {
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
@@ -111,4 +114,5 @@
   margin-top: 40px;
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
+
 
