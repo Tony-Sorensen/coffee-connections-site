@@ -8,6 +8,10 @@
   color: var(--dignity-cream);
 }
 
+/* 📐 Header Grid Layout
+   Used in: All pages
+   Purpose: Organizes logo and title side by side
+*/
 .header-grid {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -49,7 +53,7 @@
 }
 
 /* 🧭 Navigation Button Bar
-   Used in: All pages with nav (index.html, menu.html, etc.)
+   Used in: All pages
    Purpose: Visually organized nav with color-coded buttons
 */
 .nav-buttons {
@@ -62,7 +66,7 @@
 .nav-buttons a {
   padding: 12px 24px;
   font-weight: bold;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   border-radius: 8px;
   text-decoration: none;
   background-color: transparent;
@@ -70,13 +74,13 @@
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-/* 🎯 Focus Visibility */
+/* 🎯 Focus Visibility for Navigation */
 .nav-buttons a:focus {
   outline: 3px solid var(--deep-plum);
   outline-offset: 2px;
 }
 
-/* 🎨 Color-Linked Navigation Buttons */
+/* 🎨 Page-Specific Button Colors */
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
@@ -119,7 +123,7 @@
 
 /* 📱 Responsive Navigation Adjustments
    Used in: All pages on mobile
-   Purpose: Stack nav buttons vertically for smaller screens
+   Purpose: Stack nav buttons vertically
 */
 @media (max-width: 600px) {
   .nav-buttons {
@@ -133,9 +137,9 @@
   }
 }
 
-/* 🤝 Footer Styling Block
+/* 🤝 Footer Styling
    Used in: All pages
-   Purpose: Consistent footer presentation with soft visual hierarchy
+   Purpose: Consistent footer with soft tone
 */
 footer {
   background-color: var(--mocha-brown);
