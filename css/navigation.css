@@ -2,6 +2,7 @@
    Used in: All pages
    Purpose: Holds navigation bar layout
 */
+/*
 .nav-container {
   background-color: var(--eggshell);
   padding: 16px 30px;
@@ -13,6 +14,7 @@
 }
 
 /* 🌐 Top-Level Navigation Bar */
+/*
 .nav-menu {
   display: flex;
   gap: 40px;
@@ -24,6 +26,7 @@
 }
 
 /* 📂 Primary Links */
+/*
 .nav-menu > li {
   position: relative;
 }
@@ -45,6 +48,7 @@
 }
 
 /* 📎 Dropdown Menu Styles */
+/*
 .submenu {
   display: none;
   position: absolute;
@@ -78,8 +82,9 @@
 }
 
 /* ✨ Reveal Dropdown on Hover or Focus */
+/*
 .nav-menu > li:hover .submenu,
 .nav-menu > li:focus-within .submenu {
   display: block;
 }
-
+*/
