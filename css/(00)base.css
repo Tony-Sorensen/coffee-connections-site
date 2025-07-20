@@ -1,18 +1,13 @@
-/* 🛍️ Resilience Market Base Setup
-   Purpose: Establish visual tone and site-wide typographic rhythm
----------------------------------------------------------- */
-body {
-  background-color: var(--eggshell);
-  color: var(--text-dark);
-  font-family: var(--font-main);
-  line-height: 1.7;
-  margin: 0;
-}
-
 /* 🎨 Mission-Aligned Colors
    Purpose: Emotional storytelling via storefront styling
 ---------------------------------------------------------- */
+/* 🎨 Mission-Aligned Theme System */
 :root {
+  /* 🖋️ Font System */
+  --font-main: 'DM Sans', sans-serif;
+  --font-heading: 'Merriweather', serif;
+
+  /* Color Palette */
   --dignity-cream: #F6F2EC;
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -31,6 +26,26 @@ body {
   --plum-veil: #E9E5F8;
 }
 
+/* 🛍️ Resilience Market Base Setup */
+body {
+  background-color: var(--eggshell);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ✨ Header Typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+  /* 🖋️ Font System */
+  --font-main: 'DM Sans', sans-serif;
+  --font-heading: 'Merriweather', serif;
 /* 🌟 Featured Collection Styles
    Target: .featured-collection
 ---------------------------------------------------------- */
