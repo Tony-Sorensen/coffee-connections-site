@@ -2,6 +2,7 @@
    Used in: journal.html, pages-of-healing.html
    Purpose: Wraps user-submitted story form
 */
+/*
 .journal-form {
   background-color: #f7f2e7;
   padding: 60px 30px;
@@ -28,6 +29,7 @@
    Used in: journal-form, newsletter sign-up
    Purpose: Styling for inputs, labels, text areas
 */
+/*
 .journal-form label {
   font-size: 1.125rem;
   display: block;
@@ -52,6 +54,7 @@
    Used in: journal-form
    Purpose: Displayed when “Other” topic is selected
 */
+/*
 #other-topic-text {
   display: none;
   margin-top: 10px;
@@ -62,6 +65,7 @@
    Used in: journal-form
    Purpose: Expressive category labeling via badges
 */
+/*
 .checkbox-group {
   display: flex;
   gap: 20px;
@@ -92,6 +96,7 @@
    Used in: form submissions
    Purpose: Validation feedback after user action
 */
+/*
 .confirmation-message {
   display: none;
   color: #2d7634;
@@ -104,4 +109,4 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
+*/
