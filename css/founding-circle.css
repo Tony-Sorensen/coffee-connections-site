@@ -2,6 +2,7 @@
    Used in: Founding-Circle.html
    Purpose: Welcoming statement for values and collective purpose
 */
+/*
 .founding-intro {
   background-color: var(--dignity-cream);
   padding: 60px 30px;
@@ -11,6 +12,7 @@
 
 .founding-intro h2 {
   font-size: 2.125rem; /* 34px */
+/*
   color: var(--deep-plum);
   font-weight: bold;
   margin-bottom: 15px;
@@ -18,6 +20,7 @@
 
 .founding-intro p {
   font-size: 1.25rem; /* 20px */
+/*
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
@@ -28,6 +31,7 @@
    Used in: Founding-Circle.html
    Purpose: Personal reflections & onboarding stories
 */
+/*
 .founding-seats {
   padding: 60px 30px;
   background-color: var(--eggshell);
@@ -53,26 +57,31 @@
 
 .founding-seat h3 {
   font-size: 1.625rem; /* 26px */
+/*
   color: var(--deep-plum);
   margin-bottom: 10px;
 }
 
 .founding-seat p {
   font-size: 1.1875rem; /* ~19px */
+/*
   line-height: 1.6;
   color: var(--text-dark);
   margin-bottom: 16px;
 }
+*/
 
 /* 🔗 Founding Circle Resource Links
    Used in: Founding-Circle.html
    Purpose: Navigational anchors to deeper stories or shared values
 */
+/*
 .founding-links {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 1.0625rem; /* 17px */
+/*
 }
 
 .founding-links li {
@@ -90,3 +99,4 @@
   color: var(--deep-plum);
   text-decoration: underline;
 }
+*/
