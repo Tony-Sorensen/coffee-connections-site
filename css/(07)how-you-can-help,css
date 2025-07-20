@@ -1,0 +1,36 @@
+/* 🤲 Page Setup: How You Can Help */
+body {
+  background-color: var(--eggshell);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* 🚧 Under Construction Block */
+.page-under-construction {
+  background-color: var(--dignity-cream);
+  padding: 80px 30px;
+  text-align: center;
+  border-left: 6px solid var(--india-green);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 60px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.construction-title {
+  font-size: 1.75rem;     /* 28px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 20px;
+}
+
+.construction-text {
+  font-size: 1.25rem;     /* 20px */
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+}
