@@ -2,6 +2,7 @@
    Used in: All pages
    Purpose: Stack navigation, simplify mission layout
 */
+/*
 @media (max-width: 768px) {
   .header-grid {
     grid-template-columns: 1fr;
@@ -36,6 +37,7 @@
   }
 
   /* 📺 Mission Grid Responsive Stack */
+/*
   .mission-grid {
     flex-direction: column;
     padding: 40px 20px;
@@ -70,6 +72,7 @@
 /* 📘 Journal Form Layout (≤600px)
    Used in: Pages-of-Healing.html
 */
+/*
 @media (max-width: 600px) {
   .journal-form {
     padding: 40px 20px;
@@ -103,6 +106,7 @@
 }
 
 /* 🪑 Founding Seats (≤768px) */
+/*
 @media (max-width: 768px) {
   .founding-seat {
     margin: 20px;
@@ -121,6 +125,7 @@
 }
 
 /* 📢 Social Sharing (≤768px) */
+/*
 @media (max-width: 768px) {
   .social-share {
     padding: 40px 20px;
@@ -141,6 +146,7 @@
 }
 
 /* 📱 Final Catch-All (≤480px) */
+/*
 @media (max-width: 480px) {
   body {
     font-size: 1rem;
@@ -165,7 +171,7 @@
     box-sizing: border-box;
   }
 }
-
+*/
 
 
 
