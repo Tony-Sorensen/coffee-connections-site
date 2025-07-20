@@ -1,0 +1,198 @@
+/* 🛍️ Resilience Market Base Setup
+   Purpose: Establish visual tone and site-wide typographic rhythm
+---------------------------------------------------------- */
+body {
+  background-color: var(--eggshell);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* 🎨 Mission-Aligned Colors
+   Purpose: Emotional storytelling via storefront styling
+---------------------------------------------------------- */
+:root {
+  --dignity-cream: #F6F2EC;
+  /* Other variables like --deep-plum, --resilience-teal, --healing-green, etc. are loaded globally */
+}
+
+/* 🌟 Featured Collection Styles
+   Target: .featured-collection
+---------------------------------------------------------- */
+.featured-collection {
+  text-align: center;
+  padding: 60px 30px;
+  background-color: var(--dignity-cream);
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.featured-collection h2 {
+  font-size: 1.75rem;     /* 28px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 16px;
+}
+
+.featured-collection p {
+  font-size: 1.125rem;    /* 18px */
+  line-height: 1.7;
+  color: var(--text-dark);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* 🧱 Product Grid Layouts
+   Target: All grid sections
+---------------------------------------------------------- */
+.product-grid,
+.grid-resilience,
+.grid-pages,
+.grid-sip,
+.grid-voices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+/* 🎨 Product Card Styling
+   Target: .product-card
+---------------------------------------------------------- */
+.product-card {
+  background-color: var(--dignity-cream);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+/* 🖼️ Product Imagery
+   Target: .product-image
+---------------------------------------------------------- */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* 🧾 Product Typography
+   Target: Titles, descriptions, prices
+---------------------------------------------------------- */
+.product-card h3 {
+  font-size: 1.375rem;    /* 22px */
+  color: var(--deep-plum);
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1.125rem;    /* 18px */
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.125rem;    /* 18px */
+  color: var(--india-green);
+}
+
+/* 🟢 Emotional Grid Borders
+   Purpose: Visual storytelling via left accent
+---------------------------------------------------------- */
+.grid-resilience .product-card {
+  border-left: 6px solid var(--healing-green);
+}
+.grid-pages .product-card {
+  border-left: 6px solid var(--connection-purple);
+}
+.grid-sip .product-card {
+  border-left: 6px solid var(--resilience-teal);
+}
+.grid-voices .product-card {
+  border-left: 6px solid var(--viridian);
+}
+
+/* 🔘 CTA Buttons (Universal)
+   Target: .cta inside .product-card
+---------------------------------------------------------- */
+.product-card .cta {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 1.125rem;    /* 18px */
+  font-weight: bold;
+  background-color: var(--dignity-cream);
+  color: var(--deep-plum);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🎯 CTA Background by Grid Type
+---------------------------------------------------------- */
+.grid-resilience .cta,
+.grid-sip .cta {
+  background-color: var(--resilience-teal);
+}
+.grid-pages .cta {
+  background-color: var(--connection-purple);
+}
+.grid-voices .cta {
+  background-color: var(--viridian);
+}
+
+/* ✨ CTA Hover Styling
+   Target: All .cta buttons
+---------------------------------------------------------- */
+.product-card .cta:hover {
+  background-color: var(--deep-plum);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 🛍️ Section Container: Resilience on Display */
+.resilience-display {
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* ☕ Section Container: Sip with Purpose */
+.sip-with-purpose {
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* 📓 Section Container: Pages of Healing */
+.pages-of-healing {
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* 🖼️ Section Container: Voices on the Wall */
+.voices-on-the-wall {
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
