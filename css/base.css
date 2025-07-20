@@ -2,6 +2,7 @@
    Used in: All pages
    Purpose: Defines brand color palette for consistency and emotional resonance
 */
+/*
 :root {
   --healing-green: #7CB342;
   --resilience-teal: #009688;
@@ -25,20 +26,23 @@
    Used in: All pages
    Purpose: Sets font standards, background, and core body properties
 */
+/*
 body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.125rem; /* 18px */
+/*
   line-height: 1.7;
   background-color: var(--eggshell);
   color: var(--text-dark);
   margin: 0;
   padding: 0;
 }
-
+*/
 /* 🔗 Universal Link Styling
    Used in: All pages
    Purpose: Ensures interactive links are consistent and readable
 */
+/*
 a {
   color: var(--deep-plum);
   text-decoration: none;
@@ -54,6 +58,7 @@ a:hover {
    Used in: Throughout components
    Purpose: Small reusable helpers and structural resets
 */
+/*
 .text-center {
   text-align: center;
 }
@@ -66,3 +71,4 @@ a:hover {
   font-weight: bold;
   color: var(--deep-plum);
 }
+*/
