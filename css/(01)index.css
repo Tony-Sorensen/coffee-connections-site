@@ -1,0 +1,77 @@
+/* 🎨 Page-Specific Styles for index.html */
+
+/* Mission Grid Layout */
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Mission Left (Video) */
+.mission-left {
+  text-align: center;
+}
+
+.video-wrapper {
+  margin-bottom: 1rem;
+}
+
+.video-caption {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/* Mission Right (Statement) */
+.mission-right {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-medium);
+}
+
+.founder-name {
+  font-style: italic;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Founding Circle Snippet */
+.founding-circle-snippet {
+  background-color: var(--soft-cream);
+  padding: 3rem 1.5rem;
+  margin: 3rem auto;
+  max-width: 960px;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.read-more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-medium);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* 🧾 Footer Styles */
+footer {
+  background-color: var(--soft-cream);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.6;
+}
