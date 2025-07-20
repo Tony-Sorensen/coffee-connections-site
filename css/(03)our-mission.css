@@ -1,0 +1,222 @@
+/* 📜 Mission Hero Block */
+.mission-hero {
+  background-color: var(--dignity-cream);
+  text-align: left;
+  padding: 60px 30px;
+  border-left: 8px solid var(--resilience-teal);
+  border-radius: 10px;
+}
+
+.mission-title {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 30px;
+}
+
+.mission-subtext,
+.mission-story {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+/* 🛤️ Origin Journey Grid */
+.mission-origin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 60px 30px;
+  background-color: var(--eggshell);
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.origin-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.origin-right {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.origin-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.origin-title {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 30px;
+}
+
+.story-block p {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+/* 🎯 Mission Pillars */
+.mission-pillars {
+  background-color: var(--dignity-cream);
+  padding: 60px 30px;
+  border-left: 8px solid var(--connection-purple);
+  border-radius: 10px;
+}
+
+.pillars-title {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 30px;
+}
+
+.pillars-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pillars-list li {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.pillar-label {
+  font-weight: 600;
+  color: var(--deep-plum);
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ✍️ Founders' Message */
+.mission-founders {
+  background-color: var(--dignity-cream);
+  padding: 60px 30px;
+  border-left: 8px solid var(--resilience-teal);
+  font-style: italic;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.origin-voice {
+  display: block;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--deep-plum);
+  margin-bottom: 8px;
+}
+
+.collective-call {
+  font-weight: 600;
+  color: var(--connection-purple);
+}
+
+/* 💌 Mission Invitation CTA */
+.mission-invitation {
+  text-align: center;
+  background-color: var(--dignity-cream);
+  padding: 50px 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.invitation-title {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 15px;
+}
+
+.invitation-text {
+  font-size: 1.125rem; /* 18px */
+  margin-bottom: 20px;
+}
+
+.cta-join {
+  display: inline-block;
+  font-size: 1.125rem; /* 18px */
+  padding: 12px 20px;
+  background-color: var(--connection-purple);
+  color: var(--dignity-cream);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-join:hover {
+  background-color: var(--deep-plum);
+}
+
+/* 📢 Social Sharing */
+.social-share {
+  background-color: var(--eggshell);
+  padding: 60px 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.03);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+.share-title {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 20px;
+}
+
+.share-text {
+  font-size: 1.25rem; /* 20px */
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.share-note {
+  font-size: 1rem; /* 16px */
+  color: var(--text-dark);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.share-buttons a {
+  margin: 8px;
+  font-size: 1.125rem; /* 18px */
+  color: var(--connection-purple);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.share-buttons a:hover {
+  color: var(--deep-plum);
+}
+
+/* 🎨 Semantic Emphasis Classes */
+.mission-emphasis {
+  font-weight: 600;
+  color: var(--india-green);
+}
+
+.callout-emotion {
+  font-style: italic;
+  color: var(--connection-purple);
+}
+
+.truth-strike {
+  font-weight: 700;
+  background-color: var(--mint-healing);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
