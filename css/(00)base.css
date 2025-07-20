@@ -14,7 +14,21 @@ body {
 ---------------------------------------------------------- */
 :root {
   --dignity-cream: #F6F2EC;
-  /* Other variables like --deep-plum, --resilience-teal, --healing-green, etc. are loaded globally */
+  --healing-green: #7CB342;
+  --resilience-teal: #009688;
+  --connection-purple: #673AB7;
+  --india-green: #138808;
+  --jade-green: #00A86B;
+  --viridian: #40826D;
+  --deep-plum: #4E2753;
+  --mocha-brown: #554c43;
+  --eggshell: #f4f1ea;
+  --text-dark: #333333;
+  --lavender-soft: #F3DCF9;
+  --aqua-soft: #B7F7F9;
+  --mint-healing: #D8F4E7;
+  --teal-mist: #EBF2FD;
+  --plum-veil: #E9E5F8;
 }
 
 /* 🌟 Featured Collection Styles
