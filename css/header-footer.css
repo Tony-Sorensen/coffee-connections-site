@@ -2,6 +2,7 @@
    Used in: All pages
    Purpose: Brand bar with logo, title, and tagline
 */
+/*
 .site-header {
   background-color: var(--deep-plum);
   padding: 30px 20px;
@@ -12,6 +13,7 @@
    Used in: All pages
    Purpose: Organizes logo and title side by side
 */
+/*
 .header-grid {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -25,6 +27,7 @@
    Used in: All pages
    Purpose: Displays brand logo in header
 */
+/*
 .logo {
   max-width: 200px;
   height: auto;
@@ -36,18 +39,21 @@
    Used in: All pages
    Purpose: Mission-driven intro and context branding
 */
+/*
 .title-cell {
   text-align: center;
 }
 
 .title-cell h1 {
   font-size: 2.375rem; /* 38px */
+/*
   margin: 0;
   line-height: 1.2;
 }
 
 .title-cell .tagline {
   font-size: 1.25rem; /* 20px */
+/*
   font-style: italic;
   margin-top: 8px;
 }
@@ -56,6 +62,7 @@
    Used in: All pages
    Purpose: Visually organized nav with color-coded buttons
 */
+/*
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -75,12 +82,14 @@
 }
 
 /* 🎯 Focus Visibility for Navigation */
+/*
 .nav-buttons a:focus {
   outline: 3px solid var(--deep-plum);
   outline-offset: 2px;
 }
 
 /* 🎨 Page-Specific Button Colors */
+/*
 .nav-buttons a[href="index.html"] {
   border-color: var(--india-green);
   color: var(--india-green);
@@ -125,6 +134,7 @@
    Used in: All pages on mobile
    Purpose: Stack nav buttons vertically
 */
+/*
 @media (max-width: 600px) {
   .nav-buttons {
     flex-direction: column;
@@ -141,6 +151,7 @@
    Used in: All pages
    Purpose: Consistent footer with soft tone
 */
+/*
 footer {
   background-color: var(--mocha-brown);
   color: var(--dignity-cream);
@@ -149,4 +160,4 @@ footer {
   font-size: 15px;
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
-
+*/
