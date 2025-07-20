@@ -2,6 +2,7 @@
    Used in: Navigation, Footer, Utility Links
    Purpose: Accessible, mission-aligned buttons for general use
 */
+/*
 .button {
   background-color: #D9CBB3;
   color: #2C1E1E;
@@ -25,6 +26,7 @@
    Used in: Founding-Circle.html, Journal outreach
    Purpose: Provides clean, accessible layout for social sharing links
 */
+/*
 .share-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +60,7 @@
    Used in: index.html, Our-Mission.html, Founding-Circle.html, Resilience-Market.html
    Purpose: Creates visual hierarchy for major engagement
 */
+/*
 .cta {
   display: inline-block;
   padding: 14px 30px;
@@ -80,6 +83,7 @@
    Used in: Resilience-Market.html
    Purpose: Customized buttons by advocacy category
 */
+/*
 .grid-resilience .cta,
 .grid-sip .cta {
   background-color: var(--resilience-teal);
@@ -102,7 +106,9 @@
    Used in: mission blocks, story elements
    Purpose: Emphasizes key language and emotional tone
 */
+/*
 .highlight {
   font-weight: bold;
   color: var(--deep-plum);
 }
+*/
