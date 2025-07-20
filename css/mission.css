@@ -2,6 +2,7 @@
    Used in: Our-Mission.html
    Purpose: Opening headline + context-setting subtext
 */
+/*
 .mission-hero {
   background-color: var(--dignity-cream);
   text-align: center;
@@ -32,6 +33,7 @@
    Used in: Our-Mission.html
    Purpose: Key commitments presented as styled blocks
 */
+/*
 .mission-pillars {
   background-color: var(--eggshell);
   padding: 60px 30px;
@@ -77,6 +79,7 @@
    Used in: Our-Mission.html
    Purpose: Video intro and founder statement pairing
 */
+/*
 .mission-grid {
   max-width: 100%;
   width: 100%;
@@ -90,6 +93,7 @@
 }
 
 /* 🌿 Welcome Video Styling */
+/*
 .video-wrapper {
   aspect-ratio: 16 / 9;
   max-width: 800px;
@@ -112,6 +116,7 @@
 }
 
 /* 💬 Mission Welcome Text */
+/*
 .mission-left h2 {
   font-size: 1.625rem;
   margin-bottom: 12px;
@@ -125,6 +130,7 @@
 }
 
 /* 💜 Founder Statement Text */
+/*
 .mission-right h2 {
   font-size: 1.75rem;
   margin-bottom: 12px;
@@ -141,6 +147,7 @@
    Used in: Our-Mission.html
    Purpose: End-of-page community action prompt
 */
+/*
 .mission-invitation {
   text-align: center;
   background-color: var(--dignity-cream);
@@ -163,6 +170,7 @@
    Used in: Founding-Circle.html
    Purpose: Emotional quote-based narrative statement
 */
+/*
 .mission-founders {
   background-color: var(--dignity-cream);
   padding: 60px 30px;
@@ -185,6 +193,7 @@
 }
 
 /* 📱 Responsive Mission Grid Adjustments */
+/*
 @media (max-width: 768px) {
   .mission-grid {
     flex-direction: column;
@@ -196,3 +205,4 @@
     max-width: 100%;
   }
 }
+*/
