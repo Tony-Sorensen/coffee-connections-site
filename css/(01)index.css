@@ -22,8 +22,9 @@
 
 .video-caption {
   font-size: 1.25rem;
-  color: var(--text-dark);
   line-height: 1.4;
+  color: var(--text-dark);
+  font-family: var(--font-heading); /* 🎨 Mission-aligned font system */
 }
 
 /* Mission Right (Statement) */
@@ -31,12 +32,14 @@
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text-medium);
+  font-family: var(--font-main); /* Add this */
 }
 
 .founder-name {
   font-style: italic;
   margin-top: 1rem;
   display: inline-block;
+    font-family: var(--font-main); /* Add this */
 }
 
 /* Founding Circle Snippet */
@@ -56,6 +59,7 @@
   color: var(--accent-medium);
   font-weight: bold;
   text-decoration: none;
+  font-family: var(--font-main); /* Add this */
 }
 
 .read-more-link:hover {
@@ -69,6 +73,7 @@ footer {
   text-align: center;
   font-size: 1rem;
   color: var(--text-dark);
+  font-family: var(--font-main); /* Add this */
 }
 
 footer p {
