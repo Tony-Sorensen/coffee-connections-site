@@ -1,4 +1,6 @@
-/* 📜 Mission Hero Block */
+/*/* 📜 Mission Hero Block
+   Purpose: Introductory storytelling with emotional tone
+---------------------------------------------------------- */
 .mission-hero {
   background-color: var(--dignity-cream);
   text-align: left;
@@ -7,22 +9,28 @@
   border-radius: 10px;
 }
 
+/* 📝 Mission Title */
 .mission-title {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;              /* 32px */
   font-weight: 700;
+  font-family: var(--font-heading);  /* Merriweather for warmth */
   color: var(--deep-plum);
   margin-bottom: 30px;
 }
 
+/* 📖 Mission Intro Text */
 .mission-subtext,
 .mission-story {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;           /* 20px */
   line-height: 1.6;
+  font-family: var(--font-main);     /* DM Sans for readability */
   color: var(--text-dark);
   margin-bottom: 20px;
 }
 
-/* 🛤️ Origin Journey Grid */
+/* 🛤️ Origin Journey Grid
+   Purpose: Narrative split block for origin storytelling
+---------------------------------------------------------- */
 .mission-origin {
   display: flex;
   flex-wrap: wrap;
@@ -33,11 +41,13 @@
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+/* 🔍 Left Text Column */
 .origin-left {
   flex: 1;
   min-width: 280px;
 }
 
+/* 🖼️ Right Image Column */
 .origin-right {
   flex: 1;
   min-width: 280px;
@@ -51,21 +61,27 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* ✒️ Section Heading */
 .origin-title {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;                  /* 32px */
   font-weight: 700;
+  font-family: var(--font-heading); /* Merriweather for warmth */
   color: var(--deep-plum);
   margin-bottom: 30px;
 }
 
+/* 📖 Story Text */
 .story-block p {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;               /* 20px */
   line-height: 1.6;
+  font-family: var(--font-main);   /* DM Sans for clarity */
   color: var(--text-dark);
   margin-bottom: 24px;
 }
 
-/* 🎯 Mission Pillars */
+/* 🎯 Mission Pillars
+   Purpose: Showcase foundational values with clarity and warmth
+---------------------------------------------------------- */
 .mission-pillars {
   background-color: var(--dignity-cream);
   padding: 60px 30px;
@@ -73,60 +89,77 @@
   border-radius: 10px;
 }
 
+/* 🔖 Pillars Title */
 .pillars-title {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;                   /* 32px */
   font-weight: 700;
+  font-family: var(--font-heading); /* Merriweather for depth and identity */
   color: var(--deep-plum);
   margin-bottom: 30px;
 }
 
+/* 📋 Pillars List Container */
 .pillars-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
+/* 🪜 Individual Pillars */
 .pillars-list li {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;                /* 20px */
   line-height: 1.6;
+  font-family: var(--font-main);    /* DM Sans for clarity and trust */
   color: var(--text-dark);
   margin-bottom: 24px;
 }
 
+/* 🏷️ Pillar Labels */
 .pillar-label {
   font-weight: 600;
+  font-family: var(--font-main);    /* Consistent body font */
   color: var(--deep-plum);
   display: block;
   margin-bottom: 6px;
 }
 
-/* ✍️ Founders' Message */
+/* ✍️ Founders' Message
+   Purpose: Personal testimony that feels hand-written and heartfelt
+---------------------------------------------------------- */
 .mission-founders {
   background-color: var(--dignity-cream);
   padding: 60px 30px;
   border-left: 8px solid var(--resilience-teal);
   font-style: italic;
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;                     /* 24px */
   line-height: 1.8;
+  font-family: var(--font-heading);     /* Merriweather for warm, journal tone */
   color: var(--text-dark);
   max-width: 900px;
   margin: 0 auto 60px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
+/* 🖋️ Voice Attribution */
 .origin-voice {
   display: block;
   font-weight: bold;
   font-style: normal;
+  font-family: var(--font-main);        /* DM Sans for clear attribution */
   color: var(--deep-plum);
   margin-bottom: 8px;
 }
 
+/* 💬 Collective Closing Call */
 .collective-call {
   font-weight: 600;
+  font-family: var(--font-main);        /* Consistent body styling */
   color: var(--connection-purple);
 }
 
-/* 💌 Mission Invitation CTA */
+/* 💌 Mission Invitation CTA
+   Purpose: Final emotional nudge to join in the journey
+---------------------------------------------------------- */
 .mission-invitation {
   text-align: center;
   background-color: var(--dignity-cream);
@@ -134,88 +167,118 @@
   border-top: 2px solid rgba(0, 0, 0, 0.04);
 }
 
+/* 📣 Invitation Heading */
 .invitation-title {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;                   /* 28px */
   font-weight: 700;
+  font-family: var(--font-heading);    /* Merriweather for depth */
   color: var(--deep-plum);
   margin-bottom: 15px;
 }
 
+/* 📝 Invitation Text */
 .invitation-text {
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;                  /* 18px */
+  font-family: var(--font-main);       /* DM Sans for warm accessibility */
+  color: var(--text-dark);
   margin-bottom: 20px;
 }
 
+/* ✨ Call-to-Action Join Button
+   Purpose: Invite participation with warmth and clarity
+---------------------------------------------------------- */
 .cta-join {
   display: inline-block;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;               /* 18px */
+  font-weight: 700;
+  font-family: var(--font-main);    /* DM Sans for clarity and energy */
   padding: 12px 20px;
   background-color: var(--connection-purple);
   color: var(--dignity-cream);
   text-decoration: none;
   border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-join:hover {
   background-color: var(--deep-plum);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 📢 Social Sharing */
+/* 📢 Social Sharing Block
+   Purpose: Extend community ripple effect
+---------------------------------------------------------- */
 .social-share {
   background-color: var(--eggshell);
   padding: 60px 30px;
+  text-align: center;
   border-top: 2px solid rgba(0, 0, 0, 0.03);
   border-bottom: 2px solid rgba(0, 0, 0, 0.03);
-  text-align: center;
 }
 
+/* 📣 Share Title */
 .share-title {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;                 /* 28px */
   font-weight: 700;
+  font-family: var(--font-heading);  /* Merriweather for emotional tone */
   color: var(--deep-plum);
   margin-bottom: 20px;
 }
 
+/* 📝 Share Description */
 .share-text {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;                 /* 20px */
+  font-family: var(--font-main);     /* DM Sans for approachable storytelling */
   color: var(--text-dark);
   margin-bottom: 24px;
 }
 
+/* 🔍 Subnote Styling */
 .share-note {
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;                    /* 16px */
+  font-family: var(--font-main);
   color: var(--text-dark);
   opacity: 0.8;
   margin-bottom: 20px;
 }
 
+/* 🔗 Share Buttons */
 .share-buttons a {
   margin: 8px;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;               /* 18px */
+  font-family: var(--font-main);
   color: var(--connection-purple);
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .share-buttons a:hover {
   color: var(--deep-plum);
 }
 
-/* 🎨 Semantic Emphasis Classes */
+/* 🎨 Semantic Emphasis Classes
+   Purpose: Textual emotion, advocacy, and healing-based design accents
+---------------------------------------------------------- */
+
+/* 🟢 Empathetic Strength */
 .mission-emphasis {
   font-weight: 600;
+  font-family: var(--font-main);         /* Clear, confident tone */
   color: var(--india-green);
 }
 
+/* 💜 Emotional Italics */
 .callout-emotion {
   font-style: italic;
+  font-family: var(--font-main);         /* Personal storytelling tone */
   color: var(--connection-purple);
 }
 
+/* ✊ Truth Highlight */
 .truth-strike {
   font-weight: 700;
+  font-family: var(--font-main);         /* Strong declaration */
   background-color: var(--mint-healing);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
