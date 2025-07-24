@@ -3,13 +3,12 @@ body.mobile-view {
   /* Apply tweaks if JS toggles mobile state manually */
 }
 
-
 /* 📢 Social Sharing Section
    Used in: All pages
    Purpose: Encourages sharing the mission across platforms
 */
 .social-share {
-  background-color: var(--mint-healing);
+  background-color: var(--dignity-cream); /* Soft, consistent tone */
   padding: 2rem 1.875rem; /* 32px 30px */
   text-align: center;
   border-top: 2px solid rgba(0,0,0,0.04);
