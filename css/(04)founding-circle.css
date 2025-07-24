@@ -78,7 +78,7 @@
 
 /* 📘 Survivor Journal Introduction */
 .journal-intro {
-  background-color: var(--mint-healing);
+  background-color: --dignity-cream: #F6F2EC;
   padding: 60px 30px;
   text-align: center;
   border-top: 2px solid rgba(0,0,0,0.05);
