@@ -247,8 +247,14 @@
   font-size: 0.95rem;
   color: white;
 }
-.tag-sexual-assault { background-color: #6a1b9a; }
-.tag-domestic-violence { background-color: #008080; }
-.tag-ptsd { background-color: #2e7d32; }
-.tag-anxiety,
-.tag-depression { background-color: #1565c0; }
+
+/* 🎗️ Individual Tag Styling */
+.tag-mental-health-journey         { background-color: #9c27b0; } /* Healing Purple */
+.tag-domestic-violence-survivor   { background-color: #00695c; } /* Grounded Teal */
+.tag-sexual-assault-survivor      { background-color: #8e24aa; } /* Resilience Plum */
+.tag-ptsd-complex-trauma          { background-color: #388e3c; } /* Deep Forest Green */
+.tag-anxiety-depression           { background-color: #1976d2; } /* Safe Sky Blue */
+.tag-grief-loss                   { background-color: #455a64; } /* Twilight Steel */
+.tag-addiction-recovery           { background-color: #5d4037; } /* Sober Brown */
+.tag-healing-as-caregiver         { background-color: #00838f; } /* Empathetic Cyan */
+
