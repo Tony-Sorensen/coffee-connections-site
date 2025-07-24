@@ -94,3 +94,9 @@ footer p {
   opacity: 1;
   text-decoration: underline solid;
 }
+
+.read-more-link:focus,
+.soft-link:focus {
+  outline: 2px dashed var(--accent-medium);
+  outline-offset: 4px;
+}
