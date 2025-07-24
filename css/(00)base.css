@@ -3,9 +3,9 @@
 ---------------------------------------------------------- */
 /* 🎨 Mission-Aligned Theme System */
 :root {
-  /* 🖋️ Font System */
-  --font-main: 'DM Sans', sans-serif;
-  --font-heading: 'Merriweather', serif;
+ /* 🖋️ Font System */
+  --font-main: 'DM Sans', sans-serif;             /* Friendly, readable body text */
+  --font-heading: 'Libre Franklin', sans-serif;   /* Clear, dignified headers with modern warmth */
 
   /* Color Palette */
   --dignity-cream: #F6F2EC;
@@ -43,7 +43,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);       /* Merriweather for story-driven headers */
+  font-family: var(--font-heading);       /* Libre Franklin for clear, dignified headers */
   font-weight: 700;
   line-height: 1.3;
   margin-top: 0;
