@@ -35,17 +35,26 @@ body {
   margin: 0;
 }
 
-/* ✨ Header Typography */
-h1, h2, h3, h4 {
+/* ✨ Global Typography Enhancements */
+body {
+  background-color: var(--eggshell);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.3;
   margin-top: 0;
 }
 
-  /* 🖋️ Font System */
-  --font-main: 'DM Sans', sans-serif;
-  --font-heading: 'Merriweather', serif;
+p, li, a, span, input, textarea, button {
+  font-family: var(--font-main);
+}
+
 /* 🌟 Featured Collection Styles
    Target: .featured-collection
 ---------------------------------------------------------- */
@@ -71,6 +80,14 @@ h1, h2, h3, h4 {
   color: var(--text-dark);
   max-width: 720px;
   margin: 0 auto;
+}
+
+.featured-collection h2 {
+  font-family: var(--font-heading);
+}
+
+.featured-collection p {
+  font-family: var(--font-main);
 }
 
 /* 🧱 Product Grid Layouts
