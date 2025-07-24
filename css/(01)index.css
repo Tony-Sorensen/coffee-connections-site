@@ -66,6 +66,16 @@
   text-decoration: underline;
 }
 
+/* 🎉 Grand Opening Countdown Styles */
+.countdown-section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  max-width: 960px;
+  font-family: var(--font-heading); /* ✨ Bold, celebratory type */
+  color: var(--text-dark);
+}
+
 /* 🧾 Footer Styles */
 footer {
   background-color: var(--soft-cream);
