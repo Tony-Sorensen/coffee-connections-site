@@ -75,3 +75,17 @@ footer p {
   margin: 0;
   line-height: 1.6;
 }
+
+/* 🔗 Soft Link for Fallback Video */
+.soft-link {
+  color: inherit;
+  text-decoration: underline dotted;
+  font-style: italic;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.soft-link:hover {
+  opacity: 1;
+  text-decoration: underline solid;
+}
