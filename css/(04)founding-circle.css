@@ -5,12 +5,14 @@
   text-align: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
+
 .circle-title {
   font-size: 2.125rem;
   font-weight: 700;
   color: var(--deep-plum);
   margin-bottom: 16px;
 }
+
 .circle-text {
   font-size: 1.25rem;
   line-height: 1.8;
@@ -27,6 +29,7 @@
   border-top: 2px solid rgba(0, 0, 0, 0.04);
   border-bottom: 2px solid rgba(0, 0, 0, 0.04);
 }
+
 .founding-seat {
   background-color: var(--dignity-cream);
   border-left: 8px solid var(--resilience-teal);
@@ -37,19 +40,23 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 .founding-seat:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transform: translateY(-3px);
 }
+
 .seat-title {
   font-size: 1.625rem;
   color: var(--deep-plum);
   margin-bottom: 10px;
 }
+
 .origin-voice {
   font-weight: bold;
   color: var(--deep-plum);
 }
+
 .mission-emphasis {
   font-weight: 600;
   color: var(--india-green);
@@ -62,15 +69,18 @@
   margin: 0;
   font-size: 1.0625rem;
 }
+
 .founding-links li {
   margin-bottom: 8px;
 }
+
 .founding-links a {
   color: var(--india-green);
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .founding-links a:hover {
   color: var(--deep-plum);
   text-decoration: underline;
@@ -84,12 +94,14 @@
   border-top: 2px solid rgba(0,0,0,0.05);
   border-bottom: 2px solid rgba(0,0,0,0.05);
 }
+
 .journal-title {
   font-size: 2rem;
   font-weight: 700;
   color: var(--deep-plum);
   margin-bottom: 20px;
 }
+
 .journal-text em {
   font-style: italic;
   color: var(--connection-purple);
@@ -104,6 +116,7 @@
   margin: 0 auto 60px;
   padding: 0 30px;
 }
+
 .journal-spread {
   display: none;
   flex-wrap: wrap;
@@ -114,9 +127,11 @@
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
+
 .journal-spread.active {
   display: flex;
 }
+
 .journal-page {
   flex: 0 0 45%;
   padding: 30px;
@@ -125,23 +140,28 @@
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
+
 .journal-page.left-page {
   border-left: 6px solid var(--connection-purple);
 }
+
 .journal-page.right-page {
   border-left: 6px solid var(--resilience-teal);
 }
+
 .entry-title {
   font-size: 1.375rem;
   font-weight: 700;
   color: var(--deep-plum);
   margin-bottom: 12px;
 }
+
 .entry-text {
   font-size: 1.125rem;
   line-height: 1.7;
   color: var(--text-dark);
 }
+
 .entry-author {
   font-style: italic;
   color: var(--connection-purple);
@@ -153,6 +173,7 @@
   text-align: center;
   margin: 40px 0;
 }
+
 .journal-nav button {
   font-size: 2rem;
   background: none;
@@ -161,6 +182,7 @@
   color: var(--connection-purple);
   margin: 0 10px;
 }
+
 .journal-nav button:hover {
   color: var(--deep-plum);
 }
@@ -175,24 +197,28 @@
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
+
 .journal-form-title {
   font-size: 1.75rem;
   color: var(--deep-plum);
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .journal-form-text {
   font-size: 1.125rem;
   line-height: 1.7;
   color: var(--text-dark);
   margin-bottom: 30px;
 }
+
 .journal-form label {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
   color: var(--deep-plum);
 }
+
 .journal-form input[type="text"],
 .journal-form textarea {
   width: 100%;
@@ -202,15 +228,18 @@
   border-radius: 6px;
   font-size: 1rem;
 }
+
 .checkbox-group {
   margin-bottom: 20px;
 }
+
 .checkbox-group label {
   display: block;
   margin-bottom: 6px;
   font-weight: 500;
   color: var(--text-dark);
 }
+
 .submit-story {
   background-color: var(--connection-purple);
   color: var(--dignity-cream);
@@ -222,9 +251,59 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
 .submit-story:hover {
   background-color: var(--deep-plum);
 }
+
+/* Opt-in consent label */
+.optin-label {
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+  position: relative;
+}
+
+/* Tooltip icon */
+.tooltip-icon {
+  display: inline-block;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Tooltip text (hidden by default) */
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 240px;
+  background-color: var(--dignity-cream);
+  color: var(--deep-plum);
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Reveal tooltip on hover or focus */
+.tooltip-icon:hover .tooltip-text,
+.tooltip-icon:focus .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .confirmation-message {
   font-size: 1rem;
   color: var(--india-green);
