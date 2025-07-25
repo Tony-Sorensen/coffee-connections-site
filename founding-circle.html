@@ -389,10 +389,21 @@
 
     <button type="submit" class="submit-story">Add My Story</button>
 
-    <p id="submission-confirmation" class="confirmation-message">
-      Thank you for sharing your story. It has been safely received and held with care.
-    </p>
+    <label for="entry-optin" class="optin-label">
+      <input type="checkbox" id="entry-optin" name="entry-optin" value="yes" aria-describedby="optin-description">
+      I give permission for my story to be shared in other Coffee & Connections platforms, with care and anonymity as needed.
+      <span class="tooltip-icon" aria-label="More info" role="img" tabindex="0">ℹ️
+       <span class="tooltip-text" id="optin-description">
+        Your story may appear in newsletters, community murals, or online journals. All uses will honor anonymity and consent.
+       </span>
+     </span>
+    </label>
+
+<p id="submission-confirmation" class="confirmation-message">
+  Thank you for sharing your story. It has been safely received and held with care.
+</p>
   </form>
+  
 </section>
 
 <!-- 📢 SOCIAL SHARING: Survivor Journal Outreach -->
