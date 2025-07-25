@@ -89,6 +89,12 @@
     font-size: 1.25rem;
   }
 
+  .responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
   /* === (04) Founding Circle ===
      Sections: Founders Grid, Supporter Lists
   ---------------------------------------------------------- */
