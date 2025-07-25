@@ -140,3 +140,25 @@
   border-radius: 12px;
   margin-bottom: 40px;
 }
+
+/* 🌱 Resilience Market Launch Notice */
+.market-notice {
+  background-color: var(--dignity-cream);
+  border: 2px solid rgba(0,0,0,0.05);
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 760px;
+}
+.notice-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--deep-plum);
+  margin-bottom: 20px;
+}
+.notice-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
