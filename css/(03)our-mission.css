@@ -61,6 +61,27 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* 📸 Founder Photo Caption */
+.founder-photo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.founder-photo figcaption {
+  font-size: 1rem;
+  color: var(--text-muted);         /* Use your preferred accent tone */
+  margin-top: 8px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.caption-context {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-style: italic;
+}
 /* ✒️ Section Heading */
 .origin-title {
   font-size: 2rem;                  /* 32px */
