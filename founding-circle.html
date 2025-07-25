@@ -365,44 +365,51 @@
     <input type="hidden" name="_gotcha" style="display:none !important">
 
     <label for="entry-name">Name or Initials:</label>
-    <input type="text" id="entry-name" name="entry-name" placeholder="Optional">
+    <input type="text" id="entry-name" name="entry-name" placeholder="Optional" maxlength="100">
 
     <label for="entry-location">City:</label>
-    <input type="text" id="entry-location" name="entry-location" placeholder="Optional">
+    <input type="text" id="entry-location" name="entry-location" placeholder="Optional" maxlength="100">
 
     <label for="entry-topics">Your story touches on:</label>
-    <div class="checkbox-group">
-      <label><input type="checkbox" name="entry-topics" value="Mental Health Journey"> Mental Health Journey</label>
-      <label><input type="checkbox" name="entry-topics" value="Domestic Violence Survivor"> Domestic Violence Survivor</label>
-      <label><input type="checkbox" name="entry-topics" value="Sexual Assault Survivor"> Sexual Assault Survivor</label>
-      <label><input type="checkbox" name="entry-topics" value="PTSD & Complex Trauma"> PTSD & Complex Trauma</label>
-      <label><input type="checkbox" name="entry-topics" value="Anxiety & Depression"> Anxiety & Depression</label>
-      <label><input type="checkbox" name="entry-topics" value="Grief & Loss"> Grief & Loss</label>
-      <label><input type="checkbox" name="entry-topics" value="Addiction Recovery"> Addiction Recovery</label>
-      <label><input type="checkbox" name="entry-topics" value="Healing as a Caregiver"> Healing as a Caregiver</label>
-      <label><input type="checkbox" name="entry-topics" value="Other"> Other</label>
-      <input type="text" id="other-topic-text" name="other-topic-text" placeholder="Add your own tag...">
+    <div class="checkbox-group" aria-describedby="entry-topics-note">
+      <label><input type="checkbox" name="entry-topics[]" value="Mental Health Journey"> Mental Health Journey</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Domestic Violence Survivor"> Domestic Violence Survivor</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Sexual Assault Survivor"> Sexual Assault Survivor</label>
+      <label><input type="checkbox" name="entry-topics[]" value="PTSD & Complex Trauma"> PTSD & Complex Trauma</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Anxiety & Depression"> Anxiety & Depression</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Grief & Loss"> Grief & Loss</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Addiction Recovery"> Addiction Recovery</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Healing as a Caregiver"> Healing as a Caregiver</label>
+      <label><input type="checkbox" name="entry-topics[]" value="Other"> Other</label>
+      <input type="text" id="other-topic-text" name="entry-topics[]" placeholder="Add your own tag..." maxlength="100">
     </div>
+    <small id="entry-topics-note" class="visually-hidden">You may select more than one topic. Each will be captured and honored.</small>
 
-    <label for="entry-message">Your Message:</label>
-    <textarea id="entry-message" name="entry-message" rows="6" placeholder="What would you say to someone walking a similar path?"></textarea>
-
-    <button type="submit" class="submit-story">Add My Story</button>
+    <label for="entry-message" aria-describedby="message-guidance">Your Message:</label>
+    <textarea id="entry-message" name="entry-message" rows="6" placeholder="What would you say to someone walking a similar path?" required></textarea>
+    <small id="message-guidance" class="visually-hidden">
+    Take your time. There’s no limit to what you need to say. Your words may help someone feel seen.
+    </small>
 
     <label for="entry-optin" class="optin-label">
       <input type="checkbox" id="entry-optin" name="entry-optin" value="yes" aria-describedby="optin-description">
       I give permission for my story to be shared in other Coffee & Connections platforms, with care and anonymity as needed.
       <span class="tooltip-icon" aria-label="More info" role="img" tabindex="0">ℹ️
-       <span class="tooltip-text" id="optin-description">
-        Your story may appear in newsletters, community murals, or online journals. All uses will honor anonymity and consent.
-       </span>
-     </span>
+        <span class="tooltip-text" id="optin-description">
+          Your story may appear in newsletters, community murals, or online journals. All uses will honor anonymity and consent.
+        </span>
+      </span>
     </label>
 
-<p id="submission-confirmation" class="confirmation-message">
-  Thank you for sharing your story. It has been safely received and held with care.
-</p>
+    <button type="submit" class="submit-story">Add My Story</button>
+
+    <p id="submission-confirmation" class="confirmation-message">
+      Thank you for sharing your story. It has been safely received and held with care.<br>
+      If you gave permission, we may share your words respectfully across our community platforms.
+    </p>
   </form>
+</section>
+
   
 </section>
 
