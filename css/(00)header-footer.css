@@ -60,7 +60,7 @@
   font-size: 2rem;                   /* 32px */
   font-weight: 700;
   margin: 0;
-  color: var(--deep-plum);
+  color: #4B0082; /* Indigo */
   line-height: 1.3;
 }
 
