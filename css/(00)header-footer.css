@@ -57,7 +57,7 @@
 
 /* 🧠 Title Styling */
 .title-cell h1 {
-  font-size: 2rem;                   /* 32px */
+  font-size: 2.5rem;                   
   font-weight: 700;
   margin: 0;
   color: #4B0082; /* Indigo */
@@ -66,9 +66,9 @@
 
 /* 💬 Tagline Styling */
 .title-cell .tagline {
-  font-size: 1.125rem;               /* 18px */
+  font-size: 1.25rem;               
   font-style: italic;
-  color: var(--text-dark);
+  color: #5A3E5F; /* Muted plum for warmth */
   margin-top: 0.5rem;
 }
 
